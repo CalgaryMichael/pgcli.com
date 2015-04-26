@@ -24,7 +24,7 @@
 &lt;p&gt;That will launch pgcli with the appropriate database credentials. &lt;/p&gt;
 &lt;p&gt;That's it. &lt;/p&gt;
 &lt;h3&gt;Credit&lt;/h3&gt;
-&lt;p&gt;My personal thanks to &lt;a href="https://github.com/ashchristopher/"&gt;Ash Christopher&lt;/a&gt; for taking the initiative to create this package. It was a well requested feature of pgcli, so you just made a lot of people happy. &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Sat, 25 Apr 2015 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2015-04-25:django-pgcli.html</guid><category>python</category><category>django</category></item><item><title>dbcli - a new github org</title><link>http://pgcli.com/dbcli.html</link><description>&lt;p&gt;I'm officially moving the &lt;a href="https://github.com/dbcli/pgcli"&gt;pgcli&lt;/a&gt; project into
+&lt;p&gt;My personal thanks to &lt;a href="https://github.com/ashchristopher/"&gt;Ash Christopher&lt;/a&gt; for taking the initiative to create this package. It was a well requested feature of pgcli, you just made a lot of people happy. &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Sat, 25 Apr 2015 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2015-04-25:django-pgcli.html</guid><category>python</category><category>django</category></item><item><title>dbcli - a new github org</title><link>http://pgcli.com/dbcli.html</link><description>&lt;p&gt;I'm officially moving the &lt;a href="https://github.com/dbcli/pgcli"&gt;pgcli&lt;/a&gt; project into
 the &lt;a href="https://github.com/dbcli"&gt;dbcli&lt;/a&gt; org in github.&lt;/p&gt;
 &lt;h2&gt;Why?&lt;/h2&gt;
 &lt;ul&gt;
