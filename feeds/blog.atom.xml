@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/blog.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-04-18T00:00:00-07:00</updated><entry><title>dbcli - a new github org</title><link href="http://pgcli.com/dbcli.html" rel="alternate"></link><updated>2015-04-18T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-04-18:dbcli.html</id><summary type="html">&lt;p&gt;I'm officially moving the &lt;a href="https://github.com/dbcli/pgcli"&gt;pgcli&lt;/a&gt; project into
+<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/blog.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-04-25T00:00:00-07:00</updated><entry><title>Django Integration of pgcli</title><link href="http://pgcli.com/django-pgcli.html" rel="alternate"></link><updated>2015-04-25T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-04-25:django-pgcli.html</id><summary type="html">&lt;p&gt;Django web framework has a rich set of management commands. One of them is &lt;code&gt;python manage.py dbshell&lt;/code&gt;. This will launch the default database repl and connect to the appropriate database for the web application.&lt;/p&gt;
+&lt;p&gt;Now it is possible to launch &lt;code&gt;pgcli&lt;/code&gt; instead of the default &lt;code&gt;psql&lt;/code&gt; for Postgres by installing the &lt;a href="https://github.com/ashchristopher/django-pgcli"&gt;django-pgcli&lt;/a&gt; python package.&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;p&gt;Install it using &lt;code&gt;pip&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;    $ pip install django-pgcli
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Then add &lt;code&gt;django_pgcli&lt;/code&gt; to the list of INSTALLED_APPS in your project's settings.py.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;    INSTALLED_APPS = [
+        ...,
+        &amp;#39;django_pgsql&amp;#39;,
+    ]
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;p&gt;Launch the &lt;code&gt;dbshell&lt;/code&gt; through the management command. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;    $ python manage.py dbshell
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;That will launch pgcli with the appropriate database credentials. &lt;/p&gt;
+&lt;p&gt;That's it. &lt;/p&gt;
+&lt;h3&gt;Credit&lt;/h3&gt;
+&lt;p&gt;My personal thanks to &lt;a href="https://github.com/ashchristopher/"&gt;Ash Christopher&lt;/a&gt; for taking the initiative to create this package. It was a well requested feature of pgcli, so you just made a lot of people happy. &lt;/p&gt;</summary><category term="python"></category><category term="django"></category></entry><entry><title>dbcli - a new github org</title><link href="http://pgcli.com/dbcli.html" rel="alternate"></link><updated>2015-04-18T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-04-18:dbcli.html</id><summary type="html">&lt;p&gt;I'm officially moving the &lt;a href="https://github.com/dbcli/pgcli"&gt;pgcli&lt;/a&gt; project into
 the &lt;a href="https://github.com/dbcli"&gt;dbcli&lt;/a&gt; org in github.&lt;/p&gt;
 &lt;h2&gt;Why?&lt;/h2&gt;
 &lt;ul&gt;
