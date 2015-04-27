@@ -10,7 +10,7 @@
 &lt;p&gt;Then add &lt;code&gt;django_pgcli&lt;/code&gt; to the list of INSTALLED_APPS in your project's settings.py.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;    INSTALLED_APPS = [
         ...,
-        &amp;#39;django_pgsql&amp;#39;,
+        &amp;#39;django_pgcli&amp;#39;,
     ]
 &lt;/pre&gt;&lt;/div&gt;
 
