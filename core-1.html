@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Introducing the core devs of pgcli</title>
+        <link rel="stylesheet" href="./theme/css/main.css" />
+        <link href="http://pgcli.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="pgcli Atom Feed" />
+        <link href="http://pgcli.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="pgcli RSS Feed" />
+        <script type="text/javascript">
+            /* <![CDATA[ */
+        (function() {
+         var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+         s.type = 'text/javascript';
+         s.async = true;
+         s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+         t.parentNode.insertBefore(s, t);
+         })();
+/* ]]> */</script>
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="./">pgcli </a></h1>
+                <!--<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://github.com/amjith/pgcli"></a>
+                <script data-gratipay-username="amjith" data-gratipay-widget="button" src="//grtp.co/v1.js"></script>-->
+                <h3><a href="https://www.kickstarter.com/projects/1839007321/mysql-cli">** Please support my Kickstarter campaign for mysql-cli **</a></h3>
+                <nav><ul>
+                    <li><a href="./index">pgcli</a></li>
+                    <li><a href="./install">Install</a></li>
+                    <li><a href="./features">Features</a></li>
+                    <li><a href="./faq">FAQ</a></li>
+                    <li><a href="./develop">Develop</a></li>
+                    <li><a href="./thanks">Thanks</a></li>
+                    <li><a href="./about">About</a></li>
+                    <li class="active"><a href="./category/blog.html">Blog</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="./core-1.html" rel="bookmark"
+           title="Permalink to Introducing the core devs of pgcli">Introducing the core devs of pgcli</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2015-04-26T00:00:00-07:00">
+                Published: Sun 26 April 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="./author/amjith.html">Amjith</a>
+        </address>
+<p>In <a href="./category/blog.html">Blog</a>. </p>
+<p>tags: <a href="./tag/python.html">python</a> </p>
+</footer><!-- /.post-info -->      <p>It is my pleasure to announce the core devs of the pgcli project. </p>
+<h1><a href="https://github.com/drocco007">Daniel Rocco</a></h1>
+<p>Daniel made pgcli handle JSON, bytea, and large decimal values correctly. He improved the completion matching by adding sub-string matching. His creative solution to reducing completion noise is extremely useful. He also added numerous tests to cover a lot more branches in the code path. </p>
+<h1><a href="https://github.com/darikg">Darik Gamble</a></h1>
+<p>Darik is a prolific committer who is credited for numerous feature additions in pgcli. He single handedly made pgcli <a href="./embedding-pgcli-in-ipython.html">embeddable inside IPython</a>, which still blows my mind. He made pgcli behave more like psql, added schema support to completion (this is huge), view name completion, auto-escaping of tables/columns and numerous special command (<code>\dv, \df, \dn</code>). Darik's feature additions are creative and well-thought out.</p>
+<h1><a href="https://github.com/j-bennet">Iryna Cherniavska</a></h1>
+<p>Iryna is one of the earliest contributors to the project. She is credited for adding a rich set of tests to the completion engine and brought in mocks to test some of the tricky bits. She also added many of the special commands such as <code>\dv, \di, \e</code> and contributed to the <a href="https://github.com/dbcli/pgcli/blob/master/DEVELOP.rst#adding-postgresql-special-meta-commands">developer document</a>.</p>
+<h1><a href="https://github.com/macobo">Karl-Aksel Puulmann</a></h1>
+<p>Karl fixed some of the critical issues early on in the project, which paved the way to get this project widely accepted. Karl made pgcli handle unicode. He created robust testing fixtures to make it easy for contributors to add tests. Thanks to Karl, it is now possible to cancel queries that are in flight using Ctrl-C.</p>
+<p>He also created an experimental <a href="https://github.com/macobo/sqlcomplete">SQL completion engine</a> that can provide accurate suggestions based on actual grammar instead of the heuristics. It is still in the experimental phase and we hope to use it in pgcli in the future.</p>
+<h1>Thanks</h1>
+<p>I'm extremely grateful to all of the core devs for their contributions so far and their willingness to play the role of core dev in the project. I'm quite lucky to be working with such amazing devs.</p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://pgcli.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            <li><a href="http://pgcli.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">rss feed</a></li>
+
+                            <li><a href="http://twitter.com/amjithr">twitter</a></li>
+                            <li><a href="http://github.com/amjith/pgcli">github</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-58061452-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+</body>
+</html>
