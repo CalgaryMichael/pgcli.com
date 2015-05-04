@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/blog.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-04-28T00:00:00-07:00</updated><entry><title>Introducing the core devs of pgcli</title><link href="http://pgcli.com/core-1.html" rel="alternate"></link><updated>2015-04-28T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-04-28:core-1.html</id><summary type="html">&lt;p&gt;It is my pleasure to announce the core devs of the pgcli project. &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/blog.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-05-05T00:00:00-07:00</updated><entry><title>A Better CLI for MySQL - Kickstarter Success</title><link href="http://pgcli.com/mysql-cli-kickstarter-success.html" rel="alternate"></link><updated>2015-05-05T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-05-05:mysql-cli-kickstarter-success.html</id><summary type="html">&lt;p&gt;About a month ago, I started a new &lt;a href="https://www.kickstarter.com/projects/1839007321/mysql-cli"&gt;kickstarter
+project&lt;/a&gt; to create a
+MySQL client that can do auto-completion and syntax highlighting.&lt;/p&gt;
+&lt;p&gt;An equivalent of &lt;a href="http://pgcli.com"&gt;pgcli&lt;/a&gt; for the MySQL database.&lt;/p&gt;
+&lt;p&gt;Today I'm happy to announce that the kickstarter has reached it's &lt;a href="https://www.kickstarter.com/projects/1839007321/mysql-cli"&gt;goal&lt;/a&gt; and it's
+strongly marching towards the stretch goal. &lt;/p&gt;
+&lt;p&gt;Thank you everyone for pitching in and helping me reach the goal.&lt;/p&gt;
+&lt;p&gt;This is the last day to back the project, if you'd like to get early access to the app.&lt;/p&gt;
+&lt;p&gt;I would like to extend my thanks to the first Gold sponsor
+&lt;a href="https://jweiland.net/"&gt;jweiland.net&lt;/a&gt;. The boost from their generous
+contribution gave me the confidence that we'll reach the goal.&lt;/p&gt;
+&lt;p&gt;Thanks to all the supporters who spread the word and pitched in. I appreciate it very much.&lt;/p&gt;</summary><category term="python"></category><category term="mysql"></category></entry><entry><title>Introducing the core devs of pgcli</title><link href="http://pgcli.com/core-1.html" rel="alternate"></link><updated>2015-04-28T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-04-28:core-1.html</id><summary type="html">&lt;p&gt;It is my pleasure to announce the core devs of the pgcli project. &lt;/p&gt;
 &lt;h1&gt;&lt;a href="https://github.com/drocco007"&gt;Daniel Rocco&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Daniel made pgcli handle JSON, bytea, and large decimal values correctly. He improved the completion matching by adding sub-string matching. His creative solution to reducing completion noise is extremely useful. He also added numerous tests to cover a lot more branches in the code path.&lt;/p&gt;
 &lt;p&gt;Daniel loves Python and is a frequent speaker at PyAtl on introductory topics, testing, design, and shiny things; he loves seeing the spark of wonder and delight in people's eyes when someone shares a novel, surprising, or beautiful idea. He lives in Atlanta with a microbiologist and four aspiring rocketeers.&lt;/p&gt;

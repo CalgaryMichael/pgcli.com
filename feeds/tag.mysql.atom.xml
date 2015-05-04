@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/tag.mysql.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-04-05T00:00:00-07:00</updated><entry><title>Kickstarter: mysql-cli</title><link href="http://pgcli.com/mysql-cli-kickstarter.html" rel="alternate"></link><updated>2015-04-05T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-04-05:mysql-cli-kickstarter.html</id><summary type="html">&lt;p&gt;I'm starting a project called &lt;a href="http://mysql-cli.com"&gt;mysql-cli&lt;/a&gt;.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/tag.mysql.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-05-05T00:00:00-07:00</updated><entry><title>A Better CLI for MySQL - Kickstarter Success</title><link href="http://pgcli.com/mysql-cli-kickstarter-success.html" rel="alternate"></link><updated>2015-05-05T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-05-05:mysql-cli-kickstarter-success.html</id><summary type="html">&lt;p&gt;About a month ago, I started a new &lt;a href="https://www.kickstarter.com/projects/1839007321/mysql-cli"&gt;kickstarter
+project&lt;/a&gt; to create a
+MySQL client that can do auto-completion and syntax highlighting.&lt;/p&gt;
+&lt;p&gt;An equivalent of &lt;a href="http://pgcli.com"&gt;pgcli&lt;/a&gt; for the MySQL database.&lt;/p&gt;
+&lt;p&gt;Today I'm happy to announce that the kickstarter has reached it's &lt;a href="https://www.kickstarter.com/projects/1839007321/mysql-cli"&gt;goal&lt;/a&gt; and it's
+strongly marching towards the stretch goal. &lt;/p&gt;
+&lt;p&gt;Thank you everyone for pitching in and helping me reach the goal.&lt;/p&gt;
+&lt;p&gt;This is the last day to back the project, if you'd like to get early access to the app.&lt;/p&gt;
+&lt;p&gt;I would like to extend my thanks to the first Gold sponsor
+&lt;a href="https://jweiland.net/"&gt;jweiland.net&lt;/a&gt;. The boost from their generous
+contribution gave me the confidence that we'll reach the goal.&lt;/p&gt;
+&lt;p&gt;Thanks to all the supporters who spread the word and pitched in. I appreciate it very much.&lt;/p&gt;</summary><category term="python"></category><category term="mysql"></category></entry><entry><title>Kickstarter: mysql-cli</title><link href="http://pgcli.com/mysql-cli-kickstarter.html" rel="alternate"></link><updated>2015-04-05T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-04-05:mysql-cli-kickstarter.html</id><summary type="html">&lt;p&gt;I'm starting a project called &lt;a href="http://mysql-cli.com"&gt;mysql-cli&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://mysql-cli.com"&gt;mysql-cli&lt;/a&gt; will be a command line client for MySQL, with
 auto-completion and syntax highlighting. An equivalent of
 &lt;a href="http://pgcli.com"&gt;pgcli&lt;/a&gt; for MySQL database.&lt;/p&gt;
