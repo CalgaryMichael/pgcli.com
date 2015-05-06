@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8" />
-        <title>Features</title>
+        <title>Integrating pgcli with heroku toolbelt</title>
         <link rel="stylesheet" href="./theme/css/main.css" />
         <link href="http://pgcli.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="pgcli Atom Feed" />
         <link href="http://pgcli.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="pgcli RSS Feed" />
@@ -30,56 +30,64 @@
                 <nav><ul>
                     <li><a href="./index">pgcli</a></li>
                     <li><a href="./install">Install</a></li>
-                    <li class="active"><a href="./features">Features</a></li>
+                    <li><a href="./features">Features</a></li>
                     <li><a href="./faq">FAQ</a></li>
                     <li><a href="./develop">Develop</a></li>
                     <li><a href="./thanks">Thanks</a></li>
                     <li><a href="./about">About</a></li>
-                    <li><a href="./category/blog.html">Blog</a></li>
+                    <li class="active"><a href="./category/blog.html">Blog</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 <section id="content" class="body">
-    <h1 class="entry-title">Features</h1>
-    
-    <div class="section" id="auto-completion">
-<h2>Auto-completion</h2>
-<p>Simple completions such as keywords and sql-functions.</p>
-<img alt="Keyword Completion" class="align-center" src="./images/keywords.png" style="width: 750px;" />
-</div>
-<div class="section" id="smart-completion">
-<h2>Smart-completion</h2>
-<p>Table name completions after the 'FROM' keyword.</p>
-<img alt="Table Names" class="align-center" src="./images/tables.png" style="width: 750px;" />
-<p>Column name completions once a table is recognized.</p>
-<img alt="Column Names" class="align-center" src="./images/columns.png" style="width: 750px;" />
-</div>
-<div class="section" id="alias-support">
-<h2>Alias support</h2>
-<p>Column completions will work even when table names are aliased.</p>
-<img alt="Alias Resolution" class="align-center" src="./images/alias.png" style="width: 750px;" />
-</div>
-<div class="section" id="syntax-highlighting">
-<h2>Syntax-highlighting</h2>
-<p>Syntax highlighting for sql.</p>
-<img alt="Syntax Highlighting" class="align-center" src="./images/syntax.png" style="width: 750px;" />
-</div>
-<div class="section" id="special-commands">
-<h2>Special commands</h2>
-<p>Limited support for some of psql's powerful back-slash commands.</p>
-<img alt="Special Commands" class="align-center" src="./images/special_commands.png" style="width: 750px;" />
-</div>
-<div class="section" id="multi-line">
-<h2>Multi-line</h2>
-<p>F3 key will toggle multi-line support.In multi-line mode you can break your sql
-statement into multiple lines. A semi-colon is needed to end the line.</p>
-<img alt="Special Commands" class="align-center" src="./images/multi_line.png" style="width: 750px;" />
-</div>
-<div class="section" id="pager">
-<h2>Pager</h2>
-<p>Output of an sql command is automatically piped through <tt class="docutils literal">less</tt> command.</p>
-<img alt="Special Commands" class="align-center" src="./images/pager.png" style="width: 750px;" />
-</div>
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="./heroku-pgcli.html" rel="bookmark"
+           title="Permalink to Integrating pgcli with heroku toolbelt">Integrating pgcli with heroku toolbelt</a></h1>
+    </header>
 
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2015-05-06T00:00:00-07:00">
+                Published: Wed 06 May 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="./author/amjith.html">Amjith</a>
+        </address>
+<p>In <a href="./category/blog.html">Blog</a>. </p>
+<p>tags: <a href="./tag/python.html">python</a> <a href="./tag/heroku.html">heroku</a> </p>
+</footer><!-- /.post-info -->      <p>Heroku is a popular PAAS provider that offers managed Postgres database. Heroku provides a convenience command to connect to the postgres database, which will launch <code>psql</code>. Now it is possible to launch <code>pgcli</code> instead of the default <code>psql</code> for heroku Postgres by installing the <a href="https://github.com/chrisanderton/heroku-pg-pgcli">heroku-pg-pgcli</a> plugin for heroku tool belt.</p>
+<h3>Installation</h3>
+<p>Make sure pgcli is installed. If it is not installed check the installation <a href="http://pgcli.com/install">instructions</a>. Typically it is:</p>
+<p>Either:</p>
+<div class="highlight"><pre>    $ brew install pgcli    # Only on OS X
+</pre></div>
+
+
+<p>or </p>
+<div class="highlight"><pre>    $ pip install pgcli   # Python package installation
+</pre></div>
+
+
+<p>Then install the heroku plugin</p>
+<div class="highlight"><pre>    $ heroku plugins:install git@github.com:chrisanderton/heroku-pg-pgcli.git
+</pre></div>
+
+
+<h3>Usage</h3>
+<p>Run this from within a Heroku app directory</p>
+<div class="highlight"><pre>    $ heroku pg:pgcli
+</pre></div>
+
+
+<p>That will launch pgcli with the appropriate database credentials, taken from heroku DATABASE_URL for that application.</p>
+<p>That's it. </p>
+<h3>Credit</h3>
+<p>Thanks to <a href="https://github.com/chrisanderton">Chris Anderton</a> for creating this heroku plugin. </p>
+    </div><!-- /.entry-content -->
+
+  </article>
 </section>
         <section id="extras" class="body">
                 <div class="social">

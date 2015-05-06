@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><atom:link href="http://pgcli.com/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 05 May 2015 00:00:00 -0700</lastBuildDate><item><title>A Better CLI for MySQL - Kickstarter Success</title><link>http://pgcli.com/mysql-cli-kickstarter-success.html</link><description>&lt;p&gt;About a month ago, I started a new &lt;a href="https://www.kickstarter.com/projects/1839007321/mysql-cli"&gt;kickstarter
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><atom:link href="http://pgcli.com/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 06 May 2015 00:00:00 -0700</lastBuildDate><item><title>Integrating pgcli with heroku toolbelt</title><link>http://pgcli.com/heroku-pgcli.html</link><description>&lt;p&gt;Heroku is a popular PAAS provider that offers managed Postgres database. Heroku provides a convenience command to connect to the postgres database, which will launch &lt;code&gt;psql&lt;/code&gt;. Now it is possible to launch &lt;code&gt;pgcli&lt;/code&gt; instead of the default &lt;code&gt;psql&lt;/code&gt; for heroku Postgres by installing the &lt;a href="https://github.com/chrisanderton/heroku-pg-pgcli"&gt;heroku-pg-pgcli&lt;/a&gt; plugin for heroku tool belt.&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;p&gt;Make sure pgcli is installed. If it is not installed check the installation &lt;a href="http://pgcli.com/install"&gt;instructions&lt;/a&gt;. Typically it is:&lt;/p&gt;
+&lt;p&gt;Either:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;    $ brew install pgcli    # Only on OS X
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;or &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;    $ pip install pgcli   # Python package installation
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Then install the heroku plugin&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;    $ heroku plugins:install git@github.com:chrisanderton/heroku-pg-pgcli.git
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;p&gt;Run this from within a Heroku app directory&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;    $ heroku pg:pgcli
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;That will launch pgcli with the appropriate database credentials, taken from heroku DATABASE_URL for that application.&lt;/p&gt;
+&lt;p&gt;That's it. &lt;/p&gt;
+&lt;h3&gt;Credit&lt;/h3&gt;
+&lt;p&gt;Thanks to &lt;a href="https://github.com/chrisanderton"&gt;Chris Anderton&lt;/a&gt; for creating this heroku plugin. &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Wed, 06 May 2015 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2015-05-06:heroku-pgcli.html</guid><category>python</category><category>heroku</category></item><item><title>A Better CLI for MySQL - Kickstarter Success</title><link>http://pgcli.com/mysql-cli-kickstarter-success.html</link><description>&lt;p&gt;About a month ago, I started a new &lt;a href="https://www.kickstarter.com/projects/1839007321/mysql-cli"&gt;kickstarter
 project&lt;/a&gt; to create a
 MySQL client that can do auto-completion and syntax highlighting.&lt;/p&gt;
 &lt;p&gt;An equivalent of &lt;a href="http://pgcli.com"&gt;pgcli&lt;/a&gt; for the MySQL database.&lt;/p&gt;

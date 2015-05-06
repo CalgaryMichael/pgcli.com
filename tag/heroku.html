@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8" />
-        <title>pgcli - django</title>
+        <title>pgcli - heroku</title>
         <link rel="stylesheet" href="../theme/css/main.css" />
         <link href="http://pgcli.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="pgcli Atom Feed" />
         <link href="http://pgcli.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="pgcli RSS Feed" />
@@ -41,43 +41,45 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../django-pgcli.html">Django Integration of pgcli</a></h1>
+                    <h1 class="entry-title"><a href="../heroku-pgcli.html">Integrating pgcli with heroku toolbelt</a></h1>
 <footer class="post-info">
-        <abbr class="published" title="2015-04-25T00:00:00-07:00">
-                Published: Sat 25 April 2015
+        <abbr class="published" title="2015-05-06T00:00:00-07:00">
+                Published: Wed 06 May 2015
         </abbr>
 
         <address class="vcard author">
                 By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
         </address>
 <p>In <a href="../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/django.html">django</a> </p>
-</footer><!-- /.post-info --><p>Django web framework has a rich set of management commands. One of them is <code>python manage.py dbshell</code>. This will launch the default database repl and connect to the appropriate database for the web application.</p>
-<p>Now it is possible to launch <code>pgcli</code> instead of the default <code>psql</code> for Postgres by installing the <a href="https://github.com/ashchristopher/django-pgcli">django-pgcli</a> python package.</p>
+<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/heroku.html">heroku</a> </p>
+</footer><!-- /.post-info --><p>Heroku is a popular PAAS provider that offers managed Postgres database. Heroku provides a convenience command to connect to the postgres database, which will launch <code>psql</code>. Now it is possible to launch <code>pgcli</code> instead of the default <code>psql</code> for heroku Postgres by installing the <a href="https://github.com/chrisanderton/heroku-pg-pgcli">heroku-pg-pgcli</a> plugin for heroku tool belt.</p>
 <h3>Installation</h3>
-<p>Install it using <code>pip</code>:</p>
-<div class="highlight"><pre>    $ pip install django-pgcli
+<p>Make sure pgcli is installed. If it is not installed check the installation <a href="http://pgcli.com/install">instructions</a>. Typically it is:</p>
+<p>Either:</p>
+<div class="highlight"><pre>    $ brew install pgcli    # Only on OS X
 </pre></div>
 
 
-<p>Then add <code>django_pgcli</code> to the list of INSTALLED_APPS in your project's settings.py.</p>
-<div class="highlight"><pre>    INSTALLED_APPS = [
-        ...,
-        &#39;django_pgcli&#39;,
-    ]
+<p>or </p>
+<div class="highlight"><pre>    $ pip install pgcli   # Python package installation
+</pre></div>
+
+
+<p>Then install the heroku plugin</p>
+<div class="highlight"><pre>    $ heroku plugins:install git@github.com:chrisanderton/heroku-pg-pgcli.git
 </pre></div>
 
 
 <h3>Usage</h3>
-<p>Launch the <code>dbshell</code> through the management command. </p>
-<div class="highlight"><pre>    $ python manage.py dbshell
+<p>Run this from within a Heroku app directory</p>
+<div class="highlight"><pre>    $ heroku pg:pgcli
 </pre></div>
 
 
-<p>That will launch pgcli with the appropriate database credentials. </p>
+<p>That will launch pgcli with the appropriate database credentials, taken from heroku DATABASE_URL for that application.</p>
 <p>That's it. </p>
 <h3>Credit</h3>
-<p>My personal thanks to <a href="https://github.com/ashchristopher/">Ash Christopher</a> for taking the initiative to create this package. It was a well requested feature of pgcli, you just made a lot of people happy. </p>                </article>
+<p>Thanks to <a href="https://github.com/chrisanderton">Chris Anderton</a> for creating this heroku plugin. </p>                </article>
 <p class="paginator">
     Page 1 / 1
 </p>
