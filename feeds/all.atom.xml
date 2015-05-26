@@ -1,5 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/all.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-05-06T00:00:00-07:00</updated><entry><title>Integrating pgcli with heroku toolbelt</title><link href="http://pgcli.com/heroku-pgcli.html" rel="alternate"></link><updated>2015-05-06T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-05-06:heroku-pgcli.html</id><summary type="html">&lt;p&gt;Heroku is a popular PAAS provider that offers managed Postgres database. Heroku provides a convenience command to connect to the postgres database, which will launch &lt;code&gt;psql&lt;/code&gt;. Now it is possible to launch &lt;code&gt;pgcli&lt;/code&gt; instead of the default &lt;code&gt;psql&lt;/code&gt; for heroku Postgres by installing the &lt;a href="https://github.com/chrisanderton/heroku-pg-pgcli"&gt;heroku-pg-pgcli&lt;/a&gt; plugin for heroku tool belt.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/all.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-05-26T00:00:00-07:00</updated><entry><title>Release v0.17.0</title><link href="http://pgcli.com/v0.17.0.html" rel="alternate"></link><updated>2015-05-26T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-05-26:v0.17.0.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
+auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+&lt;/pre&gt;
+&lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
+&lt;p&gt;This release comes with the latest version of prompt_tookit, improved
+auto-completion support, better matching algorithm in auto-completion, new
+special commands (&lt;tt class="docutils literal"&gt;\e&lt;/tt&gt;, &lt;tt class="docutils literal"&gt;\dT&lt;/tt&gt;), fix CJK dispaly and a lot more. Thanks to
+the many contributors.&lt;/p&gt;
+&lt;div class="section" id="features"&gt;
+&lt;h2&gt;Features:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p class="first"&gt;Add support for auto-completing view names. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Add subsequence matching for completion. (Thanks: &lt;a class="reference external" href="https://github.com/drocco007"&gt;Daniel Rocco&lt;/a&gt;)
+Previously completions only matched a table name if it started with the
+partially typed word. Now completions will match even if the partially typed
+word is in the middle of a suggestion.&lt;/p&gt;
+&lt;p&gt;eg: When you type 'mig', 'django_migrations' will be suggested.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Completion for built-in tables and temporary tables are suggested after entering a prefix of &lt;tt class="docutils literal"&gt;pg_&lt;/tt&gt;. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Add place holder doc strings for special commands that are planned for implementation. (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Updated version of prompt_toolkit, now matching braces are highlighted. (Thanks: &lt;a class="reference external" href="https://github.com/jonathanslenders"&gt;Jonathan Slenders&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Added support for &lt;tt class="docutils literal"&gt;\e&lt;/tt&gt; command. Queries can be edited in an external editor. (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;eg: When you type &lt;tt class="docutils literal"&gt;SELECT * FROM \e&lt;/tt&gt; it will be opened in an external editor.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Add special command &lt;tt class="docutils literal"&gt;\dT&lt;/tt&gt; to show datatypes. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Add auto-completion support for datatypes in CREATE, SELECT etc. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Improve the auto-completion in WHERE clause with logical operators. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bug-fixes"&gt;
+&lt;h2&gt;Bug Fixes:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Fix the table formatting while printing multi-byte characters (Chinese, Japanese etc). (Thanks: &lt;a class="reference external" href="https://github.com/xalley"&gt;蔡佳男&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix a crash when pg_catalog was present in search path. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fixed a bug that broke &lt;tt class="docutils literal"&gt;\e&lt;/tt&gt; when prompt_tookit was updated. (Thanks: &lt;a class="reference external" href="https://github.com/fpietka"&gt;François Pietka&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix the display of triggers as shown in the &lt;tt class="docutils literal"&gt;\d&lt;/tt&gt; output. (Thanks: &lt;a class="reference external" href="https://github.com/droustchev"&gt;Dimitar Roustchev&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix broken auto-completion for INNER JOIN, LEFT JOIN etc. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix incorrect super() calls in pgbuffer, pgtoolbar and pgcompleter. No change in functionality but protects against future problems. (Thanks: &lt;a class="reference external" href="https://github.com/drocco007"&gt;Daniel Rocco&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add missing schema completion for CREATE and DROP statements. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Minor fixes around cursor cleanup.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="python"></category><category term="release"></category><category term="changelog"></category><category term="postgres"></category></entry><entry><title>Integrating pgcli with heroku toolbelt</title><link href="http://pgcli.com/heroku-pgcli.html" rel="alternate"></link><updated>2015-05-06T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-05-06:heroku-pgcli.html</id><summary type="html">&lt;p&gt;Heroku is a popular PAAS provider that offers managed Postgres database. Heroku provides a convenience command to connect to the postgres database, which will launch &lt;code&gt;psql&lt;/code&gt;. Now it is possible to launch &lt;code&gt;pgcli&lt;/code&gt; instead of the default &lt;code&gt;psql&lt;/code&gt; for heroku Postgres by installing the &lt;a href="https://github.com/chrisanderton/heroku-pg-pgcli"&gt;heroku-pg-pgcli&lt;/a&gt; plugin for heroku tool belt.&lt;/p&gt;
 &lt;h3&gt;Installation&lt;/h3&gt;
 &lt;p&gt;Make sure pgcli is installed. If it is not installed check the installation &lt;a href="http://pgcli.com/install"&gt;instructions&lt;/a&gt;. Typically it is:&lt;/p&gt;
 &lt;p&gt;Either:&lt;/p&gt;

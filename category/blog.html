@@ -41,7 +41,82 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../heroku-pgcli.html">Integrating pgcli with heroku toolbelt</a></h1>
+                    <h1 class="entry-title"><a href="../v0.17.0.html">Release v0.17.0</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2015-05-26T00:00:00-07:00">
+                Published: Tue 26 May 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
+        </address>
+<p>In <a href="../category/blog.html">Blog</a>. </p>
+<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
+</footer><!-- /.post-info --><p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
+auto-completion and syntax highlighting. You can install this version by:</p>
+<pre class="code bash literal-block">
+<span class="nv">$ </span>pip install -U pgcli
+</pre>
+<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
+<p>This release comes with the latest version of prompt_tookit, improved
+auto-completion support, better matching algorithm in auto-completion, new
+special commands (<tt class="docutils literal">\e</tt>, <tt class="docutils literal">\dT</tt>), fix CJK dispaly and a lot more. Thanks to
+the many contributors.</p>
+<div class="section" id="features">
+<h2>Features:</h2>
+<ul>
+<li><p class="first">Add support for auto-completing view names. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</p>
+</li>
+<li><p class="first">Add subsequence matching for completion. (Thanks: <a class="reference external" href="https://github.com/drocco007">Daniel Rocco</a>)
+Previously completions only matched a table name if it started with the
+partially typed word. Now completions will match even if the partially typed
+word is in the middle of a suggestion.</p>
+<p>eg: When you type 'mig', 'django_migrations' will be suggested.</p>
+</li>
+<li><p class="first">Completion for built-in tables and temporary tables are suggested after entering a prefix of <tt class="docutils literal">pg_</tt>. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</p>
+</li>
+<li><p class="first">Add place holder doc strings for special commands that are planned for implementation. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>)</p>
+</li>
+<li><p class="first">Updated version of prompt_toolkit, now matching braces are highlighted. (Thanks: <a class="reference external" href="https://github.com/jonathanslenders">Jonathan Slenders</a>)</p>
+</li>
+<li><p class="first">Added support for <tt class="docutils literal">\e</tt> command. Queries can be edited in an external editor. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>)</p>
+<p>eg: When you type <tt class="docutils literal">SELECT * FROM \e</tt> it will be opened in an external editor.</p>
+</li>
+<li><p class="first">Add special command <tt class="docutils literal">\dT</tt> to show datatypes. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</p>
+</li>
+<li><p class="first">Add auto-completion support for datatypes in CREATE, SELECT etc. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</p>
+</li>
+<li><p class="first">Improve the auto-completion in WHERE clause with logical operators. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</p>
+</li>
+</ul>
+</div>
+<div class="section" id="bug-fixes">
+<h2>Bug Fixes:</h2>
+<ul class="simple">
+<li>Fix the table formatting while printing multi-byte characters (Chinese, Japanese etc). (Thanks: <a class="reference external" href="https://github.com/xalley">蔡佳男</a>)</li>
+<li>Fix a crash when pg_catalog was present in search path. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</li>
+<li>Fixed a bug that broke <tt class="docutils literal">\e</tt> when prompt_tookit was updated. (Thanks: <a class="reference external" href="https://github.com/fpietka">François Pietka</a>)</li>
+<li>Fix the display of triggers as shown in the <tt class="docutils literal">\d</tt> output. (Thanks: <a class="reference external" href="https://github.com/droustchev">Dimitar Roustchev</a>)</li>
+<li>Fix broken auto-completion for INNER JOIN, LEFT JOIN etc. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</li>
+<li>Fix incorrect super() calls in pgbuffer, pgtoolbar and pgcompleter. No change in functionality but protects against future problems. (Thanks: <a class="reference external" href="https://github.com/drocco007">Daniel Rocco</a>)</li>
+<li>Add missing schema completion for CREATE and DROP statements. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</li>
+<li>Minor fixes around cursor cleanup.</li>
+</ul>
+</div>
+                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="../heroku-pgcli.html" rel="bookmark"
+                           title="Permalink to Integrating pgcli with heroku toolbelt">Integrating pgcli with heroku toolbelt</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2015-05-06T00:00:00-07:00">
                 Published: Wed 06 May 2015
@@ -52,39 +127,10 @@
         </address>
 <p>In <a href="../category/blog.html">Blog</a>. </p>
 <p>tags: <a href="../tag/python.html">python</a> <a href="../tag/heroku.html">heroku</a> </p>
-</footer><!-- /.post-info --><p>Heroku is a popular PAAS provider that offers managed Postgres database. Heroku provides a convenience command to connect to the postgres database, which will launch <code>psql</code>. Now it is possible to launch <code>pgcli</code> instead of the default <code>psql</code> for heroku Postgres by installing the <a href="https://github.com/chrisanderton/heroku-pg-pgcli">heroku-pg-pgcli</a> plugin for heroku tool belt.</p>
-<h3>Installation</h3>
-<p>Make sure pgcli is installed. If it is not installed check the installation <a href="http://pgcli.com/install">instructions</a>. Typically it is:</p>
-<p>Either:</p>
-<div class="highlight"><pre>    $ brew install pgcli    # Only on OS X
-</pre></div>
-
-
-<p>or </p>
-<div class="highlight"><pre>    $ pip install pgcli   # Python package installation
-</pre></div>
-
-
-<p>Then install the heroku plugin</p>
-<div class="highlight"><pre>    $ heroku plugins:install git@github.com:chrisanderton/heroku-pg-pgcli.git
-</pre></div>
-
-
-<h3>Usage</h3>
-<p>Run this from within a Heroku app directory</p>
-<div class="highlight"><pre>    $ heroku pg:pgcli
-</pre></div>
-
-
-<p>That will launch pgcli with the appropriate database credentials, taken from heroku DATABASE_URL for that application.</p>
-<p>That's it. </p>
-<h3>Credit</h3>
-<p>Thanks to <a href="https://github.com/chrisanderton">Chris Anderton</a> for creating this heroku plugin. </p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+</footer><!-- /.post-info -->                <p>Heroku is a popular PAAS provider that offers managed Postgres database. Heroku provides a convenience command to connect to the postgres database, which will launch <code>psql</code>. Now it is possible to launch <code>pgcli</code> instead of the default <code>psql</code> for heroku Postgres by installing the <a href="https://github.com/chrisanderton/heroku-pg-pgcli">heroku-pg-pgcli</a> plugin for heroku tool belt ...</p>
+                <a class="readmore" href="../heroku-pgcli.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
@@ -134,29 +180,6 @@ strongly marching towards ...</p>
 <h1><a href="https://github.com/drocco007">Daniel Rocco</a></h1>
 <p>Daniel made pgcli handle JSON, bytea, and large decimal values correctly. He improved the completion matching by adding sub-string matching. His creative solution to reducing completion noise is extremely useful. He also added numerous tests ...</p>
                 <a class="readmore" href="../core-1.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../django-pgcli.html" rel="bookmark"
-                           title="Permalink to Django Integration of pgcli">Django Integration of pgcli</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-04-25T00:00:00-07:00">
-                Published: Sat 25 April 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
-        </address>
-<p>In <a href="../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/django.html">django</a> </p>
-</footer><!-- /.post-info -->                <p>Django web framework has a rich set of management commands. One of them is <code>python manage.py dbshell</code>. This will launch the default database repl and connect to the appropriate database for the web application.</p>
-<p>Now it is possible to launch <code>pgcli</code> instead of the default <code>psql</code> for Postgres by ...</p>
-                <a class="readmore" href="../django-pgcli.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
                 </ol><!-- /#posts-list -->

@@ -41,10 +41,10 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../v0.16.3.html">Release v0.16.3</a></h1>
+                    <h1 class="entry-title"><a href="../v0.17.0.html">Release v0.17.0</a></h1>
 <footer class="post-info">
-        <abbr class="published" title="2015-04-02T00:00:00-07:00">
-                Published: Thu 02 April 2015
+        <abbr class="published" title="2015-05-26T00:00:00-07:00">
+                Published: Tue 26 May 2015
         </abbr>
 
         <address class="vcard author">
@@ -58,15 +58,49 @@ auto-completion and syntax highlighting. You can install this version by:</p>
 <span class="nv">$ </span>pip install -U pgcli
 </pre>
 <p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
-<p>This is a minor bug-fix release that fixes the syntax-highlighting of various
-Postgres specific keywords and adds the ability to surface messages thrown by
-sql exceptions.</p>
+<p>This release comes with the latest version of prompt_tookit, improved
+auto-completion support, better matching algorithm in auto-completion, new
+special commands (<tt class="docutils literal">\e</tt>, <tt class="docutils literal">\dT</tt>), fix CJK dispaly and a lot more. Thanks to
+the many contributors.</p>
+<div class="section" id="features">
+<h2>Features:</h2>
+<ul>
+<li><p class="first">Add support for auto-completing view names. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</p>
+</li>
+<li><p class="first">Add subsequence matching for completion. (Thanks: <a class="reference external" href="https://github.com/drocco007">Daniel Rocco</a>)
+Previously completions only matched a table name if it started with the
+partially typed word. Now completions will match even if the partially typed
+word is in the middle of a suggestion.</p>
+<p>eg: When you type 'mig', 'django_migrations' will be suggested.</p>
+</li>
+<li><p class="first">Completion for built-in tables and temporary tables are suggested after entering a prefix of <tt class="docutils literal">pg_</tt>. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</p>
+</li>
+<li><p class="first">Add place holder doc strings for special commands that are planned for implementation. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>)</p>
+</li>
+<li><p class="first">Updated version of prompt_toolkit, now matching braces are highlighted. (Thanks: <a class="reference external" href="https://github.com/jonathanslenders">Jonathan Slenders</a>)</p>
+</li>
+<li><p class="first">Added support for <tt class="docutils literal">\e</tt> command. Queries can be edited in an external editor. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>)</p>
+<p>eg: When you type <tt class="docutils literal">SELECT * FROM \e</tt> it will be opened in an external editor.</p>
+</li>
+<li><p class="first">Add special command <tt class="docutils literal">\dT</tt> to show datatypes. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</p>
+</li>
+<li><p class="first">Add auto-completion support for datatypes in CREATE, SELECT etc. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</p>
+</li>
+<li><p class="first">Improve the auto-completion in WHERE clause with logical operators. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</p>
+</li>
+</ul>
+</div>
 <div class="section" id="bug-fixes">
 <h2>Bug Fixes:</h2>
 <ul class="simple">
-<li>Add more SQL keywords for auto-complete suggestion.</li>
-<li>Messages raised as part of stored procedures are no longer ignored.</li>
-<li>Use postgres flavored syntax highlighting instead of generic ANSI SQL.</li>
+<li>Fix the table formatting while printing multi-byte characters (Chinese, Japanese etc). (Thanks: <a class="reference external" href="https://github.com/xalley">蔡佳男</a>)</li>
+<li>Fix a crash when pg_catalog was present in search path. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</li>
+<li>Fixed a bug that broke <tt class="docutils literal">\e</tt> when prompt_tookit was updated. (Thanks: <a class="reference external" href="https://github.com/fpietka">François Pietka</a>)</li>
+<li>Fix the display of triggers as shown in the <tt class="docutils literal">\d</tt> output. (Thanks: <a class="reference external" href="https://github.com/droustchev">Dimitar Roustchev</a>)</li>
+<li>Fix broken auto-completion for INNER JOIN, LEFT JOIN etc. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</li>
+<li>Fix incorrect super() calls in pgbuffer, pgtoolbar and pgcompleter. No change in functionality but protects against future problems. (Thanks: <a class="reference external" href="https://github.com/drocco007">Daniel Rocco</a>)</li>
+<li>Add missing schema completion for CREATE and DROP statements. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</li>
+<li>Minor fixes around cursor cleanup.</li>
 </ul>
 </div>
                 </article>
@@ -75,6 +109,35 @@ sql exceptions.</p>
                     <h1>Other articles</h1>
                     <hr />
                     <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="../v0.16.3.html" rel="bookmark"
+                           title="Permalink to Release v0.16.3">Release v0.16.3</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2015-04-02T00:00:00-07:00">
+                Published: Thu 02 April 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
+        </address>
+<p>In <a href="../category/blog.html">Blog</a>. </p>
+<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
+</footer><!-- /.post-info -->                <p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
+auto-completion and syntax highlighting. You can install this version by:</p>
+<pre class="code bash literal-block">
+<span class="nv">$ </span>pip install -U pgcli
+</pre>
+<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
+<p>This is a minor bug-fix release that fixes the syntax-highlighting of various
+Postgres specific keywords and adds ...</p>
+                <a class="readmore" href="../v0.16.3.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
@@ -138,38 +201,9 @@ auto-completion and syntax highlighting. You can install this version by:</p>
                 <a class="readmore" href="../v0.16.1.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../v0.16.0.html" rel="bookmark"
-                           title="Permalink to Release v0.16.0">Release v0.16.0</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-03-01T00:00:00-08:00">
-                Published: Sun 01 March 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
-        </address>
-<p>In <a href="../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
-</footer><!-- /.post-info -->                <p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
-auto-completion and syntax highlighting. You can install this version by:</p>
-<pre class="code bash literal-block">
-<span class="nv">$ </span>pip install -U pgcli
-</pre>
-<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
-<p>This release adds Vi-keybindings, improvements to special commands (new
-additions ds and df) and fix a lot ...</p>
-                <a class="readmore" href="../v0.16.0.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
                 </ol><!-- /#posts-list -->
 <p class="paginator">
-    Page 1 / 2
+    Page 1 / 3
         <a href="../tag/release2.html">&raquo;</a>
 </p>
                 </section><!-- /#content -->
