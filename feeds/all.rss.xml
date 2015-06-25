@@ -1,5 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><atom:link href="http://pgcli.com/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 26 May 2015 00:00:00 -0700</lastBuildDate><item><title>Release v0.17.0</title><link>http://pgcli.com/v0.17.0.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><atom:link href="http://pgcli.com/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 16 Jun 2015 00:00:00 -0700</lastBuildDate><item><title>Release v0.18.0</title><link>http://pgcli.com/v0.18.0.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
+auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+&lt;/pre&gt;
+&lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
+&lt;p&gt;This release comes with the latest version of prompt_tookit, improved
+auto-completion support, better matching algorithm in auto-completion, new
+special commands (&lt;tt class="docutils literal"&gt;\e&lt;/tt&gt;, &lt;tt class="docutils literal"&gt;\dT&lt;/tt&gt;), fix CJK dispaly and a lot more. Thanks to
+the many contributors.&lt;/p&gt;
+&lt;div class="section" id="features"&gt;
+&lt;h2&gt;Features:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p class="first"&gt;Add fuzzy matching for the table names and column names.&lt;/p&gt;
+&lt;p&gt;Matching very long table/column names are now easier with fuzzy matching. The
+fuzzy match works like the fuzzy open in SublimeText or Vim's Ctrl-P plugin.&lt;/p&gt;
+&lt;p&gt;eg: Typing &lt;tt class="docutils literal"&gt;djmiviw&lt;/tt&gt; will match &lt;strong&gt;dj&lt;/strong&gt;ango_&lt;strong&gt;mi&lt;/strong&gt;gration_&lt;strong&gt;vi&lt;/strong&gt;ews since it is able to
+match parts of the input to the full table name.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Timing information is now shown in seconds.&lt;/p&gt;
+&lt;p&gt;The &lt;tt class="docutils literal"&gt;Command Time&lt;/tt&gt; and &lt;tt class="docutils literal"&gt;Format Time&lt;/tt&gt; are now displayed in seconds instead
+of a unitless number displayed in scientific notation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Support for named queries (favorite queries). (Thanks: &lt;a class="reference external" href="https://github.com/brettatoms"&gt;Brett&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Frequently typed queries can now be saved and recalled using a name using
+newly added special commands (&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;\n[+]&lt;/span&gt;&lt;/tt&gt;, &lt;tt class="docutils literal"&gt;\ns&lt;/tt&gt;, &lt;tt class="docutils literal"&gt;\nd&lt;/tt&gt;).&lt;/p&gt;
+&lt;p&gt;eg:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class="literal-block"&gt;
+# Save a query
+pgcli&amp;gt; \ns simple select * from foo
+saved
+
+# List all saved queries
+pgcli&amp;gt; \n+
+
+# Execute a saved query
+pgcli&amp;gt; \n simple
+
+# Delete a saved query
+pgcli&amp;gt; \nd simple
+&lt;/pre&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Pasting queries into the pgcli repl is orders of magnitude faster. (Thanks: &lt;a class="reference external" href="https://github.com/jonathanslenders"&gt;Jonathan Slenders&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bug-fixes"&gt;
+&lt;h2&gt;Bug Fixes:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Fix an error when running &lt;tt class="docutils literal"&gt;\d table_name&lt;/tt&gt; when running on a table with rules. (Thanks: &lt;a class="reference external" href="https://github.com/sancopanco"&gt;Ali Kargın&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix a pgcli crash when entering non-ascii characters in Windows. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;, &lt;a class="reference external" href="https://github.com/jonathanslenders"&gt;Jonathan Slenders&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="internal-changes"&gt;
+&lt;h2&gt;Internal Changes:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Complete refactor of handling the back-slash commands. It is now easier to
+add new special back-slash commands using a decorator.&lt;/li&gt;
+&lt;li&gt;Upgrade prompt_toolkit to 0.39. (Thanks: &lt;a class="reference external" href="https://github.com/jonathanslenders"&gt;Jonathan Slenders&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Change the config file management to use ConfigObj.(Thanks: &lt;a class="reference external" href="https://github.com/brettatoms"&gt;Brett&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Tue, 16 Jun 2015 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2015-06-16:v0.18.0.html</guid><category>python</category><category>release</category><category>changelog</category><category>postgres</category></item><item><title>Release v0.17.0</title><link>http://pgcli.com/v0.17.0.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
 &lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
