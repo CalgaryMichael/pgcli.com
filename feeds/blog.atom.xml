@@ -64,7 +64,7 @@ and you'd like to refresh the auto-completions to pick up the new change.&lt;/li
 &lt;ul class="simple"&gt;
 &lt;li&gt;Complete refactor of handling the back-slash commands. It is now easier to
 add new special back-slash commands using a decorator.&lt;/li&gt;
-&lt;li&gt;Upgrade prompt_toolkit to 0.39. (Thanks: &lt;a class="reference external" href="https://github.com/jonathanslenders"&gt;Jonathan Slenders&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Upgrade prompt_toolkit to 0.42. (Thanks: &lt;a class="reference external" href="https://github.com/jonathanslenders"&gt;Jonathan Slenders&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Change the config file management to use ConfigObj.(Thanks: &lt;a class="reference external" href="https://github.com/brettatoms"&gt;Brett Atoms&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Add integration tests using &lt;tt class="docutils literal"&gt;behave&lt;/tt&gt;. (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
