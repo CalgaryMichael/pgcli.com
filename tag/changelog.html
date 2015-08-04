@@ -41,10 +41,10 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../v0.18.0.html">Release v0.18.0</a></h1>
+                    <h1 class="entry-title"><a href="../v0.19.0.html">Release v0.19.0</a></h1>
 <footer class="post-info">
-        <abbr class="published" title="2015-06-16T00:00:00-07:00">
-                Published: Tue 16 June 2015
+        <abbr class="published" title="2015-08-03T00:00:00-07:00">
+                Published: Mon 03 August 2015
         </abbr>
 
         <address class="vcard author">
@@ -58,68 +58,47 @@ auto-completion and syntax highlighting. You can install this version by:</p>
 <span class="nv">$ </span>pip install -U pgcli
 </pre>
 <p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
-<p>This release comes with the ability to save favorite queries, fuzzy matching in
-auto-completion, new special commands (<tt class="docutils literal">\#</tt>), fix unicode issues in Windows and
-lot more. Thanks to the many contributors.</p>
+<p>This release comes with metadata information in the completion menus. Now you
+can see whether a completion suggestion is a table or a schema or a view.
+New special command (<tt class="docutils literal">\i</tt>), latest prompt_toolkit with wider completion menus.</p>
 <div class="section" id="features">
 <h2>Features:</h2>
 <ul>
-<li><p class="first">Add fuzzy matching for the table names and column names.</p>
-<p>Matching very long table/column names are now easier with fuzzy matching. The
-fuzzy match works like the fuzzy open in SublimeText or Vim's Ctrl-P plugin.</p>
-<p>eg: Typing <tt class="docutils literal">djmiviw</tt> will match <strong>dj</strong>ango_<strong>mi</strong>gration_<strong>vi</strong>ews since it is able to
-match parts of the input to the full table name.</p>
+<li><p class="first">Wider completion menus can be enabled via the config file. (Thanks: <a class="reference external" href="https://github.com/jonathanslenders">Jonathan Slenders</a>)</p>
+<p>Open the config file (~/.pgclirc) and check if you have
+<tt class="docutils literal">wider_completion_menu</tt> option available. If not add it in and set it to
+<tt class="docutils literal">True</tt>.</p>
 </li>
-<li><p class="first">Timing information is now shown in seconds.</p>
-<p>The <tt class="docutils literal">Command Time</tt> and <tt class="docutils literal">Format Time</tt> are now displayed in seconds instead
-of a unitless number displayed in scientific notation.</p>
+<li><p class="first">Completion menu now has metadata information such as schema, table, column, view, etc., next to the suggestions. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</p>
 </li>
-<li><p class="first">Support for named queries (favorite queries). (Thanks: <a class="reference external" href="https://github.com/brettatoms">Brett Atoms</a>)</p>
-<p>Frequently typed queries can now be saved and recalled using a name using
-newly added special commands (<tt class="docutils literal"><span class="pre">\n[+]</span></tt>, <tt class="docutils literal">\ns</tt>, <tt class="docutils literal">\nd</tt>).</p>
-<p>eg:</p>
+<li><p class="first">Customizable history file location via config file. (Thanks: <a class="reference external" href="https://github.com/cagatay">Çağatay Yüksel</a>)</p>
+<p>Add this line to your config file (~/.pgclirc) to customize where to store the history file.</p>
 </li>
 </ul>
 <pre class="literal-block">
-# Save a query
-pgcli&gt; \ns simple select * from foo
-saved
-
-# List all saved queries
-pgcli&gt; \n+
-
-# Execute a saved query
-pgcli&gt; \n simple
-
-# Delete a saved query
-pgcli&gt; \nd simple
+history_file = /path/to/history/file
 </pre>
 <ul class="simple">
-<li>Pasting queries into the pgcli repl is orders of magnitude faster. (Thanks: <a class="reference external" href="https://github.com/jonathanslenders">Jonathan Slenders</a>)</li>
-<li>Add support for PGPASSWORD environment variable to pass the password for the
-postgres database. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>)</li>
-<li>Add the ability to manually refresh autocompletions by typing <tt class="docutils literal">\#</tt> or
-<tt class="docutils literal">\refresh</tt>. This is useful if the database was updated by an external means
-and you'd like to refresh the auto-completions to pick up the new change.</li>
+<li>Add support for running queries from a file using <tt class="docutils literal">\i</tt> special command. (Thanks: <a class="reference external" href="https://github.com/mikekaminsky">Michael Kaminsky</a>)</li>
 </ul>
 </div>
 <div class="section" id="bug-fixes">
 <h2>Bug Fixes:</h2>
 <ul class="simple">
-<li>Fix an error when running <tt class="docutils literal">\d table_name</tt> when running on a table with rules. (Thanks: <a class="reference external" href="https://github.com/sancopanco">Ali Kargın</a>)</li>
-<li>Fix a pgcli crash when entering non-ascii characters in Windows. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>, <a class="reference external" href="https://github.com/jonathanslenders">Jonathan Slenders</a>)</li>
-<li>Faster rendering of expanded mode output by making the horizontal separator a fixed length string.</li>
-<li>Completion suggestions for the <tt class="docutils literal">\c</tt> command are not auto-escaped by default.</li>
+<li>Always use utf-8 for database encoding regardless of the default encoding used by the database.</li>
+<li>Fix for None dereference on <tt class="docutils literal">\d schemaname.</tt> with sequence. (Thanks: <a class="reference external" href="https://github.com/nathanjhaveri">Nathan Jhaveri</a>)</li>
+<li>Fix a crashing bug in the autocompletion engine for some <tt class="docutils literal">JOIN</tt> queries.</li>
+<li>Handle KeyboardInterrupt in pager and not quit pgcli as a consequence.</li>
 </ul>
 </div>
 <div class="section" id="internal-changes">
 <h2>Internal Changes:</h2>
 <ul class="simple">
-<li>Complete refactor of handling the back-slash commands. It is now easier to
-add new special back-slash commands using a decorator.</li>
-<li>Upgrade prompt_toolkit to 0.42. (Thanks: <a class="reference external" href="https://github.com/jonathanslenders">Jonathan Slenders</a>)</li>
-<li>Change the config file management to use ConfigObj.(Thanks: <a class="reference external" href="https://github.com/brettatoms">Brett Atoms</a>)</li>
-<li>Add integration tests using <tt class="docutils literal">behave</tt>. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>)</li>
+<li>Added more behaviorial tests (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>)</li>
+<li>Added code coverage to the tests. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>)</li>
+<li>Run behaviorial tests as part of TravisCI (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>)</li>
+<li>Upgraded prompt_toolkit version to 0.45 (Thanks: <a class="reference external" href="https://github.com/jonathanslenders">Jonathan Slenders</a>)</li>
+<li>Update the minumum required version of click to 4.1.</li>
 </ul>
 </div>
                 </article>
@@ -128,6 +107,35 @@ add new special back-slash commands using a decorator.</li>
                     <h1>Other articles</h1>
                     <hr />
                     <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="../v0.18.0.html" rel="bookmark"
+                           title="Permalink to Release v0.18.0">Release v0.18.0</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2015-06-16T00:00:00-07:00">
+                Published: Tue 16 June 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
+        </address>
+<p>In <a href="../category/blog.html">Blog</a>. </p>
+<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
+</footer><!-- /.post-info -->                <p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
+auto-completion and syntax highlighting. You can install this version by:</p>
+<pre class="code bash literal-block">
+<span class="nv">$ </span>pip install -U pgcli
+</pre>
+<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
+<p>This release comes with the ability to save favorite queries, fuzzy matching in
+auto-completion, new special commands ...</p>
+                <a class="readmore" href="../v0.18.0.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
@@ -184,37 +192,6 @@ auto-completion and syntax highlighting. You can install this version by:</p>
 <p>This is a minor bug-fix release that fixes the syntax-highlighting of various
 Postgres specific keywords and adds ...</p>
                 <a class="readmore" href="../v0.16.3.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../v0.16.2.html" rel="bookmark"
-                           title="Permalink to Release v0.16.2">Release v0.16.2</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-03-22T00:00:00-07:00">
-                Published: Sun 22 March 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
-        </address>
-<p>In <a href="../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
-</footer><!-- /.post-info -->                <p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
-auto-completion and syntax highlighting. You can install this version by:</p>
-<pre class="code bash literal-block">
-<span class="nv">$ </span>pip install -U pgcli
-</pre>
-<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
-<p>This is a bug-fix release that improves auto-completion and formatting of large
-numbers in the output.</p>
-<div class="section" id="bug-fixes">
-<h2>Bug ...</h2></div>
-                <a class="readmore" href="../v0.16.2.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
                 </ol><!-- /#posts-list -->

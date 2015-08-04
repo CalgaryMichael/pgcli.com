@@ -1,5 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><atom:link href="http://pgcli.com/feeds/blog.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 16 Jun 2015 00:00:00 -0700</lastBuildDate><item><title>Release v0.18.0</title><link>http://pgcli.com/v0.18.0.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><atom:link href="http://pgcli.com/feeds/blog.rss.xml" rel="self"></atom:link><lastBuildDate>Mon, 03 Aug 2015 00:00:00 -0700</lastBuildDate><item><title>Release v0.19.0</title><link>http://pgcli.com/v0.19.0.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
+auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+&lt;/pre&gt;
+&lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
+&lt;p&gt;This release comes with metadata information in the completion menus. Now you
+can see whether a completion suggestion is a table or a schema or a view.
+New special command (&lt;tt class="docutils literal"&gt;\i&lt;/tt&gt;), latest prompt_toolkit with wider completion menus.&lt;/p&gt;
+&lt;div class="section" id="features"&gt;
+&lt;h2&gt;Features:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p class="first"&gt;Wider completion menus can be enabled via the config file. (Thanks: &lt;a class="reference external" href="https://github.com/jonathanslenders"&gt;Jonathan Slenders&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Open the config file (~/.pgclirc) and check if you have
+&lt;tt class="docutils literal"&gt;wider_completion_menu&lt;/tt&gt; option available. If not add it in and set it to
+&lt;tt class="docutils literal"&gt;True&lt;/tt&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Completion menu now has metadata information such as schema, table, column, view, etc., next to the suggestions. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Customizable history file location via config file. (Thanks: &lt;a class="reference external" href="https://github.com/cagatay"&gt;Çağatay Yüksel&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Add this line to your config file (~/.pgclirc) to customize where to store the history file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class="literal-block"&gt;
+history_file = /path/to/history/file
+&lt;/pre&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Add support for running queries from a file using &lt;tt class="docutils literal"&gt;\i&lt;/tt&gt; special command. (Thanks: &lt;a class="reference external" href="https://github.com/mikekaminsky"&gt;Michael Kaminsky&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bug-fixes"&gt;
+&lt;h2&gt;Bug Fixes:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Always use utf-8 for database encoding regardless of the default encoding used by the database.&lt;/li&gt;
+&lt;li&gt;Fix for None dereference on &lt;tt class="docutils literal"&gt;\d schemaname.&lt;/tt&gt; with sequence. (Thanks: &lt;a class="reference external" href="https://github.com/nathanjhaveri"&gt;Nathan Jhaveri&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix a crashing bug in the autocompletion engine for some &lt;tt class="docutils literal"&gt;JOIN&lt;/tt&gt; queries.&lt;/li&gt;
+&lt;li&gt;Handle KeyboardInterrupt in pager and not quit pgcli as a consequence.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="internal-changes"&gt;
+&lt;h2&gt;Internal Changes:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Added more behaviorial tests (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added code coverage to the tests. (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Run behaviorial tests as part of TravisCI (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Upgraded prompt_toolkit version to 0.45 (Thanks: &lt;a class="reference external" href="https://github.com/jonathanslenders"&gt;Jonathan Slenders&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update the minumum required version of click to 4.1.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Mon, 03 Aug 2015 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2015-08-03:v0.19.0.html</guid><category>python</category><category>release</category><category>changelog</category><category>postgres</category></item><item><title>Release v0.18.0</title><link>http://pgcli.com/v0.18.0.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
 &lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
