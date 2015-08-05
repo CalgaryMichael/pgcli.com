@@ -41,10 +41,10 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../v0.19.0.html">Release v0.19.0</a></h1>
+                    <h1 class="entry-title"><a href="../v0.19.1.html">Release v0.19.1</a></h1>
 <footer class="post-info">
-        <abbr class="published" title="2015-08-03T00:00:00-07:00">
-                Published: Mon 03 August 2015
+        <abbr class="published" title="2015-08-04T00:00:00-07:00">
+                Published: Tue 04 August 2015
         </abbr>
 
         <address class="vcard author">
@@ -58,47 +58,11 @@ auto-completion and syntax highlighting. You can install this version by:</p>
 <span class="nv">$ </span>pip install -U pgcli
 </pre>
 <p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
-<p>This release comes with metadata information in the completion menus. Now you
-can see whether a completion suggestion is a table or a schema or a view.
-New special command (<tt class="docutils literal">\i</tt>), latest prompt_toolkit with wider completion menus.</p>
-<div class="section" id="features">
-<h2>Features:</h2>
-<ul>
-<li><p class="first">Wider completion menus can be enabled via the config file. (Thanks: <a class="reference external" href="https://github.com/jonathanslenders">Jonathan Slenders</a>)</p>
-<p>Open the config file (~/.pgclirc) and check if you have
-<tt class="docutils literal">wider_completion_menu</tt> option available. If not add it in and set it to
-<tt class="docutils literal">True</tt>.</p>
-</li>
-<li><p class="first">Completion menu now has metadata information such as schema, table, column, view, etc., next to the suggestions. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</p>
-</li>
-<li><p class="first">Customizable history file location via config file. (Thanks: <a class="reference external" href="https://github.com/cagatay">Çağatay Yüksel</a>)</p>
-<p>Add this line to your config file (~/.pgclirc) to customize where to store the history file.</p>
-</li>
-</ul>
-<pre class="literal-block">
-history_file = /path/to/history/file
-</pre>
-<ul class="simple">
-<li>Add support for running queries from a file using <tt class="docutils literal">\i</tt> special command. (Thanks: <a class="reference external" href="https://github.com/mikekaminsky">Michael Kaminsky</a>)</li>
-</ul>
-</div>
+<p>This is a minor bug fix release to fix a crashing bug during autocompletion.</p>
 <div class="section" id="bug-fixes">
 <h2>Bug Fixes:</h2>
 <ul class="simple">
-<li>Always use utf-8 for database encoding regardless of the default encoding used by the database.</li>
-<li>Fix for None dereference on <tt class="docutils literal">\d schemaname.</tt> with sequence. (Thanks: <a class="reference external" href="https://github.com/nathanjhaveri">Nathan Jhaveri</a>)</li>
-<li>Fix a crashing bug in the autocompletion engine for some <tt class="docutils literal">JOIN</tt> queries.</li>
-<li>Handle KeyboardInterrupt in pager and not quit pgcli as a consequence.</li>
-</ul>
-</div>
-<div class="section" id="internal-changes">
-<h2>Internal Changes:</h2>
-<ul class="simple">
-<li>Added more behaviorial tests (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>)</li>
-<li>Added code coverage to the tests. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>)</li>
-<li>Run behaviorial tests as part of TravisCI (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>)</li>
-<li>Upgraded prompt_toolkit version to 0.45 (Thanks: <a class="reference external" href="https://github.com/jonathanslenders">Jonathan Slenders</a>)</li>
-<li>Update the minumum required version of click to 4.1.</li>
+<li>Fix an autocompletion bug that was crashing the completion engine when unknown keyword is entered. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</li>
 </ul>
 </div>
                 </article>
@@ -107,6 +71,35 @@ history_file = /path/to/history/file
                     <h1>Other articles</h1>
                     <hr />
                     <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="../v0.19.0.html" rel="bookmark"
+                           title="Permalink to Release v0.19.0">Release v0.19.0</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2015-08-03T00:00:00-07:00">
+                Published: Mon 03 August 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
+        </address>
+<p>In <a href="../category/blog.html">Blog</a>. </p>
+<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
+</footer><!-- /.post-info -->                <p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
+auto-completion and syntax highlighting. You can install this version by:</p>
+<pre class="code bash literal-block">
+<span class="nv">$ </span>pip install -U pgcli
+</pre>
+<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
+<p>This release comes with metadata information in the completion menus. Now you
+can see whether a completion ...</p>
+                <a class="readmore" href="../v0.19.0.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
@@ -163,35 +156,6 @@ auto-completion and syntax highlighting. You can install this version by:</p>
 <p>This release comes with the latest version of prompt_tookit, improved
 auto-completion support, better matching algorithm in auto-completion ...</p>
                 <a class="readmore" href="../v0.17.0.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../v0.16.3.html" rel="bookmark"
-                           title="Permalink to Release v0.16.3">Release v0.16.3</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-04-02T00:00:00-07:00">
-                Published: Thu 02 April 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
-        </address>
-<p>In <a href="../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
-</footer><!-- /.post-info -->                <p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
-auto-completion and syntax highlighting. You can install this version by:</p>
-<pre class="code bash literal-block">
-<span class="nv">$ </span>pip install -U pgcli
-</pre>
-<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
-<p>This is a minor bug-fix release that fixes the syntax-highlighting of various
-Postgres specific keywords and adds ...</p>
-                <a class="readmore" href="../v0.16.3.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
                 </ol><!-- /#posts-list -->
