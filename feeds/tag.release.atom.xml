@@ -54,9 +54,9 @@ history_file = /path/to/history/file
 &lt;div class="section" id="internal-changes"&gt;
 &lt;h2&gt;Internal Changes:&lt;/h2&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;Added more behaviorial tests (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Added more behavioral tests (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Added code coverage to the tests. (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Run behaviorial tests as part of TravisCI (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Run behavioral tests as part of TravisCI (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Upgraded prompt_toolkit version to 0.45 (Thanks: &lt;a class="reference external" href="https://github.com/jonathanslenders"&gt;Jonathan Slenders&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Update the minumum required version of click to 4.1.&lt;/li&gt;
 &lt;/ul&gt;
