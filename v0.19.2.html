@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8" />
-        <title>Thanks</title>
+        <title>Release v0.19.2</title>
         <link rel="stylesheet" href="./theme/css/main.css" />
         <link href="http://pgcli.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="pgcli Atom Feed" />
         <link href="http://pgcli.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="pgcli RSS Feed" />
@@ -33,68 +33,63 @@
                     <li><a href="./features">Features</a></li>
                     <li><a href="./faq">FAQ</a></li>
                     <li><a href="./develop">Develop</a></li>
-                    <li class="active"><a href="./thanks">Thanks</a></li>
+                    <li><a href="./thanks">Thanks</a></li>
                     <li><a href="./about">About</a></li>
-                    <li><a href="./category/blog.html">Blog</a></li>
+                    <li class="active"><a href="./category/blog.html">Blog</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 <section id="content" class="body">
-    <h1 class="entry-title">Thanks</h1>
-    
-    <p><tt class="docutils literal">pgcli</tt> was made possible by the existence of these wonderful people and
-libraries.</p>
-<div class="section" id="libraries">
-<h2>Libraries:</h2>
-<p><a class="reference external" href="https://github.com/jonathanslenders/python-prompt-toolkit">Python Prompt Toolkit</a> - An awesome library for building interactive command line interfaces.</p>
-<p><a class="reference external" href="http://click.pocoo.org/3/">Click</a> - Basic building blocks for a CLI.</p>
-<p><a class="reference external" href="https://pypi.python.org/pypi/tabulate">Tabulate</a> - Pretty printing tabular data.</p>
-<p><a class="reference external" href="https://pypi.python.org/pypi/sqlparse">Sqlparse</a> - Sql Parsing library.</p>
-<p><a class="reference external" href="http://initd.org/psycopg/">Psycopg</a> - A solid library for talking to postgres.</p>
-<p><a class="reference external" href="http://pygments.org/">Pygments</a> - Syntax highlighting.</p>
-<p>Debian packages are hosted by packagecloud.io.</p>
-</div>
-<div class="section" id="beta-testers">
-<h2>Beta Testers:</h2>
-<p>Brave beta testers who tried out pgcli at its infancy and gave me awesome
-feedback.</p>
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="./v0.19.2.html" rel="bookmark"
+           title="Permalink to Release v0.19.2">Release v0.19.2</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2015-08-30T00:00:00-07:00">
+                Published: Sun 30 August 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="./author/amjith.html">Amjith</a>
+        </address>
+<p>In <a href="./category/blog.html">Blog</a>. </p>
+<p>tags: <a href="./tag/python.html">python</a> <a href="./tag/release.html">release</a> <a href="./tag/changelog.html">changelog</a> <a href="./tag/postgres.html">postgres</a> </p>
+</footer><!-- /.post-info -->      <div class="section" id="features">
+<h2>Features:</h2>
 <ul class="simple">
-<li><a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a></li>
-<li><a class="reference external" href="https://github.com/wulczer">Jan Urbański</a></li>
-<li><a class="reference external" href="http://jasonrclark.com/">Jason Clark</a></li>
-<li><a class="reference external" href="https://github.com/jonathanslenders">Jonathan Slenders</a></li>
+<li>Autocompletion for database name in c and connect. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</li>
+<li>Improved multiline query support by correctly handling open quotes. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</li>
+<li>Added pager command.</li>
+<li>Enhanced i to run multiple queries and display the results for each of them</li>
+<li>Added keywords to suggestions after WHERE clause.</li>
+<li>Enabled autocompletion in named queries. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>).</li>
+<li>Path to .pgclirc can be specified in command line. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>).</li>
+<li>Added support for pg_service_conf file. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>).</li>
+<li>Added custom styles. (Contributor: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</li>
 </ul>
-<p>If you'd like to send feedback, please send me an <a class="reference external" href="mailto:amjith[dot]r[at]gmail.com">email</a>, <a class="reference external" href="http://twitter.com/amjithr">tweet</a> or file a
-github <a class="reference external" href="https://github.com/dbcli/pgcli/issues">issue</a>.</p>
 </div>
-<div class="section" id="contributors">
-<h2>Contributors:</h2>
+<div class="section" id="internal-changes">
+<h2>Internal Changes:</h2>
 <ul class="simple">
-<li><a class="reference external" href="https://github.com/darikg">Darik Gamble</a></li>
-<li><a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a></li>
-<li><a class="reference external" href="https://github.com/macobo">Karl-Aksel Puulmann</a></li>
-<li><a class="reference external" href="https://github.com/qwesda">Daniel Schwarz</a></li>
-<li><a class="reference external" href="https://github.com/stuartquin">Stuart Quin</a></li>
-<li><cite>Alexander Kukushkin</cite></li>
-<li><cite>Nick Hahner</cite></li>
-<li><cite>Marc Abramowitz</cite></li>
-<li><cite>Ludovic Gasc (GMLudo)</cite></li>
-<li><cite>Vignesh Anand</cite></li>
-<li><cite>dwalmsley</cite></li>
-<li><cite>rrampage</cite></li>
-<li><cite>while0pass</cite></li>
-<li><cite>Charlie Arnold</cite></li>
-<li><a class="reference external" href="https://github.com/drocco007">Daniel Rocco</a></li>
-<li><cite>Dionysis Grigoropoulos</cite></li>
-<li><cite>Eric Workman</cite></li>
-<li><cite>François Pietka</cite></li>
-<li><cite>Guewen Baconnier</cite></li>
-<li><cite>Hans Roman</cite></li>
-<li><cite>Jacob Magnusson</cite></li>
-<li><cite>Sven-Hendrik Haase</cite></li>
-<li><cite>Tiago Ribeiro</cite></li>
+<li>More completer test cases. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</li>
+<li>Updated sqlparse version from 0.1.14 to 0.1.16. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</li>
+<li>Upgraded to prompt_toolkit 0.46. (Thanks: <a class="reference external" href="https://github.com/jonathanslenders">Jonathan Slenders</a>).</li>
+</ul>
+</div>
+<div class="section" id="bugfixes">
+<h2>BugFixes:</h2>
+<ul class="simple">
+<li>Fixed the completer crashing on invalid SQL. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</li>
+<li>Fixed unicode issues, updated tests and fixed broken tests.</li>
 </ul>
 </div>
 
+    </div><!-- /.entry-content -->
+
+  </article>
 </section>
         <section id="extras" class="body">
                 <div class="blogroll">

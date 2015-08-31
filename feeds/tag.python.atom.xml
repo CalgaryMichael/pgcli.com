@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/tag.python.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-08-04T00:00:00-07:00</updated><entry><title>Release v0.19.1</title><link href="http://pgcli.com/v0.19.1.html" rel="alternate"></link><updated>2015-08-04T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-08-04:v0.19.1.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
+<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/tag.python.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-08-30T00:00:00-07:00</updated><entry><title>Release v0.19.2</title><link href="http://pgcli.com/v0.19.2.html" rel="alternate"></link><updated>2015-08-30T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-08-30:v0.19.2.html</id><summary type="html">&lt;div class="section" id="features"&gt;
+&lt;h2&gt;Features:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Autocompletion for database name in c and connect. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Improved multiline query support by correctly handling open quotes. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Added pager command.&lt;/li&gt;
+&lt;li&gt;Enhanced i to run multiple queries and display the results for each of them&lt;/li&gt;
+&lt;li&gt;Added keywords to suggestions after WHERE clause.&lt;/li&gt;
+&lt;li&gt;Enabled autocompletion in named queries. (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Path to .pgclirc can be specified in command line. (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Added support for pg_service_conf file. (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Added custom styles. (Contributor: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="internal-changes"&gt;
+&lt;h2&gt;Internal Changes:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;More completer test cases. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Updated sqlparse version from 0.1.14 to 0.1.16. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Upgraded to prompt_toolkit 0.46. (Thanks: &lt;a class="reference external" href="https://github.com/jonathanslenders"&gt;Jonathan Slenders&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bugfixes"&gt;
+&lt;h2&gt;BugFixes:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Fixed the completer crashing on invalid SQL. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fixed unicode issues, updated tests and fixed broken tests.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="python"></category><category term="release"></category><category term="changelog"></category><category term="postgres"></category></entry><entry><title>Release v0.19.1</title><link href="http://pgcli.com/v0.19.1.html" rel="alternate"></link><updated>2015-08-04T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-08-04:v0.19.1.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
 &lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli

@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><atom:link href="http://pgcli.com/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 04 Aug 2015 00:00:00 -0700</lastBuildDate><item><title>Release v0.19.1</title><link>http://pgcli.com/v0.19.1.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><atom:link href="http://pgcli.com/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 30 Aug 2015 00:00:00 -0700</lastBuildDate><item><title>Release v0.19.2</title><link>http://pgcli.com/v0.19.2.html</link><description>&lt;div class="section" id="features"&gt;
+&lt;h2&gt;Features:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Autocompletion for database name in c and connect. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Improved multiline query support by correctly handling open quotes. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Added pager command.&lt;/li&gt;
+&lt;li&gt;Enhanced i to run multiple queries and display the results for each of them&lt;/li&gt;
+&lt;li&gt;Added keywords to suggestions after WHERE clause.&lt;/li&gt;
+&lt;li&gt;Enabled autocompletion in named queries. (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Path to .pgclirc can be specified in command line. (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Added support for pg_service_conf file. (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Added custom styles. (Contributor: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="internal-changes"&gt;
+&lt;h2&gt;Internal Changes:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;More completer test cases. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Updated sqlparse version from 0.1.14 to 0.1.16. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Upgraded to prompt_toolkit 0.46. (Thanks: &lt;a class="reference external" href="https://github.com/jonathanslenders"&gt;Jonathan Slenders&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bugfixes"&gt;
+&lt;h2&gt;BugFixes:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Fixed the completer crashing on invalid SQL. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fixed unicode issues, updated tests and fixed broken tests.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Sun, 30 Aug 2015 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2015-08-30:v0.19.2.html</guid><category>python</category><category>release</category><category>changelog</category><category>postgres</category></item><item><title>Release v0.19.1</title><link>http://pgcli.com/v0.19.1.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
 &lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
