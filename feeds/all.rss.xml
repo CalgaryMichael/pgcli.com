@@ -38,7 +38,7 @@ Type &lt;span class="s2"&gt;&amp;quot;help&amp;quot;&lt;/span&gt;, &lt;span clas
 
 
 &lt;p&gt;To learn more about the package or to contribute, follow the
-&lt;a href="https://github.com/dbcli/pgspecial"&gt;github&lt;/a&gt; link.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Tue, 22 Sep 2015 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2015-09-22:pgspecial-release.html</guid><category>python pgspecial</category></item><item><title>Release v0.19.2</title><link>http://pgcli.com/v0.19.2.html</link><description>&lt;div class="section" id="features"&gt;
+&lt;a href="https://github.com/dbcli/pgspecial"&gt;github&lt;/a&gt; link.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Iryna Cherniavska</dc:creator><pubDate>Tue, 22 Sep 2015 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2015-09-22:pgspecial-release.html</guid><category>python pgspecial</category></item><item><title>Release v0.19.2</title><link>http://pgcli.com/v0.19.2.html</link><description>&lt;div class="section" id="features"&gt;
 &lt;h2&gt;Features:&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Autocompletion for database name in c and connect. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;).&lt;/li&gt;
