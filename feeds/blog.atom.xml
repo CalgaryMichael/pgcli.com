@@ -38,7 +38,7 @@ Type &lt;span class="s2"&gt;&amp;quot;help&amp;quot;&lt;/span&gt;, &lt;span clas
 
 
 &lt;p&gt;To learn more about the package or to contribute, follow the
-&lt;a href="https://github.com/dbcli/pgspecial"&gt;github&lt;/a&gt; link.&lt;/p&gt;</summary><category term="python pgspecial"></category></entry><entry><title>Release v0.19.2</title><link href="http://pgcli.com/v0.19.2.html" rel="alternate"></link><updated>2015-08-30T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-08-30:v0.19.2.html</id><summary type="html">&lt;div class="section" id="features"&gt;
+&lt;a href="https://github.com/dbcli/pgspecial"&gt;github&lt;/a&gt; link.&lt;/p&gt;</summary><category term="python"></category><category term="pgspecial"></category></entry><entry><title>Release v0.19.2</title><link href="http://pgcli.com/v0.19.2.html" rel="alternate"></link><updated>2015-08-30T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-08-30:v0.19.2.html</id><summary type="html">&lt;div class="section" id="features"&gt;
 &lt;h2&gt;Features:&lt;/h2&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Autocompletion for database name in c and connect. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;).&lt;/li&gt;
