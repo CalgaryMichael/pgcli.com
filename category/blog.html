@@ -41,7 +41,102 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../pgspecial-release.html">Pgspecial is now an independent module</a></h1>
+                    <h1 class="entry-title"><a href="../v0.20.0.html">Release v0.20.0</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2015-10-31T00:00:00-07:00">
+                Published: Sat 31 October 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
+        </address>
+<p>In <a href="../category/blog.html">Blog</a>. </p>
+<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
+</footer><!-- /.post-info --><p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
+auto-completion and syntax highlighting. You can install this version by:</p>
+<pre class="code bash literal-block">
+<span class="nv">$ </span>pip install -U pgcli
+</pre>
+<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
+<p>This version adds support for <tt class="docutils literal">\\h</tt>  command and <tt class="docutils literal">\x auto</tt> command. Two
+very important commands that bring us close to being a total replacement for
+psql. This version can also handle really large databases without trouble
+thanks to asynchronous completion refresh. Full details below:</p>
+<div class="section" id="features">
+<h2>Features:</h2>
+<ul>
+<li><p class="first">Perform auto-completion refresh in background. (Thanks: Amjith, <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>, <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>).</p>
+<p>When the auto-completion entries are refreshed, the update now happens in a
+background thread. This means large databases with thousands of tables are
+handled without blocking.</p>
+</li>
+<li><p class="first">Add support for <tt class="docutils literal">\h</tt> command. (Thanks: <a class="reference external" href="https://github.com/stuartquin">Stuart Quin</a>).</p>
+<p>This is a huge deal. Users can now get help on an SQL command by typing:
+<tt class="docutils literal">\h COMMAND_NAME</tt> in the pgcli prompt.</p>
+</li>
+<li><p class="first">Add support for <tt class="docutils literal">\x auto</tt>. (Thanks: <a class="reference external" href="https://github.com/stuartquin">Stuart Quin</a>).</p>
+<p><tt class="docutils literal">\\x auto</tt> will automatically switch to expanded mode if the output is wider
+than the display window.</p>
+</li>
+<li><p class="first">Don't hide functions from pg_catalog. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</p>
+</li>
+<li><p class="first">Suggest set-returning functions as tables. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</p>
+<p>Functions that return table like results will now be suggested in places of tables.</p>
+</li>
+<li><p class="first">Suggest fields from functions used as tables. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</p>
+</li>
+<li><p class="first">Using <tt class="docutils literal">pgspecial</tt> as a separate module. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>).</p>
+</li>
+<li><p class="first">Make &quot;enter&quot; key behave as &quot;tab&quot; key when the completion menu is displayed. (Thanks: <a class="reference external" href="MatheusRosa">Matheus Rosa</a>).</p>
+</li>
+<li><p class="first">Support different error-handling options when running multiple queries. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</p>
+<p>When <tt class="docutils literal">on_error = STOP</tt> in the config file, pgcli will abort execution if one of the queries results in an error.</p>
+</li>
+<li><p class="first">Hide the password displayed in the process name in <tt class="docutils literal">ps</tt>. (Thanks: <a class="reference external" href="https://github.com/stuartquin">Stuart Quin</a>)</p>
+</li>
+<li><p class="first">Add <tt class="docutils literal">CONCURRENTLY</tt> to keyword completion. (Thanks: <a class="reference external" href="JohannesHoff">Johannes Hoff</a>).</p>
+</li>
+</ul>
+</div>
+<div class="section" id="bug-fixes">
+<h2>Bug Fixes:</h2>
+<ul class="simple">
+<li>Fix the ordering bug in <cite>\d+</cite> display, this bug was displaying the wrong table name in the reference. (Thanks: <a class="reference external" href="https://github.com/TamasNo1">Tamas Boros</a>).</li>
+<li>Only show expanded layout if valid list of headers provided. (Thanks: <a class="reference external" href="https://github.com/stuartquin">Stuart Quin</a>).</li>
+<li>Fix suggestions in compound join clauses. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</li>
+<li>Fix completion refresh in multiple query scenario. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</li>
+<li>Fix the broken timing information.</li>
+<li>Fix the removal of whitespaces in the output. (Thanks: <a class="reference external" href="https://github.com/d33tah">Jacek Wielemborek</a>)</li>
+<li>Fix PyPI badge. (Thanks: <a class="reference external" href="https://github.com/ming13">Artur Dryomov</a>).</li>
+</ul>
+</div>
+<div class="section" id="improvements">
+<h2>Improvements:</h2>
+<ul class="simple">
+<li>Move config file to <cite>~/.config/pgcli/config</cite> instead of <cite>~/.pgclirc</cite> (Thanks: <a class="reference external" href="inkn">inkn</a>).</li>
+<li>Move literal definitions to standalone JSON files. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</li>
+</ul>
+</div>
+<div class="section" id="internal-changes">
+<h2>Internal Changes:</h2>
+<ul class="simple">
+<li>Improvements to integration tests to make it more robust. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>).</li>
+</ul>
+</div>
+                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="../pgspecial-release.html" rel="bookmark"
+                           title="Permalink to Pgspecial is now an independent module">Pgspecial is now an independent module</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2015-09-22T00:00:00-07:00">
                 Published: Tue 22 September 2015
@@ -52,51 +147,15 @@
         </address>
 <p>In <a href="../category/blog.html">Blog</a>. </p>
 <p>tags: <a href="../tag/python.html">python</a> <a href="../tag/pgspecial.html">pgspecial</a> </p>
-</footer><!-- /.post-info --><p>The pgspecial package is now independent and has its own place on PyPI:</p>
+</footer><!-- /.post-info -->                <p>The pgspecial package is now independent and has its own place on PyPI:</p>
 <h1><a href="https://pypi.python.org/pypi/pgspecial">pgspecial</a></h1>
 <p>The package provides an API for developers who wish to run meta-commands on
 PostgreSQL database without invoking the command line or rolling out their own
 custom solution. It is easily extendable.</p>
-<p>Here is an example of installing it and using it in in python REPL:</p>
-<div class="highlight"><pre><span class="nv">$ </span>pip install pgspecial
-<span class="nv">$ </span>python
-Python 2.7.3 <span class="o">(</span>default, Jun <span class="m">22</span> 2015, 19:33:41<span class="o">)</span> 
-<span class="o">[</span>GCC 4.6.3<span class="o">]</span> on linux2
-Type <span class="s2">&quot;help&quot;</span>, <span class="s2">&quot;copyright&quot;</span>, <span class="s2">&quot;credits&quot;</span> or <span class="s2">&quot;license&quot;</span> <span class="k">for</span> more information.
-</pre></div>
-
-
-<p>After you see the prompt:</p>
-<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">psycopg2</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">pgspecial.main</span> <span class="kn">import</span> <span class="n">PGSpecial</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">p</span> <span class="o">=</span> <span class="n">PGSpecial</span><span class="p">()</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="s">&#39;postgres&#39;</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="s">&#39;localhost&#39;</span><span class="p">,</span> <span class="n">database</span><span class="o">=</span><span class="s">&#39;geo&#39;</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">cur</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">title</span><span class="p">,</span> <span class="n">rows</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span> <span class="n">status</span> <span class="ow">in</span> <span class="n">p</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">cur</span><span class="p">,</span> <span class="s">&#39;</span><span class="se">\\</span><span class="s">d city&#39;</span><span class="p">):</span>
-<span class="o">...</span>     <span class="k">print</span> <span class="n">title</span>
-<span class="o">...</span>     <span class="k">print</span> <span class="n">headers</span>
-<span class="o">...</span>     <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
-<span class="o">...</span>         <span class="k">print</span> <span class="n">row</span>
-<span class="o">...</span>     <span class="k">print</span> <span class="n">status</span>
-<span class="o">...</span>     
-<span class="o">...</span> 
-
-<span class="p">[</span><span class="s">&#39;Column&#39;</span><span class="p">,</span> <span class="s">&#39;Type&#39;</span><span class="p">,</span> <span class="s">&#39;Modifiers&#39;</span><span class="p">]</span>
-<span class="p">[</span><span class="s">&#39;zip_code&#39;</span><span class="p">,</span> <span class="s">&#39;character varying(5)&#39;</span><span class="p">,</span> <span class="s">&#39; not null&#39;</span><span class="p">]</span>
-<span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">,</span> <span class="s">&#39;character varying(28)&#39;</span><span class="p">,</span> <span class="s">&#39; not null&#39;</span><span class="p">]</span>
-<span class="p">[</span><span class="s">&#39;abbreviation&#39;</span><span class="p">,</span> <span class="s">&#39;character varying(13)&#39;</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">]</span>
-<span class="n">Indexes</span><span class="p">:</span>
-    <span class="s">&quot;city_pkey&quot;</span> <span class="n">PRIMARY</span> <span class="n">KEY</span><span class="p">,</span> <span class="n">btree</span> <span class="p">(</span><span class="n">zip_code</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
-</pre></div>
-
-
-<p>To learn more about the package or to contribute, follow the
-<a href="https://github.com/dbcli/pgspecial">github</a> link.</p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+<p>Here is an example of ...</p>
+                <a class="readmore" href="../pgspecial-release.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
@@ -159,38 +218,9 @@ auto-completion and syntax highlighting. You can install this version by:</p>
                 <a class="readmore" href="../v0.19.1.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../v0.19.0.html" rel="bookmark"
-                           title="Permalink to Release v0.19.0">Release v0.19.0</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-08-03T00:00:00-07:00">
-                Published: Mon 03 August 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
-        </address>
-<p>In <a href="../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
-</footer><!-- /.post-info -->                <p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
-auto-completion and syntax highlighting. You can install this version by:</p>
-<pre class="code bash literal-block">
-<span class="nv">$ </span>pip install -U pgcli
-</pre>
-<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
-<p>This release comes with metadata information in the completion menus. Now you
-can see whether a completion ...</p>
-                <a class="readmore" href="../v0.19.0.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
                 </ol><!-- /#posts-list -->
 <p class="paginator">
-    Page 1 / 6
+    Page 1 / 7
         <a href="../category/blog2.html">&raquo;</a>
 </p>
                 </section><!-- /#content -->

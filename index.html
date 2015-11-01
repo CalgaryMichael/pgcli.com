@@ -67,13 +67,17 @@ detailed instructions.</p>
 <h2>Usage</h2>
 <pre class="code bash literal-block">
 <span class="nv">$ </span>pgcli --help
-Usage: pgcli <span class="o">[</span>OPTIONS<span class="o">]</span> DATABASE
+Usage: pgcli <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>DATABASE<span class="o">]</span> <span class="o">[</span>USERNAME<span class="o">]</span>
 
 Options:
   -h, --host TEXT     Host address of the postgres database.
   -p, --port INTEGER  Port number at which the postgres instance is listening.
   -U, --user TEXT     User name to connect to the postgres database.
   -W, --password      Force password prompt.
+  -w, --no-password   Never prompt <span class="k">for</span> password.
+  -v, --version       Version of pgcli.
+  -d, --dbname TEXT   database name to connect to.
+  --pgclirc TEXT      Location of pgclirc file.
   --help              Show this message and exit.
 </pre>
 </div>

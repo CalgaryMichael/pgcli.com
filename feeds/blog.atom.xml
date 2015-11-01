@@ -1,5 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/blog.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-09-22T00:00:00-07:00</updated><entry><title>Pgspecial is now an independent module</title><link href="http://pgcli.com/pgspecial-release.html" rel="alternate"></link><updated>2015-09-22T00:00:00-07:00</updated><author><name>Iryna Cherniavska</name></author><id>tag:pgcli.com,2015-09-22:pgspecial-release.html</id><summary type="html">&lt;p&gt;The pgspecial package is now independent and has its own place on PyPI:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/blog.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-10-31T00:00:00-07:00</updated><entry><title>Release v0.20.0</title><link href="http://pgcli.com/v0.20.0.html" rel="alternate"></link><updated>2015-10-31T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-10-31:v0.20.0.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
+auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+&lt;/pre&gt;
+&lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
+&lt;p&gt;This version adds support for &lt;tt class="docutils literal"&gt;\\h&lt;/tt&gt;  command and &lt;tt class="docutils literal"&gt;\x auto&lt;/tt&gt; command. Two
+very important commands that bring us close to being a total replacement for
+psql. This version can also handle really large databases without trouble
+thanks to asynchronous completion refresh. Full details below:&lt;/p&gt;
+&lt;div class="section" id="features"&gt;
+&lt;h2&gt;Features:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p class="first"&gt;Perform auto-completion refresh in background. (Thanks: Amjith, &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;, &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;When the auto-completion entries are refreshed, the update now happens in a
+background thread. This means large databases with thousands of tables are
+handled without blocking.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Add support for &lt;tt class="docutils literal"&gt;\h&lt;/tt&gt; command. (Thanks: &lt;a class="reference external" href="https://github.com/stuartquin"&gt;Stuart Quin&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;This is a huge deal. Users can now get help on an SQL command by typing:
+&lt;tt class="docutils literal"&gt;\h COMMAND_NAME&lt;/tt&gt; in the pgcli prompt.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Add support for &lt;tt class="docutils literal"&gt;\x auto&lt;/tt&gt;. (Thanks: &lt;a class="reference external" href="https://github.com/stuartquin"&gt;Stuart Quin&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;tt class="docutils literal"&gt;\\x auto&lt;/tt&gt; will automatically switch to expanded mode if the output is wider
+than the display window.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Don't hide functions from pg_catalog. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Suggest set-returning functions as tables. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Functions that return table like results will now be suggested in places of tables.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Suggest fields from functions used as tables. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Using &lt;tt class="docutils literal"&gt;pgspecial&lt;/tt&gt; as a separate module. (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Make &amp;quot;enter&amp;quot; key behave as &amp;quot;tab&amp;quot; key when the completion menu is displayed. (Thanks: &lt;a class="reference external" href="MatheusRosa"&gt;Matheus Rosa&lt;/a&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Support different error-handling options when running multiple queries. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;When &lt;tt class="docutils literal"&gt;on_error = STOP&lt;/tt&gt; in the config file, pgcli will abort execution if one of the queries results in an error.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Hide the password displayed in the process name in &lt;tt class="docutils literal"&gt;ps&lt;/tt&gt;. (Thanks: &lt;a class="reference external" href="https://github.com/stuartquin"&gt;Stuart Quin&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;Add &lt;tt class="docutils literal"&gt;CONCURRENTLY&lt;/tt&gt; to keyword completion. (Thanks: &lt;a class="reference external" href="JohannesHoff"&gt;Johannes Hoff&lt;/a&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bug-fixes"&gt;
+&lt;h2&gt;Bug Fixes:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Fix the ordering bug in &lt;cite&gt;\d+&lt;/cite&gt; display, this bug was displaying the wrong table name in the reference. (Thanks: &lt;a class="reference external" href="https://github.com/TamasNo1"&gt;Tamas Boros&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Only show expanded layout if valid list of headers provided. (Thanks: &lt;a class="reference external" href="https://github.com/stuartquin"&gt;Stuart Quin&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fix suggestions in compound join clauses. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fix completion refresh in multiple query scenario. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fix the broken timing information.&lt;/li&gt;
+&lt;li&gt;Fix the removal of whitespaces in the output. (Thanks: &lt;a class="reference external" href="https://github.com/d33tah"&gt;Jacek Wielemborek&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Fix PyPI badge. (Thanks: &lt;a class="reference external" href="https://github.com/ming13"&gt;Artur Dryomov&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="improvements"&gt;
+&lt;h2&gt;Improvements:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Move config file to &lt;cite&gt;~/.config/pgcli/config&lt;/cite&gt; instead of &lt;cite&gt;~/.pgclirc&lt;/cite&gt; (Thanks: &lt;a class="reference external" href="inkn"&gt;inkn&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Move literal definitions to standalone JSON files. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="internal-changes"&gt;
+&lt;h2&gt;Internal Changes:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Improvements to integration tests to make it more robust. (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="python"></category><category term="release"></category><category term="changelog"></category><category term="postgres"></category></entry><entry><title>Pgspecial is now an independent module</title><link href="http://pgcli.com/pgspecial-release.html" rel="alternate"></link><updated>2015-09-22T00:00:00-07:00</updated><author><name>Iryna Cherniavska</name></author><id>tag:pgcli.com,2015-09-22:pgspecial-release.html</id><summary type="html">&lt;p&gt;The pgspecial package is now independent and has its own place on PyPI:&lt;/p&gt;
 &lt;h1&gt;&lt;a href="https://pypi.python.org/pypi/pgspecial"&gt;pgspecial&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;The package provides an API for developers who wish to run meta-commands on
 PostgreSQL database without invoking the command line or rolling out their own
