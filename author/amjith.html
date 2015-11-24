@@ -28,102 +28,51 @@
                 <a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://github.com/dbcli/pgcli"></a>
                 <script data-gratipay-username="amjith" data-gratipay-widget="button" src="//grtp.co/v1.js"></script>
                 <nav><ul>
-                    <li><a href="../index">pgcli</a></li>
-                    <li><a href="../install">Install</a></li>
-                    <li><a href="../features">Features</a></li>
-                    <li><a href="../faq">FAQ</a></li>
-                    <li><a href="../develop">Develop</a></li>
-                    <li><a href="../thanks">Thanks</a></li>
-                    <li><a href="../about">About</a></li>
                     <li><a href="../category/blog.html">Blog</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../v0.20.0.html">Release v0.20.0</a></h1>
+                    <h1 class="entry-title"><a href="../heroku-pgcli.html">Integrating pgcli with heroku toolbelt</a></h1>
 <footer class="post-info">
-        <abbr class="published" title="2015-10-31T00:00:00-07:00">
-                Published: Sat 31 October 2015
+        <abbr class="published" title="2015-05-06T00:00:00-07:00">
+                Published: Wed 06 May 2015
         </abbr>
 
         <address class="vcard author">
                 By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
         </address>
 <p>In <a href="../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
-</footer><!-- /.post-info --><p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
-auto-completion and syntax highlighting. You can install this version by:</p>
-<pre class="code bash literal-block">
-<span class="nv">$ </span>pip install -U pgcli
-</pre>
-<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
-<p>This version adds support for <tt class="docutils literal">\\h</tt>  command and <tt class="docutils literal">\x auto</tt> command. Two
-very important commands that bring us close to being a total replacement for
-psql. This version can also handle really large databases without trouble
-thanks to asynchronous completion refresh. Full details below:</p>
-<div class="section" id="features">
-<h2>Features:</h2>
-<ul>
-<li><p class="first">Perform auto-completion refresh in background. (Thanks: Amjith, <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>, <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>).</p>
-<p>When the auto-completion entries are refreshed, the update now happens in a
-background thread. This means large databases with thousands of tables are
-handled without blocking.</p>
-</li>
-<li><p class="first">Add support for <tt class="docutils literal">\h</tt> command. (Thanks: <a class="reference external" href="https://github.com/stuartquin">Stuart Quin</a>).</p>
-<p>This is a huge deal. Users can now get help on an SQL command by typing:
-<tt class="docutils literal">\h COMMAND_NAME</tt> in the pgcli prompt.</p>
-</li>
-<li><p class="first">Add support for <tt class="docutils literal">\x auto</tt>. (Thanks: <a class="reference external" href="https://github.com/stuartquin">Stuart Quin</a>).</p>
-<p><tt class="docutils literal">\\x auto</tt> will automatically switch to expanded mode if the output is wider
-than the display window.</p>
-</li>
-<li><p class="first">Don't hide functions from pg_catalog. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</p>
-</li>
-<li><p class="first">Suggest set-returning functions as tables. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</p>
-<p>Functions that return table like results will now be suggested in places of tables.</p>
-</li>
-<li><p class="first">Suggest fields from functions used as tables. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</p>
-</li>
-<li><p class="first">Using <tt class="docutils literal">pgspecial</tt> as a separate module. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>).</p>
-</li>
-<li><p class="first">Make &quot;enter&quot; key behave as &quot;tab&quot; key when the completion menu is displayed. (Thanks: <a class="reference external" href="MatheusRosa">Matheus Rosa</a>).</p>
-</li>
-<li><p class="first">Support different error-handling options when running multiple queries. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</p>
-<p>When <tt class="docutils literal">on_error = STOP</tt> in the config file, pgcli will abort execution if one of the queries results in an error.</p>
-</li>
-<li><p class="first">Hide the password displayed in the process name in <tt class="docutils literal">ps</tt>. (Thanks: <a class="reference external" href="https://github.com/stuartquin">Stuart Quin</a>)</p>
-</li>
-<li><p class="first">Add <tt class="docutils literal">CONCURRENTLY</tt> to keyword completion. (Thanks: <a class="reference external" href="JohannesHoff">Johannes Hoff</a>).</p>
-</li>
-</ul>
-</div>
-<div class="section" id="bug-fixes">
-<h2>Bug Fixes:</h2>
-<ul class="simple">
-<li>Fix the ordering bug in <cite>\d+</cite> display, this bug was displaying the wrong table name in the reference. (Thanks: <a class="reference external" href="https://github.com/TamasNo1">Tamas Boros</a>).</li>
-<li>Only show expanded layout if valid list of headers provided. (Thanks: <a class="reference external" href="https://github.com/stuartquin">Stuart Quin</a>).</li>
-<li>Fix suggestions in compound join clauses. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</li>
-<li>Fix completion refresh in multiple query scenario. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</li>
-<li>Fix the broken timing information.</li>
-<li>Fix the removal of whitespaces in the output. (Thanks: <a class="reference external" href="https://github.com/d33tah">Jacek Wielemborek</a>)</li>
-<li>Fix PyPI badge. (Thanks: <a class="reference external" href="https://github.com/ming13">Artur Dryomov</a>).</li>
-</ul>
-</div>
-<div class="section" id="improvements">
-<h2>Improvements:</h2>
-<ul class="simple">
-<li>Move config file to <cite>~/.config/pgcli/config</cite> instead of <cite>~/.pgclirc</cite> (Thanks: <a class="reference external" href="inkn">inkn</a>).</li>
-<li>Move literal definitions to standalone JSON files. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</li>
-</ul>
-</div>
-<div class="section" id="internal-changes">
-<h2>Internal Changes:</h2>
-<ul class="simple">
-<li>Improvements to integration tests to make it more robust. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>).</li>
-</ul>
-</div>
-                </article>
+<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/heroku.html">heroku</a> </p>
+</footer><!-- /.post-info --><p>Heroku is a popular PAAS provider that offers managed Postgres database. Heroku provides a convenience command to connect to the postgres database, which will launch <code>psql</code>. Now it is possible to launch <code>pgcli</code> instead of the default <code>psql</code> for heroku Postgres by installing the <a href="https://github.com/chrisanderton/heroku-pg-pgcli">heroku-pg-pgcli</a> plugin for heroku tool belt.</p>
+<h3>Installation</h3>
+<p>Make sure pgcli is installed. If it is not installed check the installation <a href="http://pgcli.com/install">instructions</a>. Typically it is:</p>
+<p>Either:</p>
+<div class="highlight"><pre>    $ brew install pgcli    # Only on OS X
+</pre></div>
+
+
+<p>or </p>
+<div class="highlight"><pre>    $ pip install pgcli   # Python package installation
+</pre></div>
+
+
+<p>Then install the heroku plugin</p>
+<div class="highlight"><pre>    $ heroku plugins:install git@github.com:chrisanderton/heroku-pg-pgcli.git
+</pre></div>
+
+
+<h3>Usage</h3>
+<p>Run this from within a Heroku app directory</p>
+<div class="highlight"><pre>    $ heroku pg:pgcli
+</pre></div>
+
+
+<p>That will launch pgcli with the appropriate database credentials, taken from heroku DATABASE_URL for that application.</p>
+<p>That's it. </p>
+<h3>Credit</h3>
+<p>Thanks to <a href="https://github.com/chrisanderton">Chris Anderton</a> for creating this heroku plugin. </p>                </article>
             </aside><!-- /#featured -->
                 <section id="content" class="body">
                     <h1>Other articles</h1>
@@ -132,97 +81,80 @@ than the display window.</p>
 
             <li><article class="hentry">
                 <header>
-                    <h1><a href="../v0.19.2.html" rel="bookmark"
-                           title="Permalink to Release v0.19.2">Release v0.19.2</a></h1>
+                    <h1><a href="../mysql-cli-kickstarter-success.html" rel="bookmark"
+                           title="Permalink to A Better CLI for MySQL - Kickstarter Success">A Better CLI for MySQL - Kickstarter Success</a></h1>
                 </header>
 
                 <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2015-08-30T00:00:00-07:00">
-                Published: Sun 30 August 2015
+        <abbr class="published" title="2015-05-05T00:00:00-07:00">
+                Published: Tue 05 May 2015
         </abbr>
 
         <address class="vcard author">
                 By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
         </address>
 <p>In <a href="../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
-</footer><!-- /.post-info -->                <div class="section" id="features">
-<h2>Features:</h2>
-<ul class="simple">
-<li>Autocompletion for database name in c and connect. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</li>
-<li>Improved multiline query support by correctly handling open quotes. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</li>
-<li>Added pager command.</li>
-<li>Enhanced i to run multiple queries and display the results for each of them</li>
-<li>Added keywords to suggestions after WHERE clause.</li>
-<li>Enabled autocompletion ...</li></ul></div>
-                <a class="readmore" href="../v0.19.2.html">read more</a>
+<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/mysql.html">mysql</a> </p>
+</footer><!-- /.post-info -->                <p>About a month ago, I started a new <a href="https://www.kickstarter.com/projects/1839007321/mysql-cli">kickstarter
+project</a> to create a
+MySQL client that can do auto-completion and syntax highlighting.</p>
+<p>An equivalent of <a href="http://pgcli.com">pgcli</a> for the MySQL database.</p>
+<p>Today I'm happy to announce that the kickstarter has reached it's <a href="https://www.kickstarter.com/projects/1839007321/mysql-cli">goal</a> and it's
+strongly marching towards ...</p>
+                <a class="readmore" href="../mysql-cli-kickstarter-success.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
 
             <li><article class="hentry">
                 <header>
-                    <h1><a href="../v0.19.1.html" rel="bookmark"
-                           title="Permalink to Release v0.19.1">Release v0.19.1</a></h1>
+                    <h1><a href="../core-1.html" rel="bookmark"
+                           title="Permalink to Introducing the core devs of pgcli">Introducing the core devs of pgcli</a></h1>
                 </header>
 
                 <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2015-08-04T00:00:00-07:00">
-                Published: Tue 04 August 2015
+        <abbr class="published" title="2015-04-28T00:00:00-07:00">
+                Published: Tue 28 April 2015
         </abbr>
 
         <address class="vcard author">
                 By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
         </address>
 <p>In <a href="../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
-</footer><!-- /.post-info -->                <p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
-auto-completion and syntax highlighting. You can install this version by:</p>
-<pre class="code bash literal-block">
-<span class="nv">$ </span>pip install -U pgcli
-</pre>
-<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
-<p>This is a minor bug fix release to fix a crashing bug during autocompletion.</p>
-<div class="section" id="bug-fixes">
-<h2>Bug Fixes:</h2>
-<ul class="simple">
-<li>Fix ...</li></ul></div>
-                <a class="readmore" href="../v0.19.1.html">read more</a>
+<p>tags: <a href="../tag/python.html">python</a> </p>
+</footer><!-- /.post-info -->                <p>It is my pleasure to announce the core devs of the pgcli project. </p>
+<h1><a href="https://github.com/drocco007">Daniel Rocco</a></h1>
+<p>Daniel made pgcli handle JSON, bytea, and large decimal values correctly. He improved the completion matching by adding sub-string matching. His creative solution to reducing completion noise is extremely useful. He also added numerous tests ...</p>
+                <a class="readmore" href="../core-1.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
 
             <li><article class="hentry">
                 <header>
-                    <h1><a href="../v0.19.0.html" rel="bookmark"
-                           title="Permalink to Release v0.19.0">Release v0.19.0</a></h1>
+                    <h1><a href="../django-pgcli.html" rel="bookmark"
+                           title="Permalink to Django Integration of pgcli">Django Integration of pgcli</a></h1>
                 </header>
 
                 <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2015-08-03T00:00:00-07:00">
-                Published: Mon 03 August 2015
+        <abbr class="published" title="2015-04-25T00:00:00-07:00">
+                Published: Sat 25 April 2015
         </abbr>
 
         <address class="vcard author">
                 By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
         </address>
 <p>In <a href="../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
-</footer><!-- /.post-info -->                <p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
-auto-completion and syntax highlighting. You can install this version by:</p>
-<pre class="code bash literal-block">
-<span class="nv">$ </span>pip install -U pgcli
-</pre>
-<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
-<p>This release comes with metadata information in the completion menus. Now you
-can see whether a completion ...</p>
-                <a class="readmore" href="../v0.19.0.html">read more</a>
+<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/django.html">django</a> </p>
+</footer><!-- /.post-info -->                <p>Django web framework has a rich set of management commands. One of them is <code>python manage.py dbshell</code>. This will launch the default database repl and connect to the appropriate database for the web application.</p>
+<p>Now it is possible to launch <code>pgcli</code> instead of the default <code>psql</code> for Postgres by ...</p>
+                <a class="readmore" href="../django-pgcli.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
                 </ol><!-- /#posts-list -->
 <p class="paginator">
-    Page 1 / 6
+    Page 1 / 2
         <a href="../author/amjith2.html">&raquo;</a>
 </p>
                 </section><!-- /#content -->
