@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Release v0.19.0</title>
+        <link rel="stylesheet" href="./theme/css/main.css" />
+        <link href="http://pgcli.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="pgcli Atom Feed" />
+        <link href="http://pgcli.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="pgcli RSS Feed" />
+        <script type="text/javascript">
+            /* <![CDATA[ */
+        (function() {
+         var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+         s.type = 'text/javascript';
+         s.async = true;
+         s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+         t.parentNode.insertBefore(s, t);
+         })();
+/* ]]> */</script>
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="./">pgcli </a></h1>
+                <a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://github.com/dbcli/pgcli"></a>
+                <script data-gratipay-username="amjith" data-gratipay-widget="button" src="//grtp.co/v1.js"></script>
+                <nav><ul>
+                    <li><a href="./index">pgcli</a></li>
+                    <li><a href="./install">Install</a></li>
+                    <li><a href="./features">Features</a></li>
+                    <li><a href="./faq">FAQ</a></li>
+                    <li><a href="./develop">Develop</a></li>
+                    <li><a href="./thanks">Thanks</a></li>
+                    <li><a href="./about">About</a></li>
+                    <li class="active"><a href="./category/blog.html">Blog</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="./v0.19.0.html" rel="bookmark"
+           title="Permalink to Release v0.19.0">Release v0.19.0</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2015-08-03T00:00:00-07:00">
+                Published: Mon 03 August 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="./author/amjith.html">Amjith</a>
+        </address>
+<p>In <a href="./category/blog.html">Blog</a>. </p>
+<p>tags: <a href="./tag/python.html">python</a> <a href="./tag/release.html">release</a> <a href="./tag/changelog.html">changelog</a> <a href="./tag/postgres.html">postgres</a> </p>
+</footer><!-- /.post-info -->      <p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
+auto-completion and syntax highlighting. You can install this version by:</p>
+<pre class="code bash literal-block">
+<span class="nv">$ </span>pip install -U pgcli
+</pre>
+<p>Check <a class="reference external" href="./install">detailed instructions</a> if you're having difficulty.</p>
+<p>This release comes with metadata information in the completion menus. Now you
+can see whether a completion suggestion is a table or a schema or a view.
+New special command (<tt class="docutils literal">\i</tt>), latest prompt_toolkit with wider completion menus.</p>
+<div class="section" id="features">
+<h2>Features:</h2>
+<ul>
+<li><p class="first">Wider completion menus can be enabled via the config file. (Thanks: <a class="reference external" href="https://github.com/jonathanslenders">Jonathan Slenders</a>)</p>
+<p>Open the config file (~/.pgclirc) and check if you have
+<tt class="docutils literal">wider_completion_menu</tt> option available. If not add it in and set it to
+<tt class="docutils literal">True</tt>.</p>
+</li>
+<li><p class="first">Completion menu now has metadata information such as schema, table, column, view, etc., next to the suggestions. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</p>
+</li>
+<li><p class="first">Customizable history file location via config file. (Thanks: <a class="reference external" href="https://github.com/cagatay">Çağatay Yüksel</a>)</p>
+<p>Add this line to your config file (~/.pgclirc) to customize where to store the history file.</p>
+</li>
+</ul>
+<pre class="literal-block">
+history_file = /path/to/history/file
+</pre>
+<ul class="simple">
+<li>Add support for running queries from a file using <tt class="docutils literal">\i</tt> special command. (Thanks: <a class="reference external" href="https://github.com/mikekaminsky">Michael Kaminsky</a>)</li>
+</ul>
+</div>
+<div class="section" id="bug-fixes">
+<h2>Bug Fixes:</h2>
+<ul class="simple">
+<li>Always use utf-8 for database encoding regardless of the default encoding used by the database.</li>
+<li>Fix for None dereference on <tt class="docutils literal">\d schemaname.</tt> with sequence. (Thanks: <a class="reference external" href="https://github.com/nathanjhaveri">Nathan Jhaveri</a>)</li>
+<li>Fix a crashing bug in the autocompletion engine for some <tt class="docutils literal">JOIN</tt> queries.</li>
+<li>Handle KeyboardInterrupt in pager and not quit pgcli as a consequence.</li>
+</ul>
+</div>
+<div class="section" id="internal-changes">
+<h2>Internal Changes:</h2>
+<ul class="simple">
+<li>Added more behavioral tests (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>)</li>
+<li>Added code coverage to the tests. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>)</li>
+<li>Run behavioral tests as part of TravisCI (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>)</li>
+<li>Upgraded prompt_toolkit version to 0.45 (Thanks: <a class="reference external" href="https://github.com/jonathanslenders">Jonathan Slenders</a>)</li>
+<li>Update the minumum required version of click to 4.1.</li>
+</ul>
+</div>
+
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://mycli.net/">mycli</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://pgcli.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            <li><a href="http://pgcli.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">rss feed</a></li>
+
+                            <li><a href="http://twitter.com/amjithr">twitter</a></li>
+                            <li><a href="http://github.com/dbcli/pgcli">github</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-58061452-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+</body>
+</html>

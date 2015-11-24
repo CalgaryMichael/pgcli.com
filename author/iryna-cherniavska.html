@@ -28,13 +28,57 @@
                 <a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://github.com/dbcli/pgcli"></a>
                 <script data-gratipay-username="amjith" data-gratipay-widget="button" src="//grtp.co/v1.js"></script>
                 <nav><ul>
+                    <li><a href="../index">pgcli</a></li>
+                    <li><a href="../install">Install</a></li>
+                    <li><a href="../features">Features</a></li>
+                    <li><a href="../faq">FAQ</a></li>
+                    <li><a href="../develop">Develop</a></li>
+                    <li><a href="../thanks">Thanks</a></li>
+                    <li><a href="../about">About</a></li>
                     <li><a href="../category/blog.html">Blog</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../pgspecial-release.html">Pgspecial is now an independent module</a></h1>
+                    <h1 class="entry-title"><a href="../v0.20.1.html">Release v0.20.1</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2015-11-08T00:00:00-08:00">
+                Published: Sun 08 November 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/iryna-cherniavska.html">Iryna Cherniavska</a>
+        </address>
+<p>In <a href="../category/blog.html">Blog</a>. </p>
+<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
+</footer><!-- /.post-info --><p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
+auto-completion and syntax highlighting. You can install this version by:</p>
+<pre class="code bash literal-block">
+<span class="nv">$ </span>pip install -U pgcli
+</pre>
+<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
+<p>This is a bug fix release to fix <tt class="docutils literal">pgcli</tt> crashing on startup in Windows.</p>
+<div class="section" id="bug-fixes">
+<h2>Bug Fixes:</h2>
+<ul class="simple">
+<li>Fixed logging in Windows by switching the location of log and history file based on OS. (Thanks: Amjith, <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>, <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>).</li>
+</ul>
+</div>
+                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="../pgspecial-release.html" rel="bookmark"
+                           title="Permalink to Pgspecial is now an independent module">Pgspecial is now an independent module</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2015-09-22T00:00:00-07:00">
                 Published: Tue 22 September 2015
@@ -45,50 +89,20 @@
         </address>
 <p>In <a href="../category/blog.html">Blog</a>. </p>
 <p>tags: <a href="../tag/python.html">python</a> <a href="../tag/pgspecial.html">pgspecial</a> </p>
-</footer><!-- /.post-info --><p>The pgspecial package is now independent and has its own place on PyPI:</p>
+</footer><!-- /.post-info -->                <p>The pgspecial package is now independent and has its own place on PyPI:</p>
 <h1><a href="https://pypi.python.org/pypi/pgspecial">pgspecial</a></h1>
 <p>The package provides an API for developers who wish to run meta-commands on
 PostgreSQL database without invoking the command line or rolling out their own
 custom solution. It is easily extendable.</p>
-<p>Here is an example of installing it and using it in in python REPL:</p>
-<div class="highlight"><pre><span class="nv">$ </span>pip install pgspecial
-<span class="nv">$ </span>python
-Python 2.7.3 <span class="o">(</span>default, Jun <span class="m">22</span> 2015, 19:33:41<span class="o">)</span> 
-<span class="o">[</span>GCC 4.6.3<span class="o">]</span> on linux2
-Type <span class="s2">&quot;help&quot;</span>, <span class="s2">&quot;copyright&quot;</span>, <span class="s2">&quot;credits&quot;</span> or <span class="s2">&quot;license&quot;</span> <span class="k">for</span> more information.
-</pre></div>
-
-
-<p>After you see the prompt:</p>
-<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">psycopg2</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">pgspecial.main</span> <span class="kn">import</span> <span class="n">PGSpecial</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">p</span> <span class="o">=</span> <span class="n">PGSpecial</span><span class="p">()</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="s">&#39;postgres&#39;</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="s">&#39;localhost&#39;</span><span class="p">,</span> <span class="n">database</span><span class="o">=</span><span class="s">&#39;geo&#39;</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">cur</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">title</span><span class="p">,</span> <span class="n">rows</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span> <span class="n">status</span> <span class="ow">in</span> <span class="n">p</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">cur</span><span class="p">,</span> <span class="s">&#39;</span><span class="se">\\</span><span class="s">d city&#39;</span><span class="p">):</span>
-<span class="o">...</span>     <span class="k">print</span> <span class="n">title</span>
-<span class="o">...</span>     <span class="k">print</span> <span class="n">headers</span>
-<span class="o">...</span>     <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
-<span class="o">...</span>         <span class="k">print</span> <span class="n">row</span>
-<span class="o">...</span>     <span class="k">print</span> <span class="n">status</span>
-<span class="o">...</span>     
-<span class="o">...</span> 
-
-<span class="p">[</span><span class="s">&#39;Column&#39;</span><span class="p">,</span> <span class="s">&#39;Type&#39;</span><span class="p">,</span> <span class="s">&#39;Modifiers&#39;</span><span class="p">]</span>
-<span class="p">[</span><span class="s">&#39;zip_code&#39;</span><span class="p">,</span> <span class="s">&#39;character varying(5)&#39;</span><span class="p">,</span> <span class="s">&#39; not null&#39;</span><span class="p">]</span>
-<span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">,</span> <span class="s">&#39;character varying(28)&#39;</span><span class="p">,</span> <span class="s">&#39; not null&#39;</span><span class="p">]</span>
-<span class="p">[</span><span class="s">&#39;abbreviation&#39;</span><span class="p">,</span> <span class="s">&#39;character varying(13)&#39;</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">]</span>
-<span class="n">Indexes</span><span class="p">:</span>
-    <span class="s">&quot;city_pkey&quot;</span> <span class="n">PRIMARY</span> <span class="n">KEY</span><span class="p">,</span> <span class="n">btree</span> <span class="p">(</span><span class="n">zip_code</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
-</pre></div>
-
-
-<p>To learn more about the package or to contribute, follow the
-<a href="https://github.com/dbcli/pgspecial">github</a> link.</p>                </article>
+<p>Here is an example of ...</p>
+                <a class="readmore" href="../pgspecial-release.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
 <p class="paginator">
     Page 1 / 1
 </p>
-            </aside><!-- /#featured -->
+                </section><!-- /#content -->
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>blogroll</h2>
