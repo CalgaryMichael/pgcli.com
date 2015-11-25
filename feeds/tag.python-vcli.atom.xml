@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/tag.python-vcli.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-11-24T00:00:00-08:00</updated><entry><title>Launching 'vcli' for VerticaDB</title><link href="http://pgcli.com/vcli.html" rel="alternate"></link><updated>2015-11-24T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-11-24:vcli.html</id><summary type="html">&lt;p&gt;Today we're proud to announce a new project called &lt;code&gt;vcli&lt;/code&gt;. This is a Command
+Line tool for VerticaDB that is based on &lt;a href="http://pgcli.com"&gt;pgcli&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href="https://github.com/dbcli/vcli"&gt;https://github.com/dbcli/vcli&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="vcli" src="http://pgcli.com/images/vcli.gif" /&gt;&lt;/p&gt;
+&lt;h2&gt;Who?&lt;/h2&gt;
+&lt;p&gt;The main author of &lt;code&gt;vcli&lt;/code&gt; is &lt;a href="https://github.com/eliangcs"&gt;Chang-Hung
+Liang&lt;/a&gt;. He took the source code for pgcli and
+repurposed it to work with VerticaDB. The &lt;code&gt;vcli&lt;/code&gt; project will be hosted under
+the &lt;code&gt;dbcli&lt;/code&gt; org in github. This enables us to share the code among the various
+project easily and learn from each other.&lt;/p&gt;
+&lt;h1&gt;Features&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Context sensitive auto-completion.&lt;/li&gt;
+&lt;li&gt;Fuzzy matching of table names and column names.&lt;/li&gt;
+&lt;li&gt;Syntax highlighting of SQL Statments.&lt;/li&gt;
+&lt;li&gt;Vi/Emacs mode for keybindings.&lt;/li&gt;
+&lt;li&gt;Intuitive UI design.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please feel free to report any bugs or feature requests on
+&lt;a href="https://github.com/dbcli/vcli/issues"&gt;Github&lt;/a&gt;.&lt;/p&gt;</summary><category term="python vcli"></category></entry></feed>
