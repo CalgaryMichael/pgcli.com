@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/tag.changelog.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-11-08T00:00:00-08:00</updated><entry><title>Release v0.20.1</title><link href="http://pgcli.com/v0.20.1.html" rel="alternate"></link><updated>2015-11-08T00:00:00-08:00</updated><author><name>Iryna Cherniavska</name></author><id>tag:pgcli.com,2015-11-08:v0.20.1.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This is a bug fix release to fix &lt;tt class="docutils literal"&gt;pgcli&lt;/tt&gt; crashing on startup in Windows.&lt;/p&gt;
@@ -15,7 +15,7 @@ auto-completion and syntax highlighting. You can install this version by:&lt;/p&
 </summary><category term="python"></category><category term="release"></category><category term="changelog"></category><category term="postgres"></category></entry><entry><title>Release v0.20.0</title><link href="http://pgcli.com/v0.20.0.html" rel="alternate"></link><updated>2015-10-31T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-10-31:v0.20.0.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This version adds support for &lt;tt class="docutils literal"&gt;\\h&lt;/tt&gt;  command and &lt;tt class="docutils literal"&gt;\x auto&lt;/tt&gt; command. Two
@@ -115,7 +115,7 @@ than the display window.&lt;/p&gt;
 </summary><category term="python"></category><category term="release"></category><category term="changelog"></category><category term="postgres"></category></entry><entry><title>Release v0.19.1</title><link href="http://pgcli.com/v0.19.1.html" rel="alternate"></link><updated>2015-08-04T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-08-04:v0.19.1.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This is a minor bug fix release to fix a crashing bug during autocompletion.&lt;/p&gt;
@@ -128,7 +128,7 @@ auto-completion and syntax highlighting. You can install this version by:&lt;/p&
 </summary><category term="python"></category><category term="release"></category><category term="changelog"></category><category term="postgres"></category></entry><entry><title>Release v0.19.0</title><link href="http://pgcli.com/v0.19.0.html" rel="alternate"></link><updated>2015-08-03T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-08-03:v0.19.0.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This release comes with metadata information in the completion menus. Now you
@@ -177,7 +177,7 @@ history_file = /path/to/history/file
 </summary><category term="python"></category><category term="release"></category><category term="changelog"></category><category term="postgres"></category></entry><entry><title>Release v0.18.0</title><link href="http://pgcli.com/v0.18.0.html" rel="alternate"></link><updated>2015-06-16T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-06-16:v0.18.0.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This release comes with the ability to save favorite queries, fuzzy matching in
@@ -247,7 +247,7 @@ add new special back-slash commands using a decorator.&lt;/li&gt;
 </summary><category term="python"></category><category term="release"></category><category term="changelog"></category><category term="postgres"></category></entry><entry><title>Release v0.17.0</title><link href="http://pgcli.com/v0.17.0.html" rel="alternate"></link><updated>2015-05-26T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-05-26:v0.17.0.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This release comes with the latest version of prompt_tookit, improved
@@ -298,7 +298,7 @@ word is in the middle of a suggestion.&lt;/p&gt;
 </summary><category term="python"></category><category term="release"></category><category term="changelog"></category><category term="postgres"></category></entry><entry><title>Release v0.16.3</title><link href="http://pgcli.com/v0.16.3.html" rel="alternate"></link><updated>2015-04-02T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-04-02:v0.16.3.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This is a minor bug-fix release that fixes the syntax-highlighting of various
@@ -315,7 +315,7 @@ sql exceptions.&lt;/p&gt;
 </summary><category term="python"></category><category term="release"></category><category term="changelog"></category><category term="postgres"></category></entry><entry><title>Release v0.16.2</title><link href="http://pgcli.com/v0.16.2.html" rel="alternate"></link><updated>2015-03-22T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-03-22:v0.16.2.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This is a bug-fix release that improves auto-completion and formatting of large
@@ -334,7 +334,7 @@ As a result the suggestions for tables vs functions are cleaner. (Thanks: &lt;a 
 </summary><category term="python"></category><category term="release"></category><category term="changelog"></category><category term="postgres"></category></entry><entry><title>Release v0.16.1</title><link href="http://pgcli.com/v0.16.1.html" rel="alternate"></link><updated>2015-03-03T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-03-03:v0.16.1.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This is a minor bug-fix release that fixes unicode issues with hstore.&lt;/p&gt;
@@ -351,7 +351,7 @@ connection and a type caster is registered accordingly.&lt;/li&gt;
 </summary><category term="python"></category><category term="release"></category><category term="changelog"></category><category term="postgres"></category></entry><entry><title>Release v0.16.0</title><link href="http://pgcli.com/v0.16.0.html" rel="alternate"></link><updated>2015-03-01T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-03-01:v0.16.0.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This release adds Vi-keybindings, improvements to special commands (new
@@ -386,7 +386,7 @@ statements are separated by semi-colon in the same line.&lt;/li&gt;
 </summary><category term="python"></category><category term="release"></category><category term="changelog"></category><category term="postgres"></category></entry><entry><title>Release v0.15.X</title><link href="http://pgcli.com/v0.15.X.html" rel="alternate"></link><updated>2015-02-08T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-02-08:v0.15.X.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This version adds more color schemes to the syntax highlighting. An attempt to
@@ -417,7 +417,7 @@ are &lt;cite&gt;manni&lt;/cite&gt;, &lt;cite&gt;igor&lt;/cite&gt;, &lt;cite&gt;x
 &lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can upgrade using:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;div class="section" id="features"&gt;
@@ -447,7 +447,7 @@ This can be changed via config file (~/.pgclirc) using &lt;tt class="docutils li
 </summary><category term="python"></category><category term="release"></category><category term="changelog"></category><category term="postgres"></category></entry><entry><title>Release v0.13.0</title><link href="http://pgcli.com/v0.13.0.html" rel="alternate"></link><updated>2015-01-14T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-01-14:v0.13.0.html</id><summary type="html">&lt;p&gt;A small release that gets &lt;tt class="docutils literal"&gt;pgcli&lt;/tt&gt; closer to being a drop in replacement for
 &lt;tt class="docutils literal"&gt;psql&lt;/tt&gt;.&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;div class="section" id="features"&gt;
@@ -469,7 +469,7 @@ eg: pgcli dbname user&lt;/li&gt;
 &lt;/div&gt;
 </summary><category term="python"></category><category term="release"></category><category term="changelog"></category><category term="postgres"></category></entry><entry><title>Release v0.12.0</title><link href="http://pgcli.com/v0.12.0.html" rel="alternate"></link><updated>2015-01-13T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-01-13:v0.12.0.html</id><summary type="html">&lt;p&gt;A feature packed &lt;a class="reference external" href="https://pypi.python.org/pypi/pgcli/0.12.0"&gt;release&lt;/a&gt;. You can install/upgrade using&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;div class="section" id="id1"&gt;
 &lt;h2&gt;0.12.0&lt;/h2&gt;

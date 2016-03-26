@@ -57,18 +57,18 @@ git remote add upstream git&#64;github.com:dbcli/pgcli.git
 <li><p class="first">Make the necessary changes in your local machine. Commit and push to your
 fork.</p>
 <pre class="code bash literal-block">
-<span class="nv">$ </span>git commit
+$ git commit
 
-<span class="nv">$ </span>git push origin
+$ git push origin
 </pre>
 </li>
 <li><p class="first">Create a pull request from your fork to the mainline repo using Github UI.</p>
 </li>
 <li><p class="first">Sync with the main pgcli repo.</p>
 <pre class="code bash literal-block">
-<span class="nv">$ </span>git pull upstream master   <span class="c"># Pull from the main repo to local copy.
+$ git pull upstream master   <span class="c1"># Pull from the main repo to local copy.
 </span>
-<span class="nv">$ </span>git push origin master     <span class="c"># Pushes from local copy to your fork.</span>
+$ git push origin master     <span class="c1"># Pushes from local copy to your fork.</span>
 </pre>
 </li>
 </ol>
@@ -82,11 +82,11 @@ will help you get started.</p>
 <tt class="docutils literal">cd</tt> into the local clone of pgcli folder and install pgcli using pip as
 follows:</p>
 <pre class="code bash literal-block">
-<span class="nv">$ </span>pip install --editable .
+$ pip install --editable .
 
 or
 
-<span class="nv">$ </span>pip install -e .
+$ pip install -e .
 </pre>
 <p>This will install the necessary dependencies as well as install pgcli from the
 working folder into the virtualenv. By installing it using <tt class="docutils literal">pip install <span class="pre">-e</span></tt>

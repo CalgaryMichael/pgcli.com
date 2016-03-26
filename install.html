@@ -41,11 +41,11 @@ right now.</p>
 <h2>Quick start:</h2>
 <p>If you already know how to install python packages, then you can do:</p>
 <pre class="code bash literal-block">
-<span class="nv">$ </span>pip install pgcli
+$ pip install pgcli
 
 or
 
-<span class="nv">$ </span>easy_install pgcli
+$ easy_install pgcli
 </pre>
 <p>You might need <tt class="docutils literal">sudo</tt>.</p>
 </div>
@@ -56,12 +56,12 @@ or
 <p>The easiest way install <tt class="docutils literal">pgcli</tt> in an OS X machine is to use <a class="reference external" href="http://brew.sh/">homebrew</a>.
 Please be aware that this will install postgresql via homebrew.</p>
 <pre class="code bash literal-block">
-<span class="nv">$ </span>brew install pgcli
+$ brew install pgcli
 </pre>
 <p>That's it. You can now launch it by typing <tt class="docutils literal">pgcli</tt> on the command line.</p>
 <p>If you have Postgresql installed via different means instead of brew, you can try:</p>
 <pre class="code bash literal-block">
-<span class="nv">$ </span>brew install --build-from-source pgcli
+$ brew install --build-from-source pgcli
 </pre>
 <p>This will skip installing Postgresql, if it is already available in the $PATH.</p>
 <p>Alternatively, since <tt class="docutils literal">pgcli</tt> is a python package you can install it via the
@@ -69,32 +69,32 @@ python package manager <tt class="docutils literal">pip</tt>. There is also an o
 <tt class="docutils literal">easy_install</tt> but it is replaced by pip.</p>
 <p>Check if <tt class="docutils literal">pip</tt> is installed on the system.</p>
 <pre class="code bash literal-block">
-<span class="nv">$ </span>which pip
+$ which pip
 </pre>
 <p>If the above command returns an error, then you do not have pip installed on
 your computer.</p>
 <p>Most OS X systems comes pre-installed with python and <tt class="docutils literal">easy_install</tt>. You can
 use easy_install to install <tt class="docutils literal">pip</tt>.</p>
 <pre class="code bash literal-block">
-<span class="nv">$ </span>sudo easy_install pip
+$ sudo easy_install pip
 </pre>
 <p><tt class="docutils literal">pgcli</tt> uses <tt class="docutils literal">psycopg</tt> to talk to postgres database. In order to install
 psycopg, you will need libpq installed on your system. The easiest way to get
 the necessary libraries, is to install postgresql on your system.</p>
 <pre class="code bash literal-block">
-<span class="nv">$ </span>brew install postgresql
+$ brew install postgresql
 </pre>
 <p>You will also need C compiler installed on your system in order to compile the
 required files for psycopg. Install XCode from AppStore and then install the
 CommandLineTools which will install gcc or an equivalent C compiler on your
 system. I typically do the following:</p>
 <pre class="code bash literal-block">
-<span class="nv">$ </span>xcode-select --install   <span class="c"># This will install the command line tools for xcode.</span>
+$ xcode-select --install   <span class="c1"># This will install the command line tools for xcode.</span>
 </pre>
 <p>Now that the required dependencies are satisfied you are ready to install
 <tt class="docutils literal">pgcli</tt>.</p>
 <pre class="code bash literal-block">
-<span class="nv">$ </span>sudo pip install pgcli
+$ sudo pip install pgcli
 </pre>
 </div>
 <div class="section" id="linux">
@@ -104,33 +104,33 @@ called called <tt class="docutils literal">pip</tt>. There is also an older pack
 <tt class="docutils literal">easy_install</tt> but it is replaced by pip.</p>
 <p>Check if <tt class="docutils literal">pip</tt> is installed on the system.</p>
 <pre class="code bash literal-block">
-<span class="nv">$ </span>which pip
+$ which pip
 </pre>
 <p>If the above command returns an error, then you do not have pip installed on
 your computer. You can install it using your OS package manager.</p>
 <p>Debian based systems (Debian, Ubuntu, Mint etc)</p>
 <pre class="code bash literal-block">
-<span class="nv">$ </span>sudo apt-get install python-pip
+$ sudo apt-get install python-pip
 </pre>
 <p>For Redhat based systems (Fedora, Centos, RHEL etc)</p>
 <pre class="code bash literal-block">
-<span class="nv">$ </span>sudo yum install python-pip
+$ sudo yum install python-pip
 </pre>
 <p>Pgcli uses <tt class="docutils literal">psycopg</tt> to talk to postgres database. In order to install
 psycopg, you will need libpq and python-dev installed on your system. Since
 <tt class="docutils literal">psycopg</tt> is a C extension for Python, a C compiler is needed to install it
 on your system.</p>
 <pre class="code bash literal-block">
-<span class="nv">$ </span>sudo apt-get install libpq-dev python-dev   <span class="c"># debian
+$ sudo apt-get install libpq-dev python-dev   <span class="c1"># debian
 </span>
 or
 
-<span class="nv">$ </span>sudo yum install postgresql-devel python-devel  <span class="c"># redhat</span>
+$ sudo yum install postgresql-devel python-devel  <span class="c1"># redhat</span>
 </pre>
 <p>Now that the required dependencies are satisfied you are ready to install
 <tt class="docutils literal">pgcli</tt>.</p>
 <pre class="code bash literal-block">
-<span class="nv">$ </span>sudo pip install pgcli
+$ sudo pip install pgcli
 </pre>
 <p>If you're having trouble getting this installed please feel free to <a class="reference external" href="./about">contact</a> me.</p>
 </div>

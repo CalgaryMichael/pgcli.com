@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><atom:link href="http://pgcli.com/feeds/tag.postgres.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 08 Nov 2015 00:00:00 -0800</lastBuildDate><item><title>Release v0.20.1</title><link>http://pgcli.com/v0.20.1.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This is a bug fix release to fix &lt;tt class="docutils literal"&gt;pgcli&lt;/tt&gt; crashing on startup in Windows.&lt;/p&gt;
@@ -15,7 +15,7 @@ auto-completion and syntax highlighting. You can install this version by:&lt;/p&
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Iryna Cherniavska</dc:creator><pubDate>Sun, 08 Nov 2015 00:00:00 -0800</pubDate><guid>tag:pgcli.com,2015-11-08:v0.20.1.html</guid><category>python</category><category>release</category><category>changelog</category><category>postgres</category></item><item><title>Release v0.20.0</title><link>http://pgcli.com/v0.20.0.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This version adds support for &lt;tt class="docutils literal"&gt;\\h&lt;/tt&gt;  command and &lt;tt class="docutils literal"&gt;\x auto&lt;/tt&gt; command. Two
@@ -115,7 +115,7 @@ than the display window.&lt;/p&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Sun, 30 Aug 2015 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2015-08-30:v0.19.2.html</guid><category>python</category><category>release</category><category>changelog</category><category>postgres</category></item><item><title>Release v0.19.1</title><link>http://pgcli.com/v0.19.1.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This is a minor bug fix release to fix a crashing bug during autocompletion.&lt;/p&gt;
@@ -128,7 +128,7 @@ auto-completion and syntax highlighting. You can install this version by:&lt;/p&
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Tue, 04 Aug 2015 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2015-08-04:v0.19.1.html</guid><category>python</category><category>release</category><category>changelog</category><category>postgres</category></item><item><title>Release v0.19.0</title><link>http://pgcli.com/v0.19.0.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This release comes with metadata information in the completion menus. Now you
@@ -177,7 +177,7 @@ history_file = /path/to/history/file
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Mon, 03 Aug 2015 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2015-08-03:v0.19.0.html</guid><category>python</category><category>release</category><category>changelog</category><category>postgres</category></item><item><title>Release v0.18.0</title><link>http://pgcli.com/v0.18.0.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This release comes with the ability to save favorite queries, fuzzy matching in
@@ -247,7 +247,7 @@ add new special back-slash commands using a decorator.&lt;/li&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Tue, 16 Jun 2015 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2015-06-16:v0.18.0.html</guid><category>python</category><category>release</category><category>changelog</category><category>postgres</category></item><item><title>Release v0.17.0</title><link>http://pgcli.com/v0.17.0.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This release comes with the latest version of prompt_tookit, improved
@@ -295,32 +295,10 @@ word is in the middle of a suggestion.&lt;/p&gt;
 &lt;li&gt;Minor fixes around cursor cleanup.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Tue, 26 May 2015 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2015-05-26:v0.17.0.html</guid><category>python</category><category>release</category><category>changelog</category><category>postgres</category></item><item><title>Screencast: pgcli basics</title><link>http://pgcli.com/pgcli-basics-screencast.html</link><description>&lt;p&gt;I created a screencast to showcase some of the basic features of &lt;a href="http://pgcli.com"&gt;pgcli&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;pgcli is a client for postgres that can do autocompletion and syntax highlighting.&lt;/p&gt;
-&lt;p&gt;This video covers:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Installation&lt;/li&gt;
-&lt;li&gt;Launching pgcli&lt;/li&gt;
-&lt;li&gt;Switching databases&lt;/li&gt;
-&lt;li&gt;Basic auto-completion for SELECT, CREATE, INSERT and JOIN statements.&lt;/li&gt;
-&lt;li&gt;Expanded output&lt;/li&gt;
-&lt;li&gt;Multi-line mode    &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Video:&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/124125257" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;If there is enough interest, I'll produce a few more screencasts of other
-features available in &lt;a href="http://pgcli.com"&gt;pgcli&lt;/a&gt;. Please reach me via
-&lt;a href="https://twitter.com/amjithr"&gt;twitter&lt;/a&gt; or &lt;a href="mailto:amjith.r@gmail.com"&gt;email&lt;/a&gt; to
-provide feedback.&lt;/p&gt;
-&lt;p&gt;I'm also working on a new project called &lt;a href="http://mysql-cli.com"&gt;mysql-cli&lt;/a&gt;.
-I've launched a
-&lt;a href="https://www.kickstarter.com/projects/1839007321/mysql-cli"&gt;kickstarter&lt;/a&gt;
-campaign for that project and I'd like your support. Please forward the
-&lt;a href="http://mysql-cli.com"&gt;project&lt;/a&gt; to your friends and coworkers.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Mon, 06 Apr 2015 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2015-04-06:pgcli-basics-screencast.html</guid><category>python</category><category>screencast</category><category>postgres</category></item><item><title>Release v0.16.3</title><link>http://pgcli.com/v0.16.3.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Tue, 26 May 2015 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2015-05-26:v0.17.0.html</guid><category>python</category><category>release</category><category>changelog</category><category>postgres</category></item><item><title>Release v0.16.3</title><link>http://pgcli.com/v0.16.3.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This is a minor bug-fix release that fixes the syntax-highlighting of various
@@ -337,7 +315,7 @@ sql exceptions.&lt;/p&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Thu, 02 Apr 2015 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2015-04-02:v0.16.3.html</guid><category>python</category><category>release</category><category>changelog</category><category>postgres</category></item><item><title>Release v0.16.2</title><link>http://pgcli.com/v0.16.2.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This is a bug-fix release that improves auto-completion and formatting of large
@@ -356,7 +334,7 @@ As a result the suggestions for tables vs functions are cleaner. (Thanks: &lt;a 
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Sun, 22 Mar 2015 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2015-03-22:v0.16.2.html</guid><category>python</category><category>release</category><category>changelog</category><category>postgres</category></item><item><title>Release v0.16.1</title><link>http://pgcli.com/v0.16.1.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This is a minor bug-fix release that fixes unicode issues with hstore.&lt;/p&gt;
@@ -373,7 +351,7 @@ connection and a type caster is registered accordingly.&lt;/li&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Tue, 03 Mar 2015 00:00:00 -0800</pubDate><guid>tag:pgcli.com,2015-03-03:v0.16.1.html</guid><category>python</category><category>release</category><category>changelog</category><category>postgres</category></item><item><title>Release v0.16.0</title><link>http://pgcli.com/v0.16.0.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This release adds Vi-keybindings, improvements to special commands (new
@@ -408,7 +386,7 @@ statements are separated by semi-colon in the same line.&lt;/li&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Sun, 01 Mar 2015 00:00:00 -0800</pubDate><guid>tag:pgcli.com,2015-03-01:v0.16.0.html</guid><category>python</category><category>release</category><category>changelog</category><category>postgres</category></item><item><title>Release v0.15.X</title><link>http://pgcli.com/v0.15.X.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;p&gt;This version adds more color schemes to the syntax highlighting. An attempt to
@@ -435,84 +413,11 @@ are &lt;cite&gt;manni&lt;/cite&gt;, &lt;cite&gt;igor&lt;/cite&gt;, &lt;cite&gt;x
 &lt;li&gt;Override the LESS options completely instead of appending to it.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Sun, 08 Feb 2015 00:00:00 -0800</pubDate><guid>tag:pgcli.com,2015-02-08:v0.15.X.html</guid><category>python</category><category>release</category><category>changelog</category><category>postgres</category></item><item><title>Embedding pgcli in IPython</title><link>http://pgcli.com/embedding-pgcli-in-ipython.html</link><description>&lt;p&gt;&lt;a href="http://ipython.org/"&gt;IPython&lt;/a&gt; is an interactive shell for Python that is
-well-suited to do data-analysis. It has integration for plotting, data-analysis
-libraries, parallel computing etc. &lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/catherinedevlin/ipython-sql"&gt;IPython-sql&lt;/a&gt; is an IPython
-extension that provides an easy way to load data from a database into the
-ipython environment to do the data-analysis. Here's an example. &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;In&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;load_ext&lt;/span&gt; &lt;span class="n"&gt;sql&lt;/span&gt;
-
-&lt;span class="n"&gt;In&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;sql&lt;/span&gt; &lt;span class="n"&gt;postgres&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;localhost&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;5432&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;misago_testforum&lt;/span&gt;
-&lt;span class="n"&gt;Out&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="s"&gt;u&amp;#39;Connected: None@misago_testforum&amp;#39;&lt;/span&gt;
-
-&lt;span class="n"&gt;In&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;sql&lt;/span&gt; &lt;span class="n"&gt;select&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;FROM&lt;/span&gt; &lt;span class="n"&gt;django_migrations&lt;/span&gt; &lt;span class="n"&gt;where&lt;/span&gt; &lt;span class="nb"&gt;id&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;
-&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="n"&gt;rows&lt;/span&gt; &lt;span class="n"&gt;affected&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
-&lt;span class="n"&gt;Out&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="p"&gt;[(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;u&amp;#39;admin&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;u&amp;#39;0001_initial&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2014&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;11&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;24&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;26&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;43&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;625938&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-          &lt;span class="n"&gt;tzinfo&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;psycopg2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tz&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;FixedOffsetTimezone&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;offset&lt;/span&gt;&lt;span class="o"&gt;=-&lt;/span&gt;&lt;span class="mi"&gt;480&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;)))]&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;We can now manipulate the data that was imported from the database. &lt;/p&gt;
-&lt;p&gt;The trouble is ipython doesn't have the ability to do auto-completion for the
-sql statements. So it's a bit hard to iterate on the sql statement to get the
-right data.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://pgcli.com"&gt;Pgcli&lt;/a&gt; on the other hand is a postgres client that provides
-auto-completion for SQL statements.&lt;/p&gt;
-&lt;p&gt;Thanks to &lt;a href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt; we can now embed pgcli
-directly inside the ipython console. We can iterate over the sql statements in
-pgcli with the comfort of auto-completion and preview the results before
-loading it into IPython. When we're satisfied with the results, all we do is
-quit pgcli, and we'll drop back to IPython loaded with the results from the
-last query.&lt;/p&gt;
-&lt;p&gt;Let's see how that works. &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# IPython Console&lt;/span&gt;
-
-&lt;span class="n"&gt;In&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;load_ext&lt;/span&gt; &lt;span class="n"&gt;pgcli&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;magic&lt;/span&gt;
-
-&lt;span class="n"&gt;In&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;pgcli&lt;/span&gt; &lt;span class="n"&gt;postgres&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;localhost&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;5432&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;misago_testforum&lt;/span&gt;
-&lt;span class="n"&gt;Connected&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="nd"&gt;@misago_testforum&lt;/span&gt;
-
-&lt;span class="c"&gt;# pgcli repl&lt;/span&gt;
-
-&lt;span class="n"&gt;misago_testforum&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;SELECT&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;FROM&lt;/span&gt; &lt;span class="n"&gt;django_migrations&lt;/span&gt; &lt;span class="n"&gt;WHERE&lt;/span&gt; &lt;span class="nb"&gt;id&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;
-&lt;span class="o"&gt;+------+-------+--------------+----------------------------------+&lt;/span&gt;
-&lt;span class="o"&gt;|&lt;/span&gt;   &lt;span class="nb"&gt;id&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;app&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt;         &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;applied&lt;/span&gt;                          &lt;span class="o"&gt;|&lt;/span&gt;
-&lt;span class="o"&gt;|------+-------+--------------+----------------------------------|&lt;/span&gt;
-&lt;span class="o"&gt;|&lt;/span&gt;    &lt;span class="mi"&gt;5&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;admin&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mo"&gt;0001&lt;/span&gt;&lt;span class="n"&gt;_initial&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mi"&gt;2014&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;11&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;24&lt;/span&gt; &lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;26&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mf"&gt;43.625938&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;08&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mo"&gt;00&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;
-&lt;span class="o"&gt;+------+-------+--------------+----------------------------------+&lt;/span&gt;
-&lt;span class="n"&gt;SELECT&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
-&lt;span class="n"&gt;misago_testforum&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nb"&gt;exit&lt;/span&gt;
-&lt;span class="n"&gt;GoodBye&lt;/span&gt;&lt;span class="err"&gt;!&lt;/span&gt;
-&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="n"&gt;rows&lt;/span&gt; &lt;span class="n"&gt;affected&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
-
-&lt;span class="c"&gt;# Back on IPython Console. &lt;/span&gt;
-
-&lt;span class="n"&gt;Out&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="p"&gt;[(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;u&amp;#39;admin&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;u&amp;#39;0001_initial&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2014&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;11&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;24&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;26&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;43&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;625938&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-          &lt;span class="n"&gt;tzinfo&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;psycopg2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tz&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;FixedOffsetTimezone&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;offset&lt;/span&gt;&lt;span class="o"&gt;=-&lt;/span&gt;&lt;span class="mi"&gt;480&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;)))]&lt;/span&gt;
-
-&lt;span class="n"&gt;In&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="n"&gt;_&lt;/span&gt;
-&lt;span class="n"&gt;Out&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="p"&gt;[(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;u&amp;#39;admin&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;u&amp;#39;0001_initial&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2014&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;11&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;24&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;26&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;43&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;625938&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-          &lt;span class="n"&gt;tzinfo&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;psycopg2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tz&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;FixedOffsetTimezone&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;offset&lt;/span&gt;&lt;span class="o"&gt;=-&lt;/span&gt;&lt;span class="mi"&gt;480&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;None&lt;/span&gt;&lt;span class="p"&gt;)))]&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;That's it. So if you're using IPython for data-analysis and have your data
-residing in a Database, you can easily import it in using ipython-sql and
-pgcli.&lt;/p&gt;
-&lt;h3&gt;Installation&lt;/h3&gt;
-&lt;p&gt;Install pgcli and ipython-sql and you're all set to go. &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pip install pgcli ipython ipython-sql
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;If you have feedback, please reach out via
-&lt;a href="https://twitter.com/amjithr"&gt;twitter&lt;/a&gt; or
-&lt;a href="https://github.com/amjith/pgcli/issues"&gt;github&lt;/a&gt;. Thank you!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Tue, 03 Feb 2015 00:00:00 -0800</pubDate><guid>tag:pgcli.com,2015-02-03:embedding-pgcli-in-ipython.html</guid><category>ipython</category><category>python</category><category>postgres</category></item><item><title>Release v0.14.0</title><link>http://pgcli.com/v0.14.0.html</link><description>&lt;p&gt;A huge release that adds completion support for schemas.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Sun, 08 Feb 2015 00:00:00 -0800</pubDate><guid>tag:pgcli.com,2015-02-08:v0.15.X.html</guid><category>python</category><category>release</category><category>changelog</category><category>postgres</category></item><item><title>Release v0.14.0</title><link>http://pgcli.com/v0.14.0.html</link><description>&lt;p&gt;A huge release that adds completion support for schemas.&lt;/p&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can upgrade using:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;div class="section" id="features"&gt;
@@ -542,7 +447,7 @@ This can be changed via config file (~/.pgclirc) using &lt;tt class="docutils li
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Sat, 31 Jan 2015 00:00:00 -0800</pubDate><guid>tag:pgcli.com,2015-01-31:v0.14.0.html</guid><category>python</category><category>release</category><category>changelog</category><category>postgres</category></item><item><title>Release v0.13.0</title><link>http://pgcli.com/v0.13.0.html</link><description>&lt;p&gt;A small release that gets &lt;tt class="docutils literal"&gt;pgcli&lt;/tt&gt; closer to being a drop in replacement for
 &lt;tt class="docutils literal"&gt;psql&lt;/tt&gt;.&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
 &lt;div class="section" id="features"&gt;
@@ -564,7 +469,7 @@ eg: pgcli dbname user&lt;/li&gt;
 &lt;/div&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Wed, 14 Jan 2015 00:00:00 -0800</pubDate><guid>tag:pgcli.com,2015-01-14:v0.13.0.html</guid><category>python</category><category>release</category><category>changelog</category><category>postgres</category></item><item><title>Release v0.12.0</title><link>http://pgcli.com/v0.12.0.html</link><description>&lt;p&gt;A feature packed &lt;a class="reference external" href="https://pypi.python.org/pypi/pgcli/0.12.0"&gt;release&lt;/a&gt;. You can install/upgrade using&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -U pgcli
+$ pip install -U pgcli
 &lt;/pre&gt;
 &lt;div class="section" id="id1"&gt;
 &lt;h2&gt;0.12.0&lt;/h2&gt;
