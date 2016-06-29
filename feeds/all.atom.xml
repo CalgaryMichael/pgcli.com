@@ -66,12 +66,6 @@ The completions for JOIN and COLUMN were enhanced.&lt;/p&gt;
 &lt;li&gt;Added sdist upload to release script. (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Irina Truong&lt;/a&gt;).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="bug-fixes"&gt;
-&lt;h2&gt;Bug Fixes:&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Fixed logging in Windows by switching the location of log and history file based on OS. (Thanks: Amjith, &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;, &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
 </summary><category term="python"></category><category term="release"></category><category term="changelog"></category><category term="postgres"></category></entry><entry><title>Launching 'vcli' for VerticaDB</title><link href="http://pgcli.com/vcli.html" rel="alternate"></link><updated>2015-11-24T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2015-11-24:vcli.html</id><summary type="html">&lt;p&gt;Today we're proud to announce a new project called &lt;code&gt;vcli&lt;/code&gt;. This is a Command
 Line tool for VerticaDB that is based on &lt;a href="http://pgcli.com"&gt;pgcli&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Source: &lt;a href="https://github.com/dbcli/vcli"&gt;https://github.com/dbcli/vcli&lt;/a&gt;&lt;/p&gt;

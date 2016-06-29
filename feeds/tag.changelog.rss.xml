@@ -66,12 +66,6 @@ The completions for JOIN and COLUMN were enhanced.&lt;/p&gt;
 &lt;li&gt;Added sdist upload to release script. (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Irina Truong&lt;/a&gt;).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="bug-fixes"&gt;
-&lt;h2&gt;Bug Fixes:&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Fixed logging in Windows by switching the location of log and history file based on OS. (Thanks: Amjith, &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;, &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Tue, 28 Jun 2016 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2016-06-28:v1.0.0.html</guid><category>python</category><category>release</category><category>changelog</category><category>postgres</category></item><item><title>Release v0.20.1</title><link>http://pgcli.com/v0.20.1.html</link><description>&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;

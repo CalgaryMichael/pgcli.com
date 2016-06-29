@@ -66,12 +66,6 @@ The completions for JOIN and COLUMN were enhanced.&lt;/p&gt;
 &lt;li&gt;Added sdist upload to release script. (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Irina Truong&lt;/a&gt;).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;div class="section" id="bug-fixes"&gt;
-&lt;h2&gt;Bug Fixes:&lt;/h2&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;Fixed logging in Windows by switching the location of log and history file based on OS. (Thanks: Amjith, &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;, &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
 </summary><category term="python"></category><category term="release"></category><category term="changelog"></category><category term="postgres"></category></entry><entry><title>Release v0.20.1</title><link href="http://pgcli.com/v0.20.1.html" rel="alternate"></link><updated>2015-11-08T00:00:00-08:00</updated><author><name>Iryna Cherniavska</name></author><id>tag:pgcli.com,2015-11-08:v0.20.1.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
