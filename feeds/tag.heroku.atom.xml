@@ -3,23 +3,23 @@
 &lt;h3&gt;Installation&lt;/h3&gt;
 &lt;p&gt;Make sure pgcli is installed. If it is not installed check the installation &lt;a href="http://pgcli.com/install"&gt;instructions&lt;/a&gt;. Typically it is:&lt;/p&gt;
 &lt;p&gt;Either:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;    $ brew install pgcli    # Only on OS X
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    $ brew install pgcli    # Only on OS X
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;or &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;    $ pip install pgcli   # Python package installation
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    $ pip install pgcli   # Python package installation
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Then install the heroku plugin&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;    $ heroku plugins:install git@github.com:chrisanderton/heroku-pg-pgcli.git
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    $ heroku plugins:install git@github.com:chrisanderton/heroku-pg-pgcli.git
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h3&gt;Usage&lt;/h3&gt;
 &lt;p&gt;Run this from within a Heroku app directory&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;    $ heroku pg:pgcli
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    $ heroku pg:pgcli
 &lt;/pre&gt;&lt;/div&gt;
 
 

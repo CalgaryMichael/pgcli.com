@@ -30,80 +30,37 @@
                     <ol id="posts-list" class="hfeed" start="3">
             <li><article class="hentry">
                 <header>
-                    <h1><a href="../v0.14.0.html" rel="bookmark"
-                           title="Permalink to Release v0.14.0">Release v0.14.0</a></h1>
+                    <h1><a href="../django-pgcli.html" rel="bookmark"
+                           title="Permalink to Django Integration of pgcli">Django Integration of pgcli</a></h1>
                 </header>
 
                 <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2015-01-31T00:00:00-08:00">
-                Published: Sat 31 January 2015
+        <abbr class="published" title="2015-04-25T00:00:00-07:00">
+                Published: Sat 25 April 2015
         </abbr>
 
         <address class="vcard author">
                 By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
         </address>
 <p>In <a href="../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
-</footer><!-- /.post-info -->                <p>A huge release that adds completion support for schemas.</p>
-<p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
-auto-completion and syntax highlighting. You can upgrade using:</p>
-<pre class="code bash literal-block">
-$ pip install -U pgcli
-</pre>
-<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
-<div class="section" id="features">
-<h2>Features:</h2>
-<ul class="simple">
-<li>Add alias completion support to ON keyword. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Iryna ...</a></li></ul></div>
-                <a class="readmore" href="../v0.14.0.html">read more</a>
+<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/django.html">django</a> </p>
+</footer><!-- /.post-info -->                <p>Django web framework has a rich set of management commands. One of them is <code>python manage.py dbshell</code>. This will launch the default database repl and connect to the appropriate database for the web application.</p>
+<p>Now it is possible to launch <code>pgcli</code> instead of the default <code>psql</code> for Postgres by ...</p>
+                <a class="readmore" href="../django-pgcli.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
 
             <li><article class="hentry">
                 <header>
-                    <h1><a href="../v0.13.0.html" rel="bookmark"
-                           title="Permalink to Release v0.13.0">Release v0.13.0</a></h1>
+                    <h1><a href="../dbcli.html" rel="bookmark"
+                           title="Permalink to dbcli - a new github org">dbcli - a new github org</a></h1>
                 </header>
 
                 <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2015-01-14T00:00:00-08:00">
-                Published: Wed 14 January 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
-        </address>
-<p>In <a href="../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
-</footer><!-- /.post-info -->                <p>A small release that gets <tt class="docutils literal">pgcli</tt> closer to being a drop in replacement for
-<tt class="docutils literal">psql</tt>.</p>
-<pre class="code bash literal-block">
-$ pip install -U pgcli
-</pre>
-<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
-<div class="section" id="features">
-<h2>Features:</h2>
-<ul class="simple">
-<li>Add -d/--dbname option to the commandline.
-eg: pgcli -d database</li>
-<li>Add the username as an argument after the database.
-eg: pgcli ...</li></ul></div>
-                <a class="readmore" href="../v0.13.0.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../post-launch.html" rel="bookmark"
-                           title="Permalink to One week after launch">One week after launch</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-01-13T00:00:00-08:00">
-                Published: Tue 13 January 2015
+        <abbr class="published" title="2015-04-18T00:00:00-07:00">
+                Published: Sat 18 April 2015
         </abbr>
 
         <address class="vcard author">
@@ -111,61 +68,84 @@ eg: pgcli ...</li></ul></div>
         </address>
 <p>In <a href="../category/blog.html">Blog</a>. </p>
 <p>tags: <a href="../tag/python.html">python</a> </p>
-</footer><!-- /.post-info -->                <p>Pgcli was <a class="reference external" href="../launch.html">launched</a> approximately one week ago.</p>
-<p>It was an extremely successful launch, beyond any of my wildest imaginations.</p>
-<div class="section" id="obligatory-vanity-metrics">
-<h2>Obligatory Vanity Metrics:</h2>
-<ul class="simple">
-<li>Google Analytics: 21K views and 12.2K users.</li>
-<li><a class="reference external" href="https://twitter.com/amjithr/status/552491986255896576">Twitter</a>: 70 retweets, 68 favs.</li>
-<li><a class="reference external" href="https://github.com/amjith/pgcli">Github</a>: 1,230 stars, 45 forks, 28 watchers.</li>
-<li><a class="reference external" href="https://news.ycombinator.com/item?id=8844723">HackerNews</a>: 227 points</li>
-</ul>
-<p>Enough with the vanity ...</p></div>
-                <a class="readmore" href="../post-launch.html">read more</a>
+</footer><!-- /.post-info -->                <p>I'm officially moving the <a href="https://github.com/dbcli/pgcli">pgcli</a> project into
+the <a href="https://github.com/dbcli">dbcli</a> org in github.</p>
+<h2>Why?</h2>
+<ul>
+<li>pgcli is a community project now and having an organization helps solidify that.</li>
+<li>More peope will now have write access to the repo. Watch for the announcement of the core-devs of pgcli.</li>
+<li>It's a better ...</li></ul>
+                <a class="readmore" href="../dbcli.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
 
             <li><article class="hentry">
                 <header>
-                    <h1><a href="../v0.12.0.html" rel="bookmark"
-                           title="Permalink to Release v0.12.0">Release v0.12.0</a></h1>
+                    <h1><a href="../pgcli-basics-screencast.html" rel="bookmark"
+                           title="Permalink to Screencast: pgcli basics">Screencast: pgcli basics</a></h1>
                 </header>
 
                 <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2015-01-13T00:00:00-08:00">
-                Published: Tue 13 January 2015
+        <abbr class="published" title="2015-04-06T00:00:00-07:00">
+                Published: Mon 06 April 2015
         </abbr>
 
         <address class="vcard author">
                 By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
         </address>
 <p>In <a href="../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
-</footer><!-- /.post-info -->                <p>A feature packed <a class="reference external" href="https://pypi.python.org/pypi/pgcli/0.12.0">release</a>. You can install/upgrade using</p>
-<pre class="code bash literal-block">
-$ pip install -U pgcli
-</pre>
-<div class="section" id="id1">
-<h2>0.12.0</h2>
-<div class="section" id="features">
-<h3>Features:</h3>
-<ul class="simple">
-<li>Upgrade to prompt_toolkit version 0.26 (Thanks:<a class="reference external" href="https://github.com/macobo">Karl-Aksel Puulmann</a>)<ul>
-<li>Adds Ctrl-left/right to move the cursor one word left/right respectively.</li>
-<li>Internal API changes.</li>
+<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/screencast.html">screencast</a> <a href="../tag/postgres.html">postgres</a> </p>
+</footer><!-- /.post-info -->                <p>I created a screencast to showcase some of the basic features of <a href="http://pgcli.com">pgcli</a>.</p>
+<p>pgcli is a client for postgres that can do autocompletion and syntax highlighting.</p>
+<p>This video covers:</p>
+<ul>
+<li>Installation</li>
+<li>Launching pgcli</li>
+<li>Switching databases</li>
+<li>Basic auto-completion for SELECT, CREATE, INSERT and JOIN statements.</li>
+<li>Expanded output</li>
+<li>Multi-line mode    </li>
 </ul>
-</li>
-<li>IPython integration through <a class="reference external" href="https://github.com/catherinedevlin/ipython-sql">ipython-sql</a> (Thanks:<a class="reference external" href="https://github.com/darikg">darikg</a>)<ul>
-<li>Add an ipython ...</li></ul></li></ul></div></div>
-                <a class="readmore" href="../v0.12.0.html">read more</a>
+<p>Video:</p>
+<iframe src="https://player.vimeo.com/video/124125257" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p>If there ...</p>
+                <a class="readmore" href="../pgcli-basics-screencast.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="../mysql-cli-kickstarter.html" rel="bookmark"
+                           title="Permalink to Kickstarter: mysql-cli">Kickstarter: mysql-cli</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2015-04-05T00:00:00-07:00">
+                Published: Sun 05 April 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
+        </address>
+<p>In <a href="../category/blog.html">Blog</a>. </p>
+<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/mysql.html">mysql</a> </p>
+</footer><!-- /.post-info -->                <p>I'm starting a project called <a href="http://mysql-cli.com">mysql-cli</a>.</p>
+<p><a href="http://mysql-cli.com">mysql-cli</a> will be a command line client for MySQL, with
+auto-completion and syntax highlighting. An equivalent of
+<a href="http://pgcli.com">pgcli</a> for MySQL database.</p>
+<p>I'm raising funds for the project through <a href="http://mysql-cli.com">kickstarter</a>.
+The goal is to compensate for the development time and resources (hosting,
+testing ...</p>
+                <a class="readmore" href="../mysql-cli-kickstarter.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
                 </ol><!-- /#posts-list -->
 <p class="paginator">
         <a href="../tag/python3.html">&laquo;</a>
-    Page 4 / 5
+    Page 4 / 7
         <a href="../tag/python5.html">&raquo;</a>
 </p>
                 </section><!-- /#content -->

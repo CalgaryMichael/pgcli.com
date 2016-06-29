@@ -50,8 +50,8 @@
 PostgreSQL database without invoking the command line or rolling out their own
 custom solution. It is easily extendable.</p>
 <p>Here is an example of installing it and using it in in python REPL:</p>
-<div class="highlight"><pre><span class="nv">$ </span>pip install pgspecial
-<span class="nv">$ </span>python
+<div class="highlight"><pre><span></span>$ pip install pgspecial
+$ python
 Python 2.7.3 <span class="o">(</span>default, Jun <span class="m">22</span> 2015, 19:33:41<span class="o">)</span> 
 <span class="o">[</span>GCC 4.6.3<span class="o">]</span> on linux2
 Type <span class="s2">&quot;help&quot;</span>, <span class="s2">&quot;copyright&quot;</span>, <span class="s2">&quot;credits&quot;</span> or <span class="s2">&quot;license&quot;</span> <span class="k">for</span> more information.
@@ -59,12 +59,12 @@ Type <span class="s2">&quot;help&quot;</span>, <span class="s2">&quot;copyright&
 
 
 <p>After you see the prompt:</p>
-<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">psycopg2</span>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">psycopg2</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">pgspecial.main</span> <span class="kn">import</span> <span class="n">PGSpecial</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">p</span> <span class="o">=</span> <span class="n">PGSpecial</span><span class="p">()</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="s">&#39;postgres&#39;</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="s">&#39;localhost&#39;</span><span class="p">,</span> <span class="n">database</span><span class="o">=</span><span class="s">&#39;geo&#39;</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">conn</span> <span class="o">=</span> <span class="n">psycopg2</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="s1">&#39;postgres&#39;</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="s1">&#39;localhost&#39;</span><span class="p">,</span> <span class="n">database</span><span class="o">=</span><span class="s1">&#39;geo&#39;</span><span class="p">)</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">cur</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">title</span><span class="p">,</span> <span class="n">rows</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span> <span class="n">status</span> <span class="ow">in</span> <span class="n">p</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">cur</span><span class="p">,</span> <span class="s">&#39;</span><span class="se">\\</span><span class="s">d city&#39;</span><span class="p">):</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">title</span><span class="p">,</span> <span class="n">rows</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span> <span class="n">status</span> <span class="ow">in</span> <span class="n">p</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">cur</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">d city&#39;</span><span class="p">):</span>
 <span class="o">...</span>     <span class="k">print</span> <span class="n">title</span>
 <span class="o">...</span>     <span class="k">print</span> <span class="n">headers</span>
 <span class="o">...</span>     <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
@@ -73,12 +73,12 @@ Type <span class="s2">&quot;help&quot;</span>, <span class="s2">&quot;copyright&
 <span class="o">...</span>     
 <span class="o">...</span> 
 
-<span class="p">[</span><span class="s">&#39;Column&#39;</span><span class="p">,</span> <span class="s">&#39;Type&#39;</span><span class="p">,</span> <span class="s">&#39;Modifiers&#39;</span><span class="p">]</span>
-<span class="p">[</span><span class="s">&#39;zip_code&#39;</span><span class="p">,</span> <span class="s">&#39;character varying(5)&#39;</span><span class="p">,</span> <span class="s">&#39; not null&#39;</span><span class="p">]</span>
-<span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">,</span> <span class="s">&#39;character varying(28)&#39;</span><span class="p">,</span> <span class="s">&#39; not null&#39;</span><span class="p">]</span>
-<span class="p">[</span><span class="s">&#39;abbreviation&#39;</span><span class="p">,</span> <span class="s">&#39;character varying(13)&#39;</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">]</span>
+<span class="p">[</span><span class="s1">&#39;Column&#39;</span><span class="p">,</span> <span class="s1">&#39;Type&#39;</span><span class="p">,</span> <span class="s1">&#39;Modifiers&#39;</span><span class="p">]</span>
+<span class="p">[</span><span class="s1">&#39;zip_code&#39;</span><span class="p">,</span> <span class="s1">&#39;character varying(5)&#39;</span><span class="p">,</span> <span class="s1">&#39; not null&#39;</span><span class="p">]</span>
+<span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;character varying(28)&#39;</span><span class="p">,</span> <span class="s1">&#39; not null&#39;</span><span class="p">]</span>
+<span class="p">[</span><span class="s1">&#39;abbreviation&#39;</span><span class="p">,</span> <span class="s1">&#39;character varying(13)&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">]</span>
 <span class="n">Indexes</span><span class="p">:</span>
-    <span class="s">&quot;city_pkey&quot;</span> <span class="n">PRIMARY</span> <span class="n">KEY</span><span class="p">,</span> <span class="n">btree</span> <span class="p">(</span><span class="n">zip_code</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+    <span class="s2">&quot;city_pkey&quot;</span> <span class="n">PRIMARY</span> <span class="n">KEY</span><span class="p">,</span> <span class="n">btree</span> <span class="p">(</span><span class="n">zip_code</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
 </pre></div>
 
 
@@ -106,6 +106,12 @@ Type <span class="s2">&quot;help&quot;</span>, <span class="s2">&quot;copyright&
                         </ul>
                 </div><!-- /.social -->
         </section><!-- /#extras -->
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'dbcli/pgcli'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
     <script type="text/javascript">
     var _gaq = _gaq || [];

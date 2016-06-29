@@ -45,14 +45,14 @@ libraries, parallel computing etc. </p>
 <p><a href="https://github.com/catherinedevlin/ipython-sql">IPython-sql</a> is an IPython
 extension that provides an easy way to load data from a database into the
 ipython environment to do the data-analysis. Here's an example. </p>
-<div class="highlight"><pre><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="o">%</span><span class="n">load_ext</span> <span class="n">sql</span>
+<div class="highlight"><pre><span></span><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="o">%</span><span class="n">load_ext</span> <span class="n">sql</span>
 
 <span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="o">%</span><span class="n">sql</span> <span class="n">postgres</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="p">:</span><span class="mi">5432</span><span class="o">/</span><span class="n">misago_testforum</span>
-<span class="n">Out</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="s">u&#39;Connected: None@misago_testforum&#39;</span>
+<span class="n">Out</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="s1">u&#39;Connected: None@misago_testforum&#39;</span>
 
 <span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="o">%</span><span class="n">sql</span> <span class="n">select</span> <span class="o">*</span> <span class="n">FROM</span> <span class="n">django_migrations</span> <span class="n">where</span> <span class="nb">id</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="mi">1</span> <span class="n">rows</span> <span class="n">affected</span><span class="o">.</span>
-<span class="n">Out</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="p">[(</span><span class="mi">5</span><span class="p">,</span> <span class="s">u&#39;admin&#39;</span><span class="p">,</span> <span class="s">u&#39;0001_initial&#39;</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">625938</span><span class="p">,</span> 
+<span class="n">Out</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="p">[(</span><span class="mi">5</span><span class="p">,</span> <span class="s1">u&#39;admin&#39;</span><span class="p">,</span> <span class="s1">u&#39;0001_initial&#39;</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">625938</span><span class="p">,</span> 
           <span class="n">tzinfo</span><span class="o">=</span><span class="n">psycopg2</span><span class="o">.</span><span class="n">tz</span><span class="o">.</span><span class="n">FixedOffsetTimezone</span><span class="p">(</span><span class="n">offset</span><span class="o">=-</span><span class="mi">480</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="bp">None</span><span class="p">)))]</span>
 </pre></div>
 
@@ -70,14 +70,14 @@ loading it into IPython. When we're satisfied with the results, all we do is
 quit pgcli, and we'll drop back to IPython loaded with the results from the
 last query.</p>
 <p>Let's see how that works. </p>
-<div class="highlight"><pre><span class="c"># IPython Console</span>
+<div class="highlight"><pre><span></span><span class="c1"># IPython Console</span>
 
 <span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="o">%</span><span class="n">load_ext</span> <span class="n">pgcli</span><span class="o">.</span><span class="n">magic</span>
 
 <span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="o">%</span><span class="n">pgcli</span> <span class="n">postgres</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="p">:</span><span class="mi">5432</span><span class="o">/</span><span class="n">misago_testforum</span>
 <span class="n">Connected</span><span class="p">:</span> <span class="bp">None</span><span class="nd">@misago_testforum</span>
 
-<span class="c"># pgcli repl</span>
+<span class="c1"># pgcli repl</span>
 
 <span class="n">misago_testforum</span><span class="o">&gt;</span> <span class="n">SELECT</span> <span class="o">*</span> <span class="n">FROM</span> <span class="n">django_migrations</span> <span class="n">WHERE</span> <span class="nb">id</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="o">+------+-------+--------------+----------------------------------+</span>
@@ -90,13 +90,13 @@ last query.</p>
 <span class="n">GoodBye</span><span class="err">!</span>
 <span class="mi">1</span> <span class="n">rows</span> <span class="n">affected</span><span class="o">.</span>
 
-<span class="c"># Back on IPython Console. </span>
+<span class="c1"># Back on IPython Console. </span>
 
-<span class="n">Out</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="p">[(</span><span class="mi">5</span><span class="p">,</span> <span class="s">u&#39;admin&#39;</span><span class="p">,</span> <span class="s">u&#39;0001_initial&#39;</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">625938</span><span class="p">,</span> 
+<span class="n">Out</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="p">[(</span><span class="mi">5</span><span class="p">,</span> <span class="s1">u&#39;admin&#39;</span><span class="p">,</span> <span class="s1">u&#39;0001_initial&#39;</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">625938</span><span class="p">,</span> 
           <span class="n">tzinfo</span><span class="o">=</span><span class="n">psycopg2</span><span class="o">.</span><span class="n">tz</span><span class="o">.</span><span class="n">FixedOffsetTimezone</span><span class="p">(</span><span class="n">offset</span><span class="o">=-</span><span class="mi">480</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="bp">None</span><span class="p">)))]</span>
 
 <span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="n">_</span>
-<span class="n">Out</span><span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="p">[(</span><span class="mi">5</span><span class="p">,</span> <span class="s">u&#39;admin&#39;</span><span class="p">,</span> <span class="s">u&#39;0001_initial&#39;</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">625938</span><span class="p">,</span> 
+<span class="n">Out</span><span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="p">[(</span><span class="mi">5</span><span class="p">,</span> <span class="s1">u&#39;admin&#39;</span><span class="p">,</span> <span class="s1">u&#39;0001_initial&#39;</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">625938</span><span class="p">,</span> 
           <span class="n">tzinfo</span><span class="o">=</span><span class="n">psycopg2</span><span class="o">.</span><span class="n">tz</span><span class="o">.</span><span class="n">FixedOffsetTimezone</span><span class="p">(</span><span class="n">offset</span><span class="o">=-</span><span class="mi">480</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="bp">None</span><span class="p">)))]</span>
 </pre></div>
 
@@ -106,7 +106,7 @@ residing in a Database, you can easily import it in using ipython-sql and
 pgcli.</p>
 <h3>Installation</h3>
 <p>Install pgcli and ipython-sql and you're all set to go. </p>
-<div class="highlight"><pre><span class="nv">$ </span>pip install pgcli ipython ipython-sql
+<div class="highlight"><pre><span></span>$ pip install pgcli ipython ipython-sql
 </pre></div>
 
 
@@ -135,6 +135,12 @@ pgcli.</p>
                         </ul>
                 </div><!-- /.social -->
         </section><!-- /#extras -->
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'dbcli/pgcli'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
     <script type="text/javascript">
     var _gaq = _gaq || [];

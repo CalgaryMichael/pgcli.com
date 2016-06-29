@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
         <meta charset="utf-8" />
-        <title>pgcli - Amjith</title>
-        <link rel="stylesheet" href="../theme/css/main.css" />
+        <title>Release v1.0.0</title>
+        <link rel="stylesheet" href="./theme/css/main.css" />
         <link href="http://pgcli.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="pgcli Atom Feed" />
         <link href="http://pgcli.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="pgcli RSS Feed" />
         <!--[if IE]>
@@ -13,38 +13,43 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="../">pgcli </a></h1>
+                <h1><a href="./">pgcli </a></h1>
                 <nav><ul>
-                    <li><a href="../index">pgcli</a></li>
-                    <li><a href="../install">Install</a></li>
-                    <li><a href="../features">Features</a></li>
-                    <li><a href="../faq">FAQ</a></li>
-                    <li><a href="../develop">Develop</a></li>
-                    <li><a href="../thanks">Thanks</a></li>
-                    <li><a href="../about">About</a></li>
-                    <li><a href="../category/blog.html">Blog</a></li>
+                    <li><a href="./index">pgcli</a></li>
+                    <li><a href="./install">Install</a></li>
+                    <li><a href="./features">Features</a></li>
+                    <li><a href="./faq">FAQ</a></li>
+                    <li><a href="./develop">Develop</a></li>
+                    <li><a href="./thanks">Thanks</a></li>
+                    <li><a href="./about">About</a></li>
+                    <li class="active"><a href="./category/blog.html">Blog</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="./v1.0.0.html" rel="bookmark"
+           title="Permalink to Release v1.0.0">Release v1.0.0</a></h1>
+    </header>
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="../v1.0.0.html">Release v1.0.0</a></h1>
+    <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2016-06-28T00:00:00-07:00">
                 Published: Tue 28 June 2016
         </abbr>
 
         <address class="vcard author">
-                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
+                By                         <a class="url fn" href="./author/amjith.html">Amjith</a>
         </address>
-<p>In <a href="../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
-</footer><!-- /.post-info --><p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
+<p>In <a href="./category/blog.html">Blog</a>. </p>
+<p>tags: <a href="./tag/python.html">python</a> <a href="./tag/release.html">release</a> <a href="./tag/changelog.html">changelog</a> <a href="./tag/postgres.html">postgres</a> </p>
+</footer><!-- /.post-info -->      <p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version using:</p>
 <pre class="code bash literal-block">
 $ pip install -U pgcli
 </pre>
-<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
+<p>Check <a class="reference external" href="./install">detailed instructions</a> if you're having difficulty.</p>
 <p>This is a major update with a ton of new features a lot of bug fixes. Some of
 the highlights include support for Redshift and Postgres 8.x versions. Added
 meta commands such as <tt class="docutils literal">\copy</tt>, <tt class="docutils literal">\o</tt>, <tt class="docutils literal">\dx</tt> path completion for <tt class="docutils literal">\i</tt>.
@@ -112,106 +117,11 @@ The completions for JOIN and COLUMN were enhanced.</p>
 <li>Fixed logging in Windows by switching the location of log and history file based on OS. (Thanks: Amjith, <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>, <a class="reference external" href="https://github.com/j-bennet">Iryna Cherniavska</a>).</li>
 </ul>
 </div>
-                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../vcli.html" rel="bookmark"
-                           title="Permalink to Launching 'vcli' for VerticaDB">Launching 'vcli' for VerticaDB</a></h1>
-                </header>
+    </div><!-- /.entry-content -->
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-11-24T00:00:00-08:00">
-                Published: Tue 24 November 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
-        </address>
-<p>In <a href="../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../tag/python-vcli.html">python vcli</a> </p>
-</footer><!-- /.post-info -->                <p>Today we're proud to announce a new project called <code>vcli</code>. This is a Command
-Line tool for VerticaDB that is based on <a href="http://pgcli.com">pgcli</a>.</p>
-<p>Source: <a href="https://github.com/dbcli/vcli">https://github.com/dbcli/vcli</a></p>
-<p><img alt="vcli" src="../images/vcli.gif" /></p>
-<h2>Who?</h2>
-<p>The main author of <code>vcli</code> is <a href="https://github.com/eliangcs">Chang-Hung
-Liang</a>. He took the source code for pgcli and
-repurposed it to ...</p>
-                <a class="readmore" href="../vcli.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../v0.20.0.html" rel="bookmark"
-                           title="Permalink to Release v0.20.0">Release v0.20.0</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-10-31T00:00:00-07:00">
-                Published: Sat 31 October 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
-        </address>
-<p>In <a href="../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
-</footer><!-- /.post-info -->                <p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
-auto-completion and syntax highlighting. You can install this version by:</p>
-<pre class="code bash literal-block">
-$ pip install -U pgcli
-</pre>
-<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
-<p>This version adds support for <tt class="docutils literal">\\h</tt>  command and <tt class="docutils literal">\x auto</tt> command. Two
-very important commands that bring ...</p>
-                <a class="readmore" href="../v0.20.0.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../v0.19.2.html" rel="bookmark"
-                           title="Permalink to Release v0.19.2">Release v0.19.2</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-08-30T00:00:00-07:00">
-                Published: Sun 30 August 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
-        </address>
-<p>In <a href="../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
-</footer><!-- /.post-info -->                <div class="section" id="features">
-<h2>Features:</h2>
-<ul class="simple">
-<li>Autocompletion for database name in c and connect. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</li>
-<li>Improved multiline query support by correctly handling open quotes. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</li>
-<li>Added pager command.</li>
-<li>Enhanced i to run multiple queries and display the results for each of them</li>
-<li>Added keywords to suggestions after WHERE clause.</li>
-<li>Enabled autocompletion ...</li></ul></div>
-                <a class="readmore" href="../v0.19.2.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-                </ol><!-- /#posts-list -->
-<p class="paginator">
-    Page 1 / 7
-        <a href="../author/amjith2.html">&raquo;</a>
-</p>
-                </section><!-- /#content -->
+  </article>
+</section>
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>blogroll</h2>

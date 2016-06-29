@@ -1,5 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/tag.release.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2015-11-08T00:00:00-08:00</updated><entry><title>Release v0.20.1</title><link href="http://pgcli.com/v0.20.1.html" rel="alternate"></link><updated>2015-11-08T00:00:00-08:00</updated><author><name>Iryna Cherniavska</name></author><id>tag:pgcli.com,2015-11-08:v0.20.1.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
+<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/tag.release.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2016-06-28T00:00:00-07:00</updated><entry><title>Release v1.0.0</title><link href="http://pgcli.com/v1.0.0.html" rel="alternate"></link><updated>2016-06-28T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2016-06-28:v1.0.0.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
+auto-completion and syntax highlighting. You can install this version using:&lt;/p&gt;
+&lt;pre class="code bash literal-block"&gt;
+$ pip install -U pgcli
+&lt;/pre&gt;
+&lt;p&gt;Check &lt;a class="reference external" href="http://pgcli.com/install"&gt;detailed instructions&lt;/a&gt; if you're having difficulty.&lt;/p&gt;
+&lt;p&gt;This is a major update with a ton of new features a lot of bug fixes. Some of
+the highlights include support for Redshift and Postgres 8.x versions. Added
+meta commands such as &lt;tt class="docutils literal"&gt;\copy&lt;/tt&gt;, &lt;tt class="docutils literal"&gt;\o&lt;/tt&gt;, &lt;tt class="docutils literal"&gt;\dx&lt;/tt&gt; path completion for &lt;tt class="docutils literal"&gt;\i&lt;/tt&gt;.
+The completions for JOIN and COLUMN were enhanced.&lt;/p&gt;
+&lt;p&gt;Please file any bug reports to github issues: &lt;a class="reference external" href="https://github.com/dbcli/pgcli/issues"&gt;https://github.com/dbcli/pgcli/issues&lt;/a&gt;&lt;/p&gt;
+&lt;div class="section" id="features"&gt;
+&lt;h2&gt;Features:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Upgrade to prompt-toolkit 1.0.0. (Thanks: &lt;a class="reference external" href="https://github.com/jonathanslenders"&gt;Jonathan Slenders&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Add support for &lt;cite&gt;o&lt;/cite&gt; command to redirect query output to a file. (Thanks: &lt;a class="reference external" href="https://github.com/Gollum999"&gt;Tim Sanders&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Add &lt;cite&gt;i&lt;/cite&gt; path completion. (Thanks: &lt;a class="reference external" href="https://github.com/ajlai"&gt;Anthony Lai&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Connect to a dsn saved in config file. (Thanks: &lt;a class="reference external" href="https://github.com/roramirez"&gt;Rodrigo Ramírez Norambuena&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Upgrade sqlparse requirement to version 0.1.19. (Thanks: &lt;a class="reference external" href="FernandoL.Canizo"&gt;Fernando L. Canizo&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Add timestamptz to DATE custom extension. (Thanks: &lt;a class="reference external" href="https://github.com/fernandomora"&gt;Fernando Mora&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Ensure target dir exists when copying config. (Thanks: &lt;a class="reference external" href="DavidSzotten"&gt;David Szotten&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Handle dates that fall in the B.C. range. (Thanks: &lt;a class="reference external" href="https://github.com/stuartquin"&gt;Stuart Quin&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Pager is selected from config file or else from environment variable. (Thanks: &lt;a class="reference external" href="https://github.com/fernandomora"&gt;Fernando Mora&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Add support for Amazon Redshift. (Thanks: &lt;a class="reference external" href="TimothyCleaver"&gt;Timothy Cleaver&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Add support for Postgres 8.x. (Thanks: &lt;a class="reference external" href="TimothyCleaver"&gt;Timothy Cleaver&lt;/a&gt; and &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Don't error when completing parameter-less functions. (Thanks: &lt;a class="reference external" href="DavidSzotten"&gt;David Szotten&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Concat and return all available notices. (Thanks: &lt;a class="reference external" href="https://github.com/stuartquin"&gt;Stuart Quin&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Handle unicode in record type. (Thanks: &lt;a class="reference external" href="https://github.com/amjith"&gt;Amjith Ramanujam&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Added humanized time display. Connect #396. (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Irina Truong&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Add EXPLAIN keyword to the completion list. (Thanks: &lt;a class="reference external" href="https://github.com/amjith"&gt;Amjith Ramanujam&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Sort completions based on most recently used. (Thanks: &lt;cite&gt;Darik Gamble&lt;/cite&gt;)&lt;/li&gt;
+&lt;li&gt;Expand '*' into column list during completion. This can be triggered by hitting &lt;cite&gt;&amp;lt;tab&amp;gt;&lt;/cite&gt; after the '*' character in the sql while typing. (Thanks: &lt;a class="reference external" href="https://github.com/koljonen"&gt;Joakim Koljonen&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add a limit to the warning about too many rows. This is controlled by a new config value in ~/.config/pgcli/config. (Thanks: &lt;a class="reference external" href="https://github.com/Smotko"&gt;Anže Pečar&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Improved argument list in function parameter completions. (Thanks: &lt;a class="reference external" href="https://github.com/koljonen"&gt;Joakim Koljonen&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Column suggestions after the COLUMN keyword. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Filter out trigger implemented functions from the suggestion list. (Thanks: &lt;a class="reference external" href="https://github.com/drocco007"&gt;Daniel Rocco&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;State of the art JOIN clause completions that suggest entire conditions. (Thanks: &lt;a class="reference external" href="https://github.com/koljonen"&gt;Joakim Koljonen&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Suggest fully formed JOIN clauses based on Foreign Key relations. (Thanks: &lt;a class="reference external" href="https://github.com/koljonen"&gt;Joakim Koljonen&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add support for &lt;cite&gt;dx&lt;/cite&gt; meta command to list the installed extensions. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add support for &lt;cite&gt;copy&lt;/cite&gt; command. (Thanks: &lt;a class="reference external" href="https://github.com/catherinedevlin"&gt;Catherine Devlin&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bugs"&gt;
+&lt;h2&gt;Bugs:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Fix bug where config writing would leave a '~' dir. (Thanks: &lt;a class="reference external" href="https://github.com/jmunson"&gt;James Munson&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fix auto-completion breaking for table names with caps. (Thanks: &lt;a class="reference external" href="https://github.com/ajlai"&gt;Anthony Lai&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fix lexical ordering bug. (Thanks: &lt;a class="reference external" href="https://github.com/ajlai"&gt;Anthony Lai&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Use lexical order to break ties when fuzzy matching. (Thanks: &lt;a class="reference external" href="https://github.com/drocco007"&gt;Daniel Rocco&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fix the bug in auto-expand mode when there are no rows to display. (Thanks: &lt;a class="reference external" href="https://github.com/amjith"&gt;Amjith Ramanujam&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fix broken &lt;cite&gt;i&lt;/cite&gt; after #395. (Thanks: &lt;a class="reference external" href="DavidSzotten"&gt;David Szotten&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Fix multi-way joins in auto-completion. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Display null values as &amp;lt;null&amp;gt; in expanded output. (Thanks: &lt;a class="reference external" href="https://github.com/amjith"&gt;Amjith Ramanujam&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Robust support for Postgres version less than 9.x. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="internal-changes"&gt;
+&lt;h2&gt;Internal Changes:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Update config file location in README. (Thanks: &lt;a class="reference external" href="AriSummer"&gt;Ari Summer&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Explicitly add wcwidth as a dependency. (Thanks: &lt;a class="reference external" href="https://github.com/amjith"&gt;Amjith Ramanujam&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Add tests for the format_output. (Thanks: &lt;a class="reference external" href="https://github.com/amjith"&gt;Amjith Ramanujam&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Lots of tests for pgcompleter. (Thanks: &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Update pgspecial dependency to 1.4.0.&lt;/li&gt;
+&lt;li&gt;Added sdist upload to release script. (Thanks: &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Irina Truong&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bug-fixes"&gt;
+&lt;h2&gt;Bug Fixes:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Fixed logging in Windows by switching the location of log and history file based on OS. (Thanks: Amjith, &lt;a class="reference external" href="https://github.com/darikg"&gt;Darik Gamble&lt;/a&gt;, &lt;a class="reference external" href="https://github.com/j-bennet"&gt;Iryna Cherniavska&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="python"></category><category term="release"></category><category term="changelog"></category><category term="postgres"></category></entry><entry><title>Release v0.20.1</title><link href="http://pgcli.com/v0.20.1.html" rel="alternate"></link><updated>2015-11-08T00:00:00-08:00</updated><author><name>Iryna Cherniavska</name></author><id>tag:pgcli.com,2015-11-08:v0.20.1.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version by:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
 $ pip install -U pgcli
