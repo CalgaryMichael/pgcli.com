@@ -29,7 +29,52 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../v1.0.0.html">Release v1.0.0</a></h1>
+                    <h1 class="entry-title"><a href="../irina.html">New Maintainer for pgcli - Irina</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2016-11-20T00:00:00-08:00">
+                Published: Sun 20 November 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/amjith.html">Amjith</a>
+        </address>
+<p>In <a href="../category/blog.html">Blog</a>. </p>
+<p>tags: <a href="../tag/python.html">python</a> </p>
+</footer><!-- /.post-info --><p>About 2 years ago I (Amjith) made a modest announcement about launching <code>pgcli</code> a CLI
+client for Postgres with auto-completion. Since then <code>pgcli</code> has grown at a
+tremendous pace. We have over 4900 stars on github, released 39 versions,
+merged 320 pull requests from over 60 different contributors. We established a
+core team which has 7 team members and we're always looking for interested
+folks to join the team. Our only requirement is "be nice and welcoming to
+everyone".</p>
+<p><img src='/images/irina.png' width=750px align=center alt='Irina'/></p>
+<p>I'm happy to announce that <a href="https://github.com/j-bennet">Irina</a> has volunteered
+to take over the role of maintaining the pgcli project. I will be staying as
+part of the core team but Irina will be in charge of the direction of the
+project. </p>
+<p>A little bit about Irina, she is the earliest contributor of pgcli. In fact she
+started contributing  even before it was announced publicly. She's a personal
+friend and a great programmer. She's also the creator of the tremendously
+useful docker tool <a href="http://wharfee.com/">wharfee</a>.</p>
+<p>Why am I stepping down? There are two reasons, one I have a six month old baby
+at home and I'm sleep deprived and tired all the time. Second, I've done
+everything I can to make pgcli a success but I think I've depleted my ideas and
+I've become stagnant. It is time to bring a fresh perspective to the project.</p>
+<p>I want to thank Irina for stepping up and the rest of the core team for their
+support.</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="../v1.0.0.html" rel="bookmark"
+                           title="Permalink to Release v1.0.0">Release v1.0.0</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2016-06-28T00:00:00-07:00">
                 Published: Tue 28 June 2016
@@ -40,79 +85,16 @@
         </address>
 <p>In <a href="../category/blog.html">Blog</a>. </p>
 <p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
-</footer><!-- /.post-info --><p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
+</footer><!-- /.post-info -->                <p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version using:</p>
 <pre class="code bash literal-block">
 $ pip install -U pgcli
 </pre>
 <p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
-<p>This is a major update with a ton of new features a lot of bug fixes. Some of
-the highlights include support for Redshift and Postgres 8.x versions. Added
-meta commands such as <tt class="docutils literal">\copy</tt>, <tt class="docutils literal">\o</tt>, <tt class="docutils literal">\dx</tt> path completion for <tt class="docutils literal">\i</tt>.
-The completions for JOIN and COLUMN were enhanced.</p>
-<p>Please file any bug reports to github issues: <a class="reference external" href="https://github.com/dbcli/pgcli/issues">https://github.com/dbcli/pgcli/issues</a></p>
-<div class="section" id="features">
-<h2>Features:</h2>
-<ul class="simple">
-<li>Upgrade to prompt-toolkit 1.0.0. (Thanks: <a class="reference external" href="https://github.com/jonathanslenders">Jonathan Slenders</a>).</li>
-<li>Add support for <cite>o</cite> command to redirect query output to a file. (Thanks: <a class="reference external" href="https://github.com/Gollum999">Tim Sanders</a>).</li>
-<li>Add <cite>i</cite> path completion. (Thanks: <a class="reference external" href="https://github.com/ajlai">Anthony Lai</a>).</li>
-<li>Connect to a dsn saved in config file. (Thanks: <a class="reference external" href="https://github.com/roramirez">Rodrigo Ramírez Norambuena</a>).</li>
-<li>Upgrade sqlparse requirement to version 0.1.19. (Thanks: <a class="reference external" href="FernandoL.Canizo">Fernando L. Canizo</a>).</li>
-<li>Add timestamptz to DATE custom extension. (Thanks: <a class="reference external" href="https://github.com/fernandomora">Fernando Mora</a>).</li>
-<li>Ensure target dir exists when copying config. (Thanks: <a class="reference external" href="DavidSzotten">David Szotten</a>).</li>
-<li>Handle dates that fall in the B.C. range. (Thanks: <a class="reference external" href="https://github.com/stuartquin">Stuart Quin</a>).</li>
-<li>Pager is selected from config file or else from environment variable. (Thanks: <a class="reference external" href="https://github.com/fernandomora">Fernando Mora</a>).</li>
-<li>Add support for Amazon Redshift. (Thanks: <a class="reference external" href="TimothyCleaver">Timothy Cleaver</a>).</li>
-<li>Add support for Postgres 8.x. (Thanks: <a class="reference external" href="TimothyCleaver">Timothy Cleaver</a> and <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</li>
-<li>Don't error when completing parameter-less functions. (Thanks: <a class="reference external" href="DavidSzotten">David Szotten</a>).</li>
-<li>Concat and return all available notices. (Thanks: <a class="reference external" href="https://github.com/stuartquin">Stuart Quin</a>).</li>
-<li>Handle unicode in record type. (Thanks: <a class="reference external" href="https://github.com/amjith">Amjith Ramanujam</a>).</li>
-<li>Added humanized time display. Connect #396. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Irina Truong</a>).</li>
-<li>Add EXPLAIN keyword to the completion list. (Thanks: <a class="reference external" href="https://github.com/amjith">Amjith Ramanujam</a>).</li>
-<li>Sort completions based on most recently used. (Thanks: <cite>Darik Gamble</cite>)</li>
-<li>Expand '*' into column list during completion. This can be triggered by hitting <cite>&lt;tab&gt;</cite> after the '*' character in the sql while typing. (Thanks: <a class="reference external" href="https://github.com/koljonen">Joakim Koljonen</a>)</li>
-<li>Add a limit to the warning about too many rows. This is controlled by a new config value in ~/.config/pgcli/config. (Thanks: <a class="reference external" href="https://github.com/Smotko">Anže Pečar</a>)</li>
-<li>Improved argument list in function parameter completions. (Thanks: <a class="reference external" href="https://github.com/koljonen">Joakim Koljonen</a>)</li>
-<li>Column suggestions after the COLUMN keyword. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</li>
-<li>Filter out trigger implemented functions from the suggestion list. (Thanks: <a class="reference external" href="https://github.com/drocco007">Daniel Rocco</a>)</li>
-<li>State of the art JOIN clause completions that suggest entire conditions. (Thanks: <a class="reference external" href="https://github.com/koljonen">Joakim Koljonen</a>)</li>
-<li>Suggest fully formed JOIN clauses based on Foreign Key relations. (Thanks: <a class="reference external" href="https://github.com/koljonen">Joakim Koljonen</a>)</li>
-<li>Add support for <cite>dx</cite> meta command to list the installed extensions. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</li>
-<li>Add support for <cite>copy</cite> command. (Thanks: <a class="reference external" href="https://github.com/catherinedevlin">Catherine Devlin</a>)</li>
-</ul>
-</div>
-<div class="section" id="bugs">
-<h2>Bugs:</h2>
-<ul class="simple">
-<li>Fix bug where config writing would leave a '~' dir. (Thanks: <a class="reference external" href="https://github.com/jmunson">James Munson</a>).</li>
-<li>Fix auto-completion breaking for table names with caps. (Thanks: <a class="reference external" href="https://github.com/ajlai">Anthony Lai</a>).</li>
-<li>Fix lexical ordering bug. (Thanks: <a class="reference external" href="https://github.com/ajlai">Anthony Lai</a>).</li>
-<li>Use lexical order to break ties when fuzzy matching. (Thanks: <a class="reference external" href="https://github.com/drocco007">Daniel Rocco</a>).</li>
-<li>Fix the bug in auto-expand mode when there are no rows to display. (Thanks: <a class="reference external" href="https://github.com/amjith">Amjith Ramanujam</a>).</li>
-<li>Fix broken <cite>i</cite> after #395. (Thanks: <a class="reference external" href="DavidSzotten">David Szotten</a>).</li>
-<li>Fix multi-way joins in auto-completion. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</li>
-<li>Display null values as &lt;null&gt; in expanded output. (Thanks: <a class="reference external" href="https://github.com/amjith">Amjith Ramanujam</a>).</li>
-<li>Robust support for Postgres version less than 9.x. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>)</li>
-</ul>
-</div>
-<div class="section" id="internal-changes">
-<h2>Internal Changes:</h2>
-<ul class="simple">
-<li>Update config file location in README. (Thanks: <a class="reference external" href="AriSummer">Ari Summer</a>).</li>
-<li>Explicitly add wcwidth as a dependency. (Thanks: <a class="reference external" href="https://github.com/amjith">Amjith Ramanujam</a>).</li>
-<li>Add tests for the format_output. (Thanks: <a class="reference external" href="https://github.com/amjith">Amjith Ramanujam</a>).</li>
-<li>Lots of tests for pgcompleter. (Thanks: <a class="reference external" href="https://github.com/darikg">Darik Gamble</a>).</li>
-<li>Update pgspecial dependency to 1.4.0.</li>
-<li>Added sdist upload to release script. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Irina Truong</a>).</li>
-</ul>
-</div>
-                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+<p>This is a major update with a ton of new features a lot of bug fixes. Some ...</p>
+                <a class="readmore" href="../v1.0.0.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
@@ -172,33 +154,6 @@ $ pip install -U pgcli
 <p>This version adds support for <tt class="docutils literal">\\h</tt>  command and <tt class="docutils literal">\x auto</tt> command. Two
 very important commands that bring ...</p>
                 <a class="readmore" href="../v0.20.0.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../pgspecial-release.html" rel="bookmark"
-                           title="Permalink to Pgspecial is now an independent module">Pgspecial is now an independent module</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-09-22T00:00:00-07:00">
-                Published: Tue 22 September 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="../author/iryna-cherniavska.html">Iryna Cherniavska</a>
-        </address>
-<p>In <a href="../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/pgspecial.html">pgspecial</a> </p>
-</footer><!-- /.post-info -->                <p>The pgspecial package is now independent and has its own place on PyPI:</p>
-<h1><a href="https://pypi.python.org/pypi/pgspecial">pgspecial</a></h1>
-<p>The package provides an API for developers who wish to run meta-commands on
-PostgreSQL database without invoking the command line or rolling out their own
-custom solution. It is easily extendable.</p>
-<p>Here is an example of ...</p>
-                <a class="readmore" href="../pgspecial-release.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
                 </ol><!-- /#posts-list -->

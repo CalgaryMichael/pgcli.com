@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/all.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2016-06-28T00:00:00-07:00</updated><entry><title>Release v1.0.0</title><link href="http://pgcli.com/v1.0.0.html" rel="alternate"></link><published>2016-06-28T00:00:00-07:00</published><updated>2016-06-28T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2016-06-28:v1.0.0.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
+<feed xmlns="http://www.w3.org/2005/Atom"><title>pgcli</title><link href="http://pgcli.com/" rel="alternate"></link><link href="http://pgcli.com/feeds/all.atom.xml" rel="self"></link><id>http://pgcli.com/</id><updated>2016-11-20T00:00:00-08:00</updated><entry><title>New Maintainer for pgcli - Irina</title><link href="http://pgcli.com/irina.html" rel="alternate"></link><published>2016-11-20T00:00:00-08:00</published><updated>2016-11-20T00:00:00-08:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2016-11-20:irina.html</id><summary type="html">&lt;p&gt;About 2 years ago I (Amjith) made a modest announcement about launching &lt;code&gt;pgcli&lt;/code&gt; a CLI
+client for Postgres with auto-completion. Since then &lt;code&gt;pgcli&lt;/code&gt; has grown at a
+tremendous pace. We have over 4900 stars on github, released 39 versions,
+merged 320 pull requests from over 60 different contributors. We established a
+core team which has 7 team members and we're always looking for interested
+folks to join the team. Our only requirement is "be nice and welcoming to
+everyone".&lt;/p&gt;
+&lt;p&gt;&lt;img src='/images/irina.png' width=750px align=center alt='Irina'/&gt;&lt;/p&gt;
+&lt;p&gt;I'm happy to announce that &lt;a href="https://github.com/j-bennet"&gt;Irina&lt;/a&gt; has volunteered
+to take over the role of maintaining the pgcli project. I will be staying as
+part of the core team but Irina will be in charge of the direction of the
+project. &lt;/p&gt;
+&lt;p&gt;A little bit about Irina, she is the earliest contributor of pgcli. In fact she
+started contributing  even before it was announced publicly. She's a personal
+friend and a great programmer. She's also the creator of the tremendously
+useful docker tool &lt;a href="http://wharfee.com/"&gt;wharfee&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Why am I stepping down? There are two reasons, one I have a six month old baby
+at home and I'm sleep deprived and tired all the time. Second, I've done
+everything I can to make pgcli a success but I think I've depleted my ideas and
+I've become stagnant. It is time to bring a fresh perspective to the project.&lt;/p&gt;
+&lt;p&gt;I want to thank Irina for stepping up and the rest of the core team for their
+support.&lt;/p&gt;</summary><category term="python"></category></entry><entry><title>Release v1.0.0</title><link href="http://pgcli.com/v1.0.0.html" rel="alternate"></link><published>2016-06-28T00:00:00-07:00</published><updated>2016-06-28T00:00:00-07:00</updated><author><name>Amjith</name></author><id>tag:pgcli.com,2016-06-28:v1.0.0.html</id><summary type="html">&lt;p&gt;&lt;tt class="docutils literal"&gt;Pgcli&lt;/tt&gt; is a command line interface for Postgres database that does
 auto-completion and syntax highlighting. You can install this version using:&lt;/p&gt;
 &lt;pre class="code bash literal-block"&gt;
 $ pip install -U pgcli
