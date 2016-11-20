@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><atom:link href="http://pgcli.com/feeds/tag.mysql.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 05 May 2015 00:00:00 -0700</lastBuildDate><item><title>A Better CLI for MySQL - Kickstarter Success</title><link>http://pgcli.com/mysql-cli-kickstarter-success.html</link><description>&lt;p&gt;About a month ago, I started a new &lt;a href="https://www.kickstarter.com/projects/1839007321/mysql-cli"&gt;kickstarter
+<rss version="2.0"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><lastBuildDate>Tue, 05 May 2015 00:00:00 -0700</lastBuildDate><item><title>A Better CLI for MySQL - Kickstarter Success</title><link>http://pgcli.com/mysql-cli-kickstarter-success.html</link><description>&lt;p&gt;About a month ago, I started a new &lt;a href="https://www.kickstarter.com/projects/1839007321/mysql-cli"&gt;kickstarter
 project&lt;/a&gt; to create a
 MySQL client that can do auto-completion and syntax highlighting.&lt;/p&gt;
 &lt;p&gt;An equivalent of &lt;a href="http://pgcli.com"&gt;pgcli&lt;/a&gt; for the MySQL database.&lt;/p&gt;
@@ -10,7 +10,7 @@ strongly marching towards the stretch goal. &lt;/p&gt;
 &lt;p&gt;I would like to extend my thanks to the first Gold sponsor
 &lt;a href="https://jweiland.net/"&gt;jweiland.net&lt;/a&gt;. The boost from their generous
 contribution gave me the confidence that we'll reach the goal.&lt;/p&gt;
-&lt;p&gt;Thanks to all the supporters who spread the word and pitched in. I appreciate it very much.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Tue, 05 May 2015 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2015-05-05:mysql-cli-kickstarter-success.html</guid><category>python</category><category>mysql</category></item><item><title>Kickstarter: mysql-cli</title><link>http://pgcli.com/mysql-cli-kickstarter.html</link><description>&lt;p&gt;I'm starting a project called &lt;a href="http://mysql-cli.com"&gt;mysql-cli&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thanks to all the supporters who spread the word and pitched in. I appreciate it very much.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Tue, 05 May 2015 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:pgcli.com,2015-05-05:mysql-cli-kickstarter-success.html</guid><category>python</category><category>mysql</category></item><item><title>Kickstarter: mysql-cli</title><link>http://pgcli.com/mysql-cli-kickstarter.html</link><description>&lt;p&gt;I'm starting a project called &lt;a href="http://mysql-cli.com"&gt;mysql-cli&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://mysql-cli.com"&gt;mysql-cli&lt;/a&gt; will be a command line client for MySQL, with
 auto-completion and syntax highlighting. An equivalent of
 &lt;a href="http://pgcli.com"&gt;pgcli&lt;/a&gt; for MySQL database.&lt;/p&gt;
@@ -38,4 +38,4 @@ every time I use the default MySQL client I want to scream obscenities at my
 computer and I can't be the only one. :)&lt;/p&gt;
 &lt;p&gt;The plan is to launch &lt;a href="http://mysql-cli.com"&gt;mysql-cli&lt;/a&gt; in July 2015 and open
 up the repo to public. If you want to get involved sooner, please back the
-project on &lt;a href="http://mysql-cli.com"&gt;kickstarter&lt;/a&gt; and I'll add you to the early access list. :)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Sun, 05 Apr 2015 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2015-04-05:mysql-cli-kickstarter.html</guid><category>python</category><category>mysql</category></item></channel></rss>
+project on &lt;a href="http://mysql-cli.com"&gt;kickstarter&lt;/a&gt; and I'll add you to the early access list. :)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Sun, 05 Apr 2015 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:pgcli.com,2015-04-05:mysql-cli-kickstarter.html</guid><category>python</category><category>mysql</category></item></channel></rss>
