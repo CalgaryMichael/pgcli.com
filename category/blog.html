@@ -29,7 +29,62 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../irina.html">New Maintainer for pgcli - Irina</a></h1>
+                    <h1 class="entry-title"><a href="../v1.4.0.html">Release v1.4.0</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2017-01-11T00:00:00-08:00">
+                Published: Wed 11 January 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/irina-truong.html">Irina Truong</a>
+        </address>
+<p>In <a href="../category/blog.html">Blog</a>. </p>
+<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
+</footer><!-- /.post-info --><p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
+auto-completion and syntax highlighting. You can install this version using:</p>
+<pre class="code bash literal-block">
+$ pip install -U pgcli
+</pre>
+<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
+<div class="section" id="features">
+<h2>Features:</h2>
+<ul class="simple">
+<li>Search table suggestions using initialisms. (Thanks: <a class="reference external" href="https://github.com/koljonen">Joakim Koljonen</a>).</li>
+<li>Support for table-qualifying column suggestions. (Thanks: <a class="reference external" href="https://github.com/koljonen">Joakim Koljonen</a>).</li>
+<li>Display transaction status in the toolbar. (Thanks: <a class="reference external" href="https://github.com/koljonen">Joakim Koljonen</a>).</li>
+<li>Display vi mode in the toolbar. (Thanks: <a class="reference external" href="https://github.com/koljonen">Joakim Koljonen</a>).</li>
+<li>Added --prompt option. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Irina Truong</a>).</li>
+</ul>
+</div>
+<div class="section" id="bug-fixes">
+<h2>Bug Fixes:</h2>
+<ul class="simple">
+<li>Fix scoping for columns from CTEs. (Thanks: <a class="reference external" href="https://github.com/koljonen">Joakim Koljonen</a>)</li>
+<li>Fix crash after <cite>with</cite>. (Thanks: <a class="reference external" href="https://github.com/koljonen">Joakim Koljonen</a>).</li>
+<li>Fix issue #603 (<cite>i</cite> raises a TypeError). (Thanks: <a class="reference external" href="https://github.com/lelit">Emanuele Gaifas</a>).</li>
+</ul>
+</div>
+<div class="section" id="internal-changes">
+<h2>Internal Changes:</h2>
+<ul class="simple">
+<li>Set default data_formatting to nothing. (Thanks: <a class="reference external" href="https://github.com/amjith">Amjith Ramanujam</a>).</li>
+<li>Increased minimum prompt_toolkit requirement to 1.0.9. (Thanks: <a class="reference external" href="https://github.com/j-bennet">Irina Truong</a>).</li>
+</ul>
+</div>
+                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="../irina.html" rel="bookmark"
+                           title="Permalink to New Maintainer for pgcli - Irina">New Maintainer for pgcli - Irina</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2016-11-20T00:00:00-08:00">
                 Published: Sun 20 November 2016
@@ -40,33 +95,13 @@
         </address>
 <p>In <a href="../category/blog.html">Blog</a>. </p>
 <p>tags: <a href="../tag/python.html">python</a> </p>
-</footer><!-- /.post-info --><p>About 2 years ago I (Amjith) made a modest announcement about launching <code>pgcli</code> a CLI
+</footer><!-- /.post-info -->                <p>About 2 years ago I (Amjith) made a modest announcement about launching <code>pgcli</code> a CLI
 client for Postgres with auto-completion. Since then <code>pgcli</code> has grown at a
 tremendous pace. We have over 4900 stars on github, released 39 versions,
-merged 320 pull requests from over 60 different contributors. We established a
-core team which has 7 team members and we're always looking for interested
-folks to join the team. Our only requirement is "be nice and welcoming to
-everyone".</p>
-<p><img src='/images/irina.png' width=750px align=center alt='Irina'/></p>
-<p>I'm happy to announce that <a href="https://github.com/j-bennet">Irina</a> has volunteered
-to take over the role of maintaining the pgcli project. I will be staying as
-part of the core team but Irina will be in charge of the direction of the
-project. </p>
-<p>A little bit about Irina, she is the earliest contributor of pgcli. In fact she
-started contributing  even before it was announced publicly. She's a personal
-friend and a great programmer. She's also the creator of the tremendously
-useful docker tool <a href="http://wharfee.com/">wharfee</a>.</p>
-<p>Why am I stepping down? There are two reasons, one I have a six month old baby
-at home and I'm sleep deprived and tired all the time. Second, I've done
-everything I can to make pgcli a success but I think I've depleted my ideas and
-I've become stagnant. It is time to bring a fresh perspective to the project.</p>
-<p>I want to thank Irina for stepping up and the rest of the core team for their
-support.</p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+merged 320 pull requests from over 60 different contributors. We established ...</p>
+                <a class="readmore" href="../irina.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
@@ -122,38 +157,6 @@ Line tool for VerticaDB that is based on <a href="http://pgcli.com">pgcli</a>.</
 Liang</a>. He took the source code for pgcli and
 repurposed it to ...</p>
                 <a class="readmore" href="../vcli.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="../v0.20.1.html" rel="bookmark"
-                           title="Permalink to Release v0.20.1">Release v0.20.1</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-11-08T00:00:00-08:00">
-                Published: Sun 08 November 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="../author/iryna-cherniavska.html">Iryna Cherniavska</a>
-        </address>
-<p>In <a href="../category/blog.html">Blog</a>. </p>
-<p>tags: <a href="../tag/python.html">python</a> <a href="../tag/release.html">release</a> <a href="../tag/changelog.html">changelog</a> <a href="../tag/postgres.html">postgres</a> </p>
-</footer><!-- /.post-info -->                <p><tt class="docutils literal">Pgcli</tt> is a command line interface for Postgres database that does
-auto-completion and syntax highlighting. You can install this version by:</p>
-<pre class="code bash literal-block">
-$ pip install -U pgcli
-</pre>
-<p>Check <a class="reference external" href="../install">detailed instructions</a> if you're having difficulty.</p>
-<p>This is a bug fix release to fix <tt class="docutils literal">pgcli</tt> crashing on startup in Windows.</p>
-<div class="section" id="bug-fixes">
-<h2>Bug Fixes:</h2>
-<ul class="simple">
-<li>Fixed ...</li></ul></div>
-                <a class="readmore" href="../v0.20.1.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
                 </ol><!-- /#posts-list -->

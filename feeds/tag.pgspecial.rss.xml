@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><lastBuildDate>Tue, 22 Sep 2015 00:00:00 -0700</lastBuildDate><item><title>Pgspecial is now an independent module</title><link>http://pgcli.com/pgspecial-release.html</link><description>&lt;p&gt;The pgspecial package is now independent and has its own place on PyPI:&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><atom:link href="http://pgcli.com/feeds/tag.pgspecial.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 22 Sep 2015 00:00:00 -0700</lastBuildDate><item><title>Pgspecial is now an independent module</title><link>http://pgcli.com/pgspecial-release.html</link><description>&lt;p&gt;The pgspecial package is now independent and has its own place on PyPI:&lt;/p&gt;
 &lt;h1&gt;&lt;a href="https://pypi.python.org/pypi/pgspecial"&gt;pgspecial&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;The package provides an API for developers who wish to run meta-commands on
 PostgreSQL database without invoking the command line or rolling out their own
@@ -38,4 +38,4 @@ Type &lt;span class="s2"&gt;&amp;quot;help&amp;quot;&lt;/span&gt;, &lt;span clas
 
 
 &lt;p&gt;To learn more about the package or to contribute, follow the
-&lt;a href="https://github.com/dbcli/pgspecial"&gt;github&lt;/a&gt; link.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Iryna Cherniavska</dc:creator><pubDate>Tue, 22 Sep 2015 00:00:00 -0700</pubDate><guid isPermaLink="false">tag:pgcli.com,2015-09-22:pgspecial-release.html</guid><category>python</category><category>pgspecial</category></item></channel></rss>
+&lt;a href="https://github.com/dbcli/pgspecial"&gt;github&lt;/a&gt; link.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Iryna Cherniavska</dc:creator><pubDate>Tue, 22 Sep 2015 00:00:00 -0700</pubDate><guid>tag:pgcli.com,2015-09-22:pgspecial-release.html</guid><category>python</category><category>pgspecial</category></item></channel></rss>

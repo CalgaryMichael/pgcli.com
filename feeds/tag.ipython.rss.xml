@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><lastBuildDate>Tue, 03 Feb 2015 00:00:00 -0800</lastBuildDate><item><title>Embedding pgcli in IPython</title><link>http://pgcli.com/embedding-pgcli-in-ipython.html</link><description>&lt;p&gt;&lt;a href="http://ipython.org/"&gt;IPython&lt;/a&gt; is an interactive shell for Python that is
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pgcli</title><link>http://pgcli.com/</link><description></description><atom:link href="http://pgcli.com/feeds/tag.ipython.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 03 Feb 2015 00:00:00 -0800</lastBuildDate><item><title>Embedding pgcli in IPython</title><link>http://pgcli.com/embedding-pgcli-in-ipython.html</link><description>&lt;p&gt;&lt;a href="http://ipython.org/"&gt;IPython&lt;/a&gt; is an interactive shell for Python that is
 well-suited to do data-analysis. It has integration for plotting, data-analysis
 libraries, parallel computing etc. &lt;/p&gt;
 &lt;p&gt;&lt;a href="https://github.com/catherinedevlin/ipython-sql"&gt;IPython-sql&lt;/a&gt; is an IPython
@@ -72,4 +72,4 @@ pgcli.&lt;/p&gt;
 
 &lt;p&gt;If you have feedback, please reach out via
 &lt;a href="https://twitter.com/amjithr"&gt;twitter&lt;/a&gt; or
-&lt;a href="https://github.com/amjith/pgcli/issues"&gt;github&lt;/a&gt;. Thank you!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Tue, 03 Feb 2015 00:00:00 -0800</pubDate><guid isPermaLink="false">tag:pgcli.com,2015-02-03:embedding-pgcli-in-ipython.html</guid><category>ipython</category><category>python</category><category>postgres</category></item></channel></rss>
+&lt;a href="https://github.com/amjith/pgcli/issues"&gt;github&lt;/a&gt;. Thank you!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amjith</dc:creator><pubDate>Tue, 03 Feb 2015 00:00:00 -0800</pubDate><guid>tag:pgcli.com,2015-02-03:embedding-pgcli-in-ipython.html</guid><category>ipython</category><category>python</category><category>postgres</category></item></channel></rss>
